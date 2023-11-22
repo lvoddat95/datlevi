@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Access Example</title>
+</head>
+<body>
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="captureBtn">Chụp ảnh</button>
+
+    <script>
+        // Kiểm tra xem trình duyệt hỗ trợ getUserMedia hay không
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            // Truy cập camera
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then((stream) => {
+                    const video = document.getElementById('video');
+                    video.srcObject = stream;
+                })
+                .catch((error) => {
+                    console.error('Lỗi truy cập camera: ', error);
+                });
+        } else {
+            console.error('Trình duyệt không hỗ trợ getUserMedia.');
+        }
+
+        // Lắng nghe sự kiện click nút chụp ảnh
+        document.getElementById('captureBtn').addEventListener('click', captureImage);
+
+        function captureImage() {
+            const video = document.getElementById('video');
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const context = canvas.getContext('2d');
+
+            // Vẽ hình ảnh từ video lên canvas
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+            // Lấy dữ liệu hình ảnh từ canvas
+            const imageDataURL = canvas.toDataURL('image/png');
+
+            // Hiển thị hình ảnh chụp được (optional)
+            const img = new Image();
+            img.src = imageDataURL;
+            document.body.appendChild(img);
+
+            // Bạn có thể sử dụng imageDataURL để lưu hình ảnh hoặc thực hiện các thao tác khác.
+        }
+    </script>
+</body>
+</html>

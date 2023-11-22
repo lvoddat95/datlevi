@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>VNI - Demo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../app-assets/images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../app-assets/images/ico/favicon-16x16.png">
+
+    <!-- core stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/iconmoon/iconmoon.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/bootstrap.min.css">
+    <!-- core stylesheet -->
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/chartist.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/style_custom.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/responsive.css">
+    <!-- /custom stylesheet -->
+
+    <!-- CORE JS-->
+    <script src="../app-assets/vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="../app-assets/vendors/js/jquery-ui.min.js"></script>
+    <script src="../app-assets/vendors/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../app-assets/vendors/js/tinymce/tinymce.min.js"></script>
+    <script src="../app-assets/vendors/js/jscolor.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+
+    <div class="p-3">
+
+
+
+        <div id="myModal" class="modal bd-modal" tabindex="-1" role="dialog" data-backdrop="static">
+            <div style="
+            background: #fff;
+            height: 100%;
+            position: relative;
+        ">
+                <div class="view-text position-relative text-center">
+                    <h3 class="mb-0">Nhấp vào nút bên dưới để chụp ảnh</h3>
+                </div>
+                <div class="rounded-0">
+                    <div class="camera ">
+
+                        <input type="hidden" id="modal-data-image" value="">
+
+                        <div class="position-relative">
+                            <p class="txt-camera m-2">Đang mở Camera...</p>
+                            <video class="camera-stream p1 w-100" style="display: none;" muted autoplay
+                                playsinline></video>
+                            <canvas id="canvas" style="display:none"></canvas>
+                            <img id="photo" src="" alt="" style="display:none">
+                        </div>
+
+                        <div class="m-2" style="  ">
+                            <a href="javascript:void(0);" class="capture-camera btn-camera text-primary">
+                                <i class="fa fa-camera mr-1"></i>
+                                <span>Chụp ảnh</span>
+                            </a>
+                        </div>
+
+                        <div class="m-2 d-flex align-items-center">
+                            <a href="javascript:void(0);" class="flip-camera btn-camera w-50 mr-1">
+                                <i class="fa fa-undo mr-1 text-orange"></i>
+                                <span>Chuyển Cam</span></a>
+
+                            <a href="javascript:void(0);" class="btn-camera w-50 ml-1 text-dark text-center"
+                                class="close" data-dismiss="modal" aria-label="Close">
+                                <i class="fal fa-times mr-1"></i> Đóng
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="alert alert-warning" role="alert">
+                <strong>Lưu ý:</strong> Thiết bị cần được cấp quyền truy cập vị trí và quyền truy cập Camera.
+            </div>
+
+            <input type="hidden" id="hdn_lat" name="hdn_lat" value="">
+            <input type="hidden" id="hdn_log" name="hdn_log" value="">
+
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                            <h6 class="card-title">1. Ảnh sau xe</h6>
+
+                            <button type="button" class="btn btn-sub open-camera h-auto p-2" data-img="anh_truoc">
+                                <i class="fa fa-camera mr-1"></i>
+                                <span>Mở máy ảnh</span>
+                            </button>
+
+                            <div id="anh_truoc" class="photo-wrapper mt-2">
+                                <img class="img-fluid" alt="">
+                                <input type="hidden" id="hdn_anh_truoc" name="hdn_anh_truoc" value="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                            <h6 class="card-title">2. Ảnh sau xe</h6>
+
+                            <button type="button" class="btn btn-sub open-camera h-auto p-2" data-img="anh-sau">
+                                <i class="fa fa-camera mr-1"></i>
+                                <span>Mở máy ảnh</span>
+                            </button>
+
+                            <div id="anh-sau" class="photo-wrapper mt-2">
+                                <img class="img-fluid" alt="">
+                                <input type="hidden" name="anh-sau" value="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                            <h6 class="card-title">3. Ảnh bên trái</h6>
+
+                            <button type="button" class="btn btn-sub open-camera h-auto p-2" data-img="anh-trai">
+                                <i class="fa fa-camera mr-1"></i>
+                                <span>Mở máy ảnh</span>
+                            </button>
+
+                            <div id="anh-trai" class="photo-wrapper mt-2">
+                                <img class="img-fluid" alt="">
+                                <input type="hidden" name="anh-trai" value="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12">
+                    <div class="card p-2">
+                        <div class="card-body">
+
+                            <h6 class="card-title">4. Ảnh bên phải</h6>
+
+                            <button type="button" class="btn btn-sub open-camera h-auto p-2" data-img="anh-phai">
+                                <i class="fa fa-camera mr-1"></i>
+                                <span>Mở máy ảnh</span>
+                            </button>
+
+                            <div id="anh-phai" class="photo-wrapper mt-2">
+                                <img class="img-fluid" alt="">
+                                <input type="hidden" name="anh-phai" value="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h6 class="card-title">5. Đăng kiểm</h6>
+
+                            <p class="card-text">...</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h6 class="card-title">6. Tem</h6>
+
+                            <p class="card-text">...</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <style>
+        .view-text {
+            padding: 1.2rem;
+            text-align: center;
+            background-color: #e6e6e6;
+        }
+
+        .camera-stream {
+            border: 2px solid red;
+            max-height: calc(100vh - 220px);
+        }
+
+        .btn-camera {
+            padding: 1.2rem;
+            display: block;
+            background: #e6e6e6;
+            text-align: center;
+            font-size: 18px;
+            color: #324148;
+            outline: none !important;
+            border: 1px solid #ccc !important;
+        }
+
+        .modal-open .modal {
+            overflow: auto !important;
+        }
+
+        #photo {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            border: 2px solid #fff;
+            width: 26%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .modal-dialog {
+            overflow-y: scroll;
+            margin: 0;
+            height: 100%;
+            max-width: 100%;
+            width: 100%;
+            background: #fff;
+        }
+
+
+        .photo-wrapper {
+            display: none;
+        }
+    </style>
+
+    <script>
+        // camera stream video element
+        let camera_stream = document.querySelector('.camera-stream');
+
+        // flip button element
+        let flipBtn = document.querySelector('.flip-camera');
+
+        // default user media options
+        let constraints = {
+            audio: false,
+            video: true
+        }
+        let shouldFaceUser = true;
+
+        // check whether we can use facingMode
+        let supports = navigator.mediaDevices.getSupportedConstraints();
+        if (supports['facingMode'] === true) {
+            // flipBtn.disabled = false;
+        }
+
+        let stream = null;
+
+        function capture(p_data_img = null) {
+            constraints.video = {
+                facingMode: shouldFaceUser ? 'user' : 'environment'
+            }
+
+            navigator.mediaDevices.getUserMedia(constraints)
+                .then(function (mediaStream) {
+                    stream = mediaStream;
+                    $(camera_stream).show();
+                    $(".txt-camera").hide();
+                    camera_stream.srcObject = stream;
+                    camera_stream.play();
+                })
+                .catch(function (err) {
+                    console.log(err)
+                });
+        }
+
+        // Stop Camera
+        function stopCamera() {
+            if (null != stream) {
+                var track = stream.getTracks()[0];
+                track.stop();
+                stream.load();
+                stream = null;
+            }
+        }
+
+        function clearPhoto() {
+            $('#photo').hide();
+            $('.txt-camera').show();
+            $('.camera-stream').hide();
+        }
+
+
+        function show_camera(p_this) {
+            var v_data_img = p_this.data("img");
+            $('#modal-data-image').val(v_data_img);
+            $('#myModal').modal('show');
+            capture();
+        }
+
+        flipBtn.addEventListener('click', function () {
+            if (stream == null) return
+            // we need to flip, stop everything
+            stream.getTracks().forEach(t => {
+                t.stop();
+            });
+            // toggle / flip
+            shouldFaceUser = !shouldFaceUser;
+            capture();
+        })
+
+        $(".capture-camera").on("click", function (e) {
+            // Elements for taking the snapshot
+            const video = document.querySelector('video');
+            const canvas = document.querySelector('#canvas');
+            let context = canvas.getContext('2d');
+
+
+            const height = video.videoHeight;
+            const width = video.videoWidth;
+
+            console.log(height, width);
+
+            if (width && height) {
+                canvas.width = width;
+                canvas.height = height;
+                context.drawImage(video, 0, 0, width, height);
+
+                var data = canvas.toDataURL('image/png');
+                $('#photo').show();
+                $('#photo').attr('src', data);
+
+                let v_data_image = $('#modal-data-image').val();
+                $('#' + v_data_image).show();
+                $('#' + v_data_image).find('img').attr('src', data);
+                $('#' + v_data_image).find('input').val(data);
+
+            } else {
+                clearphoto();
+            }
+        });
+
+        $('#myModal').on('hidden.bs.modal', function (e) {
+            clearPhoto();
+        })
+
+        $(".open-camera").on("click", function (e) {
+
+            let elem = $(this);
+
+            show_camera(elem);
+
+            // if (navigator.geolocation) {
+            //     navigator.geolocation.getCurrentPosition(function (position) {
+            //         var latitude = position.coords.latitude;
+            //         var longitude = position.coords.longitude;
+
+            //         console.log("Vị trí hiện tại của bạn là:", latitude, longitude);
+
+            //         show_camera(elem);
+
+            //     }, function (error) {
+            //         if (error.code === error.PERMISSION_DENIED) {
+            //             alert("Vui lòng bật định vị để sử dụng tính năng này!");
+            //         }
+            //     });
+            // } else {
+            //     alert("Trình duyệt của bạn không hỗ trợ định vị geolocation.")
+            // }
+        });
+    </script>
+</body>
+</body>
+<!-- inline css -->
+
+
+<!-- Footer -->
+
+<!-- CORE JS-->
+<script src="../app-assets/vendors/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="../app-assets/vendors/js/moment/moment-with-locales.js"></script>
+<script src="../app-assets/vendors/js/jquery.tipsy.js"></script>
+<script src="../app-assets/vendors/js/sweetalert2.min.js"></script>
+<script src="../app-assets/vendors/js/jquery.sticky-sidebar.min.js"></script>
+<script src="../app-assets/vendors/js/isotope.pkgd.min.js"></script>
+<script src="../app-assets/vendors/js/jquery.fancybox.min.js"></script>
+<script src="../app-assets/vendors/js/jQuery.print.min.js"></script>
+<script src="../app-assets/vendors/js/hc-offcanvas-nav.js"></script>
+<!-- /CORE JS-->
+
+<!-- JS Trang-->
+<script src="../app-assets/vendors/js/select2.min.js"></script>
+<script src="../app-assets/vendors/js/cleave.min.js"></script>
+<script src="../app-assets/vendors/js/jquery.repeater.min.js"></script>
+<script src="../app-assets/vendors/js/form/jquery.validate.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/datatables.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/dataTables.responsive.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/dataTables.buttons.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/buttons.flash.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/jszip.min.js"></script>
+<!-- <script src="../app-assets/vendors/js/datatable/pdfmake.min.js"></script> -->
+<!-- <script src="../app-assets/vendors/js/datatable/vfs_fonts.js"></script> -->
+<script src="../app-assets/vendors/js/datatable/buttons.html5.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/buttons.print.min.js"></script>
+<script src="../app-assets/vendors/js/chart/d3.min.js"></script>
+<script src="../app-assets/vendors/js/chart/d3_tooltip.js"></script>
+<script src="../app-assets/vendors/js/chart/c3.min.js"></script>
+<script src="../app-assets/vendors/js/datatable/mark.js(jquery.mark.min.js),datatables.mark.js">
+</script>
+<script src="../app-assets/vendors/js/raphael.js"></script>
+<script src="../app-assets/vendors/js/Treant.js"></script>
+<script src="../app-assets/vendors/js/owl.carousel.min.js"></script>
+
+<!-- /JS Trang-->
+
+<script src="../app-assets/js/i18n.js"></script>
+
+<!-- Custom JS-->
+<script src="../app-assets/js/app.js"></script>
+<script src="../app-assets/js/acts.js"></script>
+<script src="../app-assets/js/script_custom.js"></script>
+<!-- /Custom JS-->
+
+<!-- /Footer -->
+
+</html>
