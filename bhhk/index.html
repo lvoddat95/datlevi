@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>VNI - Demo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="app-assets/images/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="app-assets/images/ico/favicon-16x16.png">
+
+    <!-- core stylesheet -->
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/iconmoon/iconmoon.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/fonts/font-awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/bootstrap.min.css">
+    <!-- core stylesheet -->
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/chartist.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/style_custom.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/responsive.css">
+    <!-- /custom stylesheet -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- CORE JS-->
+    <script src="app-assets/vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="app-assets/vendors/js/jquery-ui.min.js"></script>
+    <script src="app-assets/vendors/js/bootstrap/bootstrap.min.js"></script>
+    <script src="app-assets/vendors/js/tinymce/tinymce.min.js"></script>
+    <script src="app-assets/vendors/js/jscolor.min.js"></script>
+
+</head>
+
+<style>
+    .card-header.card-header-sticky:first-child {
+        /* border: none; */
+        border-radius: 6px;
+    }
+
+    .sm-page {
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .sm-page .sm-page-navigation {
+        width: 30em;
+        border-radius: 4px;
+        margin-right: 15px;
+    }
+
+    .sm-page .sm-page-content {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .page-title {
+            margin-bottom: 0;
+        }
+    }
+
+    .sm-card-title {
+        color: #1976d2;
+        border-bottom: 1px solid #ccc;
+        padding: 0 0 10px;
+    }
+
+    .sm-card {
+        box-shadow: none;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .text-gray {
+        color: #999;
+    }
+</style>
+
+
+<body>
+    <div class="container mx-auto p-4">
+        <div class="card" style="background: transparent;">
+            <div class="card-header card-header-sticky">
+                <div class="page-title">
+                    <div class="p-title">
+                        <p class="t-top"><i class="icon-certificate mr-2"></i>Thông tin chi tiết đơn bảo hiểm</p>
+                    </div>
+                    <div class="p-button">
+                        <div class="p-button">
+                            <a href="javascript:;" class="btn bg-red-600" id="btnApprove"><i
+                                    class="icon-file-check"></i> Duyệt đơn</a>
+                            <a href="/ALL" class="btn mr-1"><i class="fa fa-reply mr-1"></i> Quay lại</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-body p-0">
+                <div class="row gx-0">
+
+                    <div class="col-lg-4">
+                        <div class="card sm-card p-3">
+                            <h5 class="card-title sm-card-title fz-14"><i class="icon-pen2 mr-2"></i>Thông tin chung
+                            </h5>
+                            <div class="card-body p-0">
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Đơn vị cấp đơn</span>
+                                    <span class="col-lg-7 col-xxl-8">VNI Kinh Đô</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Loại hình bảo hiểm</span>
+                                    <span class="col-lg-7 col-xxl-8">F02 - Bảo hiểm tự nguyện</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Trạng thái đơn</span>
+                                    <span class="col-lg-7 col-xxl-8">Mới tiếp nhận</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Đơn bảo hiểm số#</span>
+                                    <span class="col-lg-7 col-xxl-8">765238994/F02</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số sãnh chiếu</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Ngày tạo:</span>
+                                    <span class="col-lg-7 col-xxl-8">22/12/2023 12:00:00 AM</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Ngày nhập đơn</span>
+                                    <span class="col-lg-7 col-xxl-8">22/12/2023 3:37:42 PM</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Mã người được BH</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Tên người được BH</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Mã người thanh toán</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Tên người thanh toán</span>
+                                    <span class="col-lg-7 col-xxl-8">Trần Thị Phương Thảo</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Cán bộ cấp đơn</span>
+                                    <span class="col-lg-7 col-xxl-8">Trần Thị Phương Thảo</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Loại tiền</span>
+                                    <span class="col-lg-7 col-xxl-8">VND</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Tỷ giá thuộc tính</span>
+                                    <span class="col-lg-7 col-xxl-8">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card sm-card p-3">
+                            <h5 class="card-title sm-card-title fz-14"><i class="fa fa-user mr-2"></i>Thông tin chủ xe
+                                cơ giới</h5>
+                            <div class="card-body p-0">
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Chủ xe</span>
+                                    <span class="col-lg-7 col-xxl-8">CÔNG TY TNHH SX VT TM XNK BÍCH
+                                        THỦY</span>
+                                </div>
+
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số điện thoại chủ xe</span>
+                                    <span class="col-lg-7 col-xxl-8">091 125 52 28</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">CCCD/CMT</span>
+                                    <span class="col-lg-7 col-xxl-8">2400370023</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Địa chỉ chủ xe</span>
+                                    <span class="col-lg-7 col-xxl-8">Thôn Ngoẹn, Tiên Lục, Lạng Giang, Bắc
+                                        Giang</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card sm-card p-3">
+                            <h5 class="card-title sm-card-title fz-14"><i class="fa fa-car mr-2"></i>Thông tin xe cơ
+                                giới</h5>
+                            <div class="card-body p-0">
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Phân loại xe</span>
+                                    <span class="col-lg-7 col-xxl-8">Xe động cơ đốt trong</span>
+                                </div>
+
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Mục đích KD</span>
+                                    <span class="col-lg-7 col-xxl-8">Kinh doanh vận tải</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Dòng xe</span>
+                                    <span class="col-lg-7 col-xxl-8">Xe chở hàng</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Loại xe</span>
+                                    <span class="col-lg-7 col-xxl-8">Ô tô chở hàng - Trên 15 tấn</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Nhãn hiệu xe</span>
+                                    <span class="col-lg-7 col-xxl-8">Chenglong</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số loại</span>
+                                    <span class="col-lg-7 col-xxl-8">Chenglong</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Nguồn gốc</span>
+                                    <span class="col-lg-7 col-xxl-8">Xe đã qua sử dụng - SX tại Việt
+                                        Nam</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Tháng sản xuất</span>
+                                    <span class="col-lg-7 col-xxl-8">12</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Năm sản xuất</span>
+                                    <span class="col-lg-7 col-xxl-8">2021</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Đã có biển</span>
+                                    <span class="col-lg-7 col-xxl-8">Đã có</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Loại biển</span>
+                                    <span class="col-lg-7 col-xxl-8">Biển vàng</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Biển kiểm soát</span>
+                                    <span class="col-lg-7 col-xxl-8">98H02688</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số khung</span>
+                                    <span class="col-lg-7 col-xxl-8">MR216328</span>
+                                </div>
+
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số máy</span>
+                                    <span class="col-lg-7 col-xxl-8">L6M00292</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Số chỗ ngồi</span>
+                                    <span class="col-lg-7 col-xxl-8">2 chỗ ngồi</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Màu sơn</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Trọng tải</span>
+                                    <span class="col-lg-7 col-xxl-8">15470Kg</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Xe mới</span>
+                                    <span class="col-lg-7 col-xxl-8">Không là xe mới</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Giá trị thực tế</span>
+                                    <span class="col-lg-7 col-xxl-8">900,000,000</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card sm-card p-3">
+                            <h5 class="card-title sm-card-title fz-14"><i class="fas fa-handshake mr-2"></i>Trung gian
+                                bảo hiểm</h5>
+                            <div class="card-body p-0">
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Đại lý</span>
+                                    <span class="col-lg-7 col-xxl-8">NGÔ THỊ NGỌC</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Hoa hồng đại lý</span>
+                                    <span class="col-lg-7 col-xxl-8">240000</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Môi giới</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Hoa hồng môi giới</span>
+                                    <span class="col-lg-7 col-xxl-8">0</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Nguồn dịch vụ</span>
+                                    <span class="col-lg-7 col-xxl-8">Trực tiếp</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Nguồn dịch vụ chi tiết</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Ngân hàng</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Khối khách hàng</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Cán bộ ngân hàng</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Ngân hàng TH</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Phối hợp khai thác</span>
+                                    <span class="col-lg-7 col-xxl-8">Không</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Hình thức phối hợp</span>
+                                    <span class="col-lg-7 col-xxl-8"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card sm-card p-3">
+                            <h5 class="card-title sm-card-title fz-14"><i class="fa fa-calendar-check mr-2"></i>Thời hạn
+                                bảo hiểm</h5>
+                            <div class="card-body p-0">
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Thời hạn từ</span>
+                                    <span class="col-lg-7 col-xxl-8">
+                                        01:00 ngày 28/12/2023</span>
+                                </div>
+                                <div class="row gx-0 mb-2  d-flex align-items-start">
+                                    <span class="col-lg-5 col-xxl-4 text-gray">Thời hạn đến</span>
+                                    <span class="col-lg-7 col-xxl-8">
+                                        01:00 ngày 28/12/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card sm-card p-3">
+                <h5 class="card-title sm-card-title fz-14"><i class="fa fa-info mr-2"></i>Phạm vi bảo hiểm
+                </h5>
+                <div class="card-body p-0">
+                    <table class="table table-md table-bordered">
+                        <thead class="thead-light-3">
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th class="text-center">Phạm vi được bảo hiểm</th>
+                                <th class="text-center w10p">Giá trị BH</th>
+                                <th class="text-center">Phí (%)</th>
+                                <th class="text-center w10p">Phí BH (Có VAT)</th>
+                                <th class="text-center">VAT(%)</th>
+                                <th class="text-center w8p">VAT</th>
+                                <th class="text-center">COM(%)</th>
+                                <th class="text-center">Định mức</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">MVP</td>
+                                <td>TNDS tự nguyện tăng thêm ngoài mức bắt buộc</td>
+                                <td class="text-right">200,000,000</td>
+                                <td class="text-center">3.52</td>
+                                <td class="text-right">5,280,000</td>
+                                <td class="text-center">10</td>
+                                <td class="text-right">480,000</td>
+                                <td class="text-center">5</td>
+                                <td>TNDS tự nguyện tăng thêm ngoài mức bắt buộc</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="">
+                        <table class="text-right float-right">
+                            <tr style="color: red;">
+                                <td class="p-1">Phí cơ bản (có VAT):</td>
+                                <td class="p-1 fw-medium">5,280,000 VND</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 ">Mức trách nhiệm:</td>
+                                <td class="p-1 fw-medium">200,000,000 VND</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 ">Tổng phí bảo hiểm (chưa VAT):</td>
+                                <td class="p-1 fw-medium">4,800,000 VND</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 ">VAT:</td>
+                                <td class="p-1 fw-medium">480,000 VND</td>
+                            </tr>
+                            <tr>
+                                <td class="p-1 ">Tổng phí bảo hiểm (có VAT): </td>
+                                <td class="p-1 fw-medium">5,280,000 VND</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card sm-card p-3">
+                <h5 class="card-title sm-card-title fz-14"><i class="fa fa-info mr-2"></i>Định mức khác do Cty phê duyệt
+                </h5>
+                <div class="card-body p-0">
+                    <table class="table table-md table-bordered">
+                        <thead class="thead-light-3">
+                            <tr>
+                                <th class="text-center">Phạm vi bảo hiểm</th>
+                                <th class="text-center">Định mức cũ</th>
+                                <th class="text-center">Định mức mới</th>
+                                <th class="text-center">Lý do sửa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TNDS tự nguyện tăng thêm ngoài mức bắt buộc</td>
+                                <td>TNDS tự nguyện tăng thêm ngoài mức bắt buộc</td>
+                                <td>TNDS tự nguyện tăng thêm ngoài mức bắt buộc</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card sm-card p-3">
+                <h5 class="card-title sm-card-title fz-14"><i class="fa fa-info mr-2"></i>Lịch thanh toán
+                </h5>
+                <div class="card-body p-0">
+                    <table class="table table-md table-bordered">
+                        <thead class="thead-light-3">
+                            <tr>
+                                <th class="text-center">Lần</th>
+                                <th class="text-center">Ngày thanh toán</th>
+                                <th class="text-center">Phí BH(có VAT)</th>
+                                <th class="text-center">Thành tiền VAT</th>
+                                <th class="text-center">Phí BH(chưa VAT)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">24/01/2024</td>
+                                <td class="text-right">5,280,000</td>
+                                <td class="text-right">480,000</td>
+                                <td class="text-right">4,800,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+</body>
+
+
+
+<!-- Footer -->
+
+<!-- CORE JS-->
+<script src="app-assets/vendors/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="app-assets/vendors/js/moment/moment-with-locales.js"></script>
+<script src="app-assets/vendors/js/jquery.tipsy.js"></script>
+<script src="app-assets/vendors/js/sweetalert2.min.js"></script>
+<script src="app-assets/vendors/js/jquery.sticky-sidebar.min.js"></script>
+<script src="app-assets/vendors/js/isotope.pkgd.min.js"></script>
+<script src="app-assets/vendors/js/jquery.fancybox.min.js"></script>
+<script src="app-assets/vendors/js/jQuery.print.min.js"></script>
+<script src="app-assets/vendors/js/hc-offcanvas-nav.js"></script>
+<!-- /CORE JS-->
+
+<!-- JS Trang-->
+<script src="app-assets/vendors/js/select2.min.js"></script>
+<script src="app-assets/vendors/js/cleave.min.js"></script>
+<script src="app-assets/vendors/js/jquery.repeater.min.js"></script>
+<script src="app-assets/vendors/js/form/jquery.validate.min.js"></script>
+<script src="app-assets/vendors/js/datatable/datatables.min.js"></script>
+<script src="app-assets/vendors/js/datatable/dataTables.responsive.min.js"></script>
+<script src="app-assets/vendors/js/datatable/dataTables.buttons.min.js"></script>
+<script src="app-assets/vendors/js/datatable/buttons.flash.min.js"></script>
+<script src="app-assets/vendors/js/datatable/jszip.min.js"></script>
+<!-- <script src="app-assets/vendors/js/datatable/pdfmake.min.js"></script> -->
+<!-- <script src="app-assets/vendors/js/datatable/vfs_fonts.js"></script> -->
+<script src="app-assets/vendors/js/datatable/buttons.html5.min.js"></script>
+<script src="app-assets/vendors/js/datatable/buttons.print.min.js"></script>
+<script src="app-assets/vendors/js/chart/d3.min.js"></script>
+<script src="app-assets/vendors/js/chart/d3_tooltip.js"></script>
+<script src="app-assets/vendors/js/chart/c3.min.js"></script>
+<script src="app-assets/vendors/js/datatable/mark.js(jquery.mark.min.js),datatables.mark.js">
+</script>
+<script src="app-assets/vendors/js/raphael.js"></script>
+<script src="app-assets/vendors/js/Treant.js"></script>
+<script src="app-assets/vendors/js/owl.carousel.min.js"></script>
+
+<!-- /JS Trang-->
+
+<script src="app-assets/js/i18n.js"></script>
+
+<!-- Custom JS-->
+<script src="app-assets/js/app.js"></script>
+<script src="app-assets/js/acts.js"></script>
+<script src="app-assets/js/script_custom.js"></script>
+<!-- /Custom JS-->
+
+<!-- /Footer -->
+
+</html>

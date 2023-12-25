@@ -4013,7 +4013,7 @@ body:not(.sidebar-xs) .wizard-style2.wizard>form {
     background: #fff;
     padding: 0 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     z-index: 11;
 }
 
