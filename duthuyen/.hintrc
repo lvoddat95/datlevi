@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off",
+        "label": "off"
+      }
+    ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "button-name": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 122",
+    "not chrome <= 122",
+    "not edge <= 122",
+    "not opera <= 106",
+    "not samsung <= 23"
+  ]
+}

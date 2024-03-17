@@ -1,0 +1,306 @@
+@font-face {
+  font-family: 'Inside-Cruise';
+  src:  url('../fonts/Inside-Cruise.eot?qpu3u3');
+  src:  url('../fonts/Inside-Cruise.eot?qpu3u3#iefix') format('embedded-opentype'),
+    url('../fonts/Inside-Cruise.ttf?qpu3u3') format('truetype'),
+    url('../fonts/Inside-Cruise.woff?qpu3u3') format('woff'),
+    url('../fonts/Inside-Cruise.svg?qpu3u3#Inside-Cruise') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon-font-cr {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Inside-Cruise' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ficon-babycot:before {
+  content: "\e900";
+}
+.ficon-mini-golf:before {
+  content: "\e903";
+}
+.ficon-tai-chi-class:before {
+  content: "\e904";
+}
+.ficon-24-hour-front-desk:before {
+  content: "\f102";
+}
+.ficon-24-hour-room-service:before {
+  content: "\f103";
+}
+.ficon-24-hour-security:before {
+  content: "\f104";
+}
+.ficon-air-conditioning:before {
+  content: "\f10d";
+}
+.ficon-airport-transfer:before {
+  content: "\f111";
+}
+.ficon-atm-cash-machine-on-site:before {
+  content: "\f11b";
+}
+.ficon-babysitting:before {
+  content: "\f11c";
+}
+.ficon-balcony:before {
+  content: "\f11e";
+}
+.ficon-bathrobes:before {
+  content: "\f120";
+}
+.ficon-bathtub:before {
+  content: "\f124";
+}
+.ficon-bbq-facilities:before {
+  content: "\f125";
+}
+.ficon-cycling:before, .ficon-bicycle-rental:before {
+  content: "\f129";
+}
+.ficon-boats:before {
+  content: "\f12c";
+}
+.ficon-business-center:before {
+  content: "\f131";
+}
+.ficon-canoe:before {
+  content: "\f136";
+}
+.ficon-car-park:before {
+  content: "\f138";
+}
+.ficon-children-playground:before {
+  content: "\f144";
+}
+.ficon-coffee-shop:before {
+  content: "\f14c";
+}
+.ficon-coffee-tea-maker:before {
+  content: "\f14d";
+}
+.ficon-bottled-water:before {
+  content: "\f14e";
+}
+.ficon-concierge:before, .ficon-butler:before {
+  content: "\f151";
+}
+.ficon-currency-exchange:before {
+  content: "\f158";
+}
+.ficon-daily-housekeeping:before {
+  content: "\f159";
+}
+.ficon-newspapers:before {
+  content: "\f15a";
+}
+.ficon-desk:before {
+  content: "\f15e";
+}
+.ficon-elevator:before {
+  content: "\f16a";
+}
+.ficon-private-check-in-check-out:before, .ficon-express-check-in-check-out:before {
+  content: "\f16f";
+}
+.ficon-facilities-for-disabled-guests:before {
+  content: "\f172";
+}
+.ficon-family-room:before {
+  content: "\f173";
+}
+.ficon-fax-machine:before {
+  content: "\f176";
+}
+.ficon-fishing:before {
+  content: "\f17b";
+}
+.ficon-fitness-center:before {
+  content: "\f17c";
+}
+.ficon-free-wi-fi-in-all-rooms:before {
+  content: "\f181";
+}
+.ficon-garden:before {
+  content: "\f182";
+}
+.ficon-gift-souvenir-shop:before {
+  content: "\f184";
+}
+.ficon-golf:before {
+  content: "\f185";
+}
+.ficon-golf-course-within-3-km:before {
+  content: "\f186";
+}
+.ficon-hair-dryer:before {
+  content: "\f18a";
+}
+.ficon-hot-tub:before {
+  content: "\f194";
+}
+.ficon-indoor-pool:before {
+  content: "\f1a2";
+}
+.ficon-jacuzzi:before {
+  content: "\f1ab";
+}
+.ficon-karaoke:before {
+  content: "\f1ad";
+}
+.ficon-kids-club:before {
+  content: "\f1ae";
+}
+.ficon-laundromat:before {
+  content: "\f1b4";
+}
+.ficon-laundry-service:before {
+  content: "\f1b5";
+}
+.ficon-library:before {
+  content: "\f1b6";
+}
+.ficon-lockers:before {
+  content: "\f1bb";
+}
+.ficon-luggage-storage:before {
+  content: "\f1bc";
+}
+.ficon-massage:before {
+  content: "\f1c5";
+}
+.ficon-meeting-facilities:before, .ficon-seating-area:before {
+  content: "\f1c9";
+}
+.ficon-bar:before, .ficon-mini-bar:before {
+  content: "\f1cc";
+}
+.ficon-non-smoking-rooms:before {
+  content: "\f1de";
+}
+.ficon-outdoor-pool:before {
+  content: "\f1e5";
+}
+.ficon-photocopying:before {
+  content: "\f1ea";
+}
+.ficon-pool-kids:before {
+  content: "\f1f2";
+}
+.ficon-poolside-bar:before {
+  content: "\f1f4";
+}
+.ficon-postal-service:before {
+  content: "\f1f7";
+}
+.ficon-printer:before {
+  content: "\f1f8";
+}
+.ficon-private-beach:before {
+  content: "\f1f9";
+}
+.ficon-refrigerator:before {
+  content: "\f1fe";
+}
+.ficon-restaurant:before, .ficon-breakfast-included:before, .ficon-all-meals-included:before {
+  content: "\f200";
+}
+.ficon-room-service:before, .ficon-cave-dinner:before, .ficon-dinner-on-top-deck:before {
+  content: "\f208";
+}
+.ficon-safety-deposit-boxes:before, .ficon-in-room-safe:before {
+  content: "\f209";
+}
+.ficon-salon:before {
+  content: "\f20a";
+}
+.ficon-se-dining:before {
+  content: "\f211";
+}
+.ficon-cooking-class:before {
+  content: "\f216";
+}
+.ficon-shops:before {
+  content: "\f219";
+}
+.ficon-shower:before {
+  content: "\f21a";
+}
+.ficon-shuttle-service:before {
+  content: "\f21c";
+}
+.ficon-smoking-area:before {
+  content: "\f223";
+}
+.ficon-spa:before, .ficon-sauna:before {
+  content: "\f228";
+}
+.ficon-steamroom:before {
+  content: "\f235";
+}
+.ficon-table-tennis:before {
+  content: "\f238";
+}
+.ficon-taxi-service:before {
+  content: "\f23b";
+}
+.ficon-telephone:before {
+  content: "\f23c";
+}
+.ficon-tennis-courts:before {
+  content: "\f23d";
+}
+.ficon-ticket-service:before {
+  content: "\f244";
+}
+.ficon-toiletries:before {
+  content: "\f246";
+}
+.ficon-tours:before {
+  content: "\f24d";
+}
+.ficon-shared-lounge-tv-area:before {
+  content: "\f251";
+}
+.ficon-satellite-cable-tv:before {
+  content: "\f252";
+}
+.ficon-valet-parking:before {
+  content: "\f256";
+}
+.ficon-kayaking:before, .ficon-water-sports-motorized:before {
+  content: "\f260";
+}
+.ficon-water-sports-non-motorized:before {
+  content: "\f261";
+}
+.ficon-water-eq:before {
+  content: "\f262";
+}
+.ficon-wheelchair-accessible:before {
+  content: "\f263";
+}
+.ficon-wi-fi-in-public-areas:before, .ficon-connecting:before {
+  content: "\f264";
+}
+.ficon-internet-access:before {
+  content: "\f265";
+}
+.ficon-wind-surfing:before {
+  content: "\f266";
+}
+.ficon-yoga-room:before {
+  content: "\f269";
+}
