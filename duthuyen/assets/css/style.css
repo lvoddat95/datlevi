@@ -1977,3 +1977,10 @@ input:checked+label.rdo-tile-label {
   margin-left: auto;
   margin-right: 40px;
 }
+
+.logo-big img{
+  max-height: 90px;
+}
+.logo-small img{
+  max-height: 70px;
+}
