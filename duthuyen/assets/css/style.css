@@ -1984,3 +1984,7 @@ input:checked+label.rdo-tile-label {
 .logo-small img{
   max-height: 70px;
 }
+
+.logo-footer img{
+  max-height: 90px;
+}
