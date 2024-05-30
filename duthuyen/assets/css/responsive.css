@@ -74,7 +74,7 @@ body.over-hidden-body {
 
 @media(min-width: 992px)and (max-width: 1399px) {
   .main-page {
-    padding-top: 70px
+    padding-top: 82px;
   }
 }
 
@@ -4283,7 +4283,7 @@ button:focus {
 
 @media(min-width: 992px)and (max-width: 1399px) {
   .topbar-detail-yacht {
-    top: 70px
+    top: 82px
   }
 }
 
@@ -5673,22 +5673,24 @@ button:focus {
   }
 }
 
+/* 
 .box-mobile-fixed-pay {
   display: none
 }
 
-@media(max-width: 991px) {
-  .box-mobile-fixed-pay {
-    display: flex;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    z-index: 8
-  }
+@media(max-width: 991px) { */
+.box-mobile-fixed-pay {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 8
 }
+
+/* } */
 
 .box-mobile-fixed-pay .layout {
   display: flex;
@@ -7571,7 +7573,7 @@ button:focus {
 
 @media(min-width: 992px)and (max-width: 1399px) {
   .box-show-hot-combo {
-    top: 70px;
+    top: 82px;
   }
 }
 
