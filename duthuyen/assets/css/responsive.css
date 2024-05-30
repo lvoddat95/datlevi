@@ -4295,7 +4295,7 @@ button:focus {
 
 @media(max-width: 991px) {
   .topbar-detail-yacht {
-    top: 60px
+    top: 82px
   }
 }
 
@@ -7565,19 +7565,19 @@ button:focus {
 
 @media(max-width: 1599px) {
   .box-show-hot-combo {
-    padding: 10px 0
+    padding: 10px 0;
   }
 }
 
 @media(min-width: 992px)and (max-width: 1399px) {
   .box-show-hot-combo {
-    top: 70px
+    top: 70px;
   }
 }
 
 @media(max-width: 991px) {
   .box-show-hot-combo {
-    top: 60px
+    top: 82px;
   }
 }
 
