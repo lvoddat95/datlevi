@@ -19,265 +19,1296 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="news-page">
     <div id="master-container">
+        <div id="header" class="header">
+            <div>
+                <div id="dok-header-top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="d-flex align-items-center justify-content-between gap-3 position-relative">
+                                <div class="dok-logo">
+                                    <a href="index.html">
+                                        <img class="img-fluid" src="assets/img/logo.png" alt="Logo" srcset="">
+                                    </a>
+                                </div>
 
-        <div class="dok-header-banner">
-            <a href="" title="Banner Top">
-                <img class="img-fluid"
-                    src="https://cdn.nguyenkimmall.com/images/promo/841/Top-Banner-1920x45px_1_ccgi-nf.png" alt="">
-            </a>
-            <span class="dok-close-top-banner">✕</span>
+                                <div class="dok-category d-lg-block d-none">
+                                    <a class="dok-header-item" href="javascript:void(0)">
+                                        <i class="far fa-bars-staggered"></i>
+                                        <span>Danh mục</span>
+                                    </a>
+                                </div>
+
+                                <div id="menu-main" class="menu-container" style="display: none;">
+                                    <div class="menu-wrapper space-bread-crumb" style="top: 70px;">
+                                        <div class="dok-menu-mobile-header d-lg-none d-block">
+                                            <div class="dok-menu-mobile-header-wrapper">
+                                                <div class="dok-header-search">
+                                                    <form action="">
+                                                        <input type="search" name="" id=""
+                                                            placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                        <button type="submit"><i
+                                                                class="far fa-magnifying-glass"></i></button>
+                                                    </form>
+                                                </div>
+                                                <a class="dok-menu-mobile-close text-dark d-flex align-items-center fz-14"
+                                                    href="javascript:void(0)">
+                                                    <i class="fz-28 fas fa-rectangle-xmark me-2"></i>
+                                                    <span>Đóng</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h3 class="dok-menu-mobile-title d-lg-none d-block">Danh mục sản phẩm</h3>
+                                        <div class="menu-tree">
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-speaker"></i>
+                                                        <a href="" class="multiple-link"><span>Loa</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="menu-tree-child">
+                                                    <div class="menu-tree-child-wrapper columns box">
+                                                        <div class="menu-child-item column group is-one-fifth">
+                                                            <strong class="group-title">
+                                                                Hãng điện thoại
+                                                            </strong>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone</span></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menu-child-item column group is-one-fifth">
+                                                            <strong class="group-title">
+                                                                Mức giá điện thoại
+                                                            </strong>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>Dưới 2 triệu</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="menu-child-item column group is-one-fifth">
+                                                            <strong class="group-title">
+                                                                Điện thoại HOT ⚡
+                                                            </strong>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPhone 15 Pro
+                                                                            Max</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="menu-child-item column group is-one-fifth">
+                                                            <strong class="group-title">
+                                                                Hãng máy tính bảng
+                                                            </strong>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="l" target="_self" class="label-wrapper">
+                                                                    <div class="label-item"><span>iPad</span></div>
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="menu-child-item column group is-one-fifth">
+                                                            <strong class="group-title">
+                                                                Máy tính bảng HOT ⚡
+                                                            </strong>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="menu-child-item column menu-item">
+                                                                <a href="" target="_self" class="label-wrapper">
+                                                                    <div class="label-item">
+                                                                        <span>iPad Air 2024</span>
+                                                                        <img src="assets/img/menu-icon-moi1.webp"
+                                                                            alt="HOT and NEW" loading="lazy"
+                                                                            class="label-tag">
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-record-vinyl"></i>
+                                                        <a href="" class="multiple-link"><span>Cục đẩy</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-cassette-betamax"></i>
+                                                        <a href="" class="multiple-link"><span>Bàn Mixer</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-circle-microphone-lines"></i>
+                                                        <a href="" class="multiple-link"><span>Micro</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-headphones"></i>
+                                                        <a href="" class="multiple-link"><span>Tai nghe</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-projector"></i>
+                                                        <a href="" class="multiple-link"><span>Máy chiếu</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-tv"></i>
+                                                        <a href="" class="multiple-link"><span>Màn hình LED</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-piano"></i>
+                                                        <a href="" class="multiple-link"><span>Nhạc cụ</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-light-ceiling"></i>
+                                                        <a href="" class="multiple-link"><span>Đèn LED</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="label-menu-tree" target="_self">
+                                                <div class="label-menu-item">
+                                                    <div class="right-content">
+                                                        <i class="ic-cate far fa-cassette-vhs"></i>
+                                                        <a href="" class="multiple-link"><span>Amply</span></a>
+                                                    </div>
+                                                    <div class="menu-ic-right">
+                                                        <i class="fas fa-chevron-right"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="dok-menu-mobile-filter" class="d-lg-none d-block">
+                                        <div class="dok-menu-mobile-filter-1">
+                                            <h3 class="dok-menu-mobile-title">Thương hiệu</h3>
+                                            <div class="dok-brands">
+                                                <div class="dok-brand-list swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="category-wrap-item">
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_59.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_69_1_.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="category-wrap-item">
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_60.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/t/i/tivi-logo-cate.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="category-wrap-item">
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_61.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/catalog/product/b/r/brand-icon-sony_2.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="category-wrap-item">
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_59.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_69_1_.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="category-wrap-item">
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_59.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                                <a class="category-item" href="" target="_self">
+                                                                    <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:0:50/q:30/plain/https://cellphones.com.vn/media/tmp/catalog/product/f/r/frame_69_1_.png"
+                                                                        height="50" alt="Apple" loading="lazy"
+                                                                        class="filter-brand__img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="swiper-pagination position-static"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dok-menu-mobile-filter-1">
+                                            <h3 class="dok-menu-mobile-title">Tin tức & liên hệ</h3>
+                                            <div class="dok-menu-mobile-filter-list mb-3">
+                                                <a href="">Tư vấn loa</a>
+                                                <a href="">Tư vấn tai nghe</a>
+                                                <a href="">Tư vấn máy chiếu</a>
+                                                <a href="">Tư vấn đèn LED</a>
+                                                <a href="">Tư vấn nhạc cụ</a>
+                                                <a href="">Khuyến mãi</a>
+                                                <a href="">Tuyển dụng</a>
+                                                <a href="">Tin tức và sự kiện</a>
+                                            </div>
+
+                                            <p class="fw-medium">Hotline mua hàng: <a href="tel:0941339339">0941 339 339
+                                                    (8:00 - 20:00)</a></p>
+                                            <p class="fw-medium">Hotline kỹ thuật: <a href="tel:0834397999">0834 397
+                                                    999(8:00 - 20:00)</a></p>
+                                            <p class="fw-medium">Khiếu nại & đổi trả: <a href="tel:0834397999">0834 397
+                                                    999 (8:00 - 20:00)</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="dok-header-search d-lg-block d-none">
+                                    <form action="">
+                                        <input type="search" name="" id="" placeholder="Bạn cần tìm gì hôm nay ?"
+                                            autocomplete="off">
+                                        <button type="submit"><i class="far fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+
+                                <ul class="dok-list-action list-unstyled d-flex align-items-center justify-content-end">
+                                    <li class="d-lg-block d-none">
+                                        <a href="tel:0941339339" class="d-flex align-items-center">
+                                            <span class="dok-icon fal fa-phone-volume"></span>
+                                            Hotline mua hàng: <br> 0941 339 339
+                                        </a>
+                                    </li>
+                                    <li class="d-lg-block d-none">
+                                        <a href="tel:0834397999" class="d-flex align-items-center">
+                                            <span class="dok-icon fal fa-phone-volume"></span>
+                                            Hotline bảo hành: <br> 0834 397 999
+                                        </a>
+                                    </li>
+                                    <li class="dok-cart droplist mx-0">
+                                        <a href="" class="d-flex align-items-center">
+                                            <div class="position-relative">
+                                                <span class="dok-icon mr-0 fal fa-cart-shopping">
+                                                    <span class="dok-count">2</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="droplist-box d-lg-block d-none">
+                                            <span class="dok-arrow"></span>
+                                            <ul class="dok-cart-list custom-scrollbar list-unstyled">
+                                                <li>
+                                                    <div class="dok-cart-img">
+                                                        <a href="">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn.nguyenkimmall.com/images/thumbnails/40/40/detailed/783/10051419-may-say-quan-ao-electrolux-8-5-kg-edv854n3sb-xam-1.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="dok-cart-info">
+                                                        <p class="dok-cart-title mb-0">Máy sấy quần áo Electrolux 8.5
+                                                            kg
+                                                            EDV854N3SB Xám</p>
+                                                        <p class="dok-cart-price">9.990.000đ</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="dok-cart-img">
+                                                        <a href="">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn.nguyenkimmall.com/images/thumbnails/40/40/detailed/783/10051419-may-say-quan-ao-electrolux-8-5-kg-edv854n3sb-xam-1.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="dok-cart-info">
+                                                        <p class="dok-cart-title mb-0">Máy sấy quần áo Electrolux 8.5
+                                                            kg
+                                                            EDV854N3SB Xám</p>
+                                                        <p class="dok-cart-price">9.990.000đ</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="dok-cart-footer">
+                                                <div class="d-flex align-items-end">
+                                                    <span class="fw-medium me-3">Tổng tiền:</span>
+                                                    <span class="dok-cart-price"
+                                                        style="position: relative; bottom: -2px;">9.990.000đ</span>
+                                                </div>
+                                                <a href="" class="dok-cart-buy">Mua ngay</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-lg-none d-block">
+                                        <a class="dok-header-item-mobile" href="javascript:void(0)">
+                                            <i class="far fa-bars-staggered"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dok-header-search d-lg-none d-block">
+                            <form action="">
+                                <input type="search" name="" id="" placeholder="Bạn cần tìm gì hôm nay ?"
+                                    autocomplete="off">
+                                <button type="submit"><i class="far fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dok-header-overlay"></div>
+            </div>
         </div>
 
-        <div id="header" class="header"></div>
-
         <div id="content" class="content">
+            <section class="dok-breadcrumb">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href=""><i class="fa fa-home-alt me-1 main-color"></i> Trang chủ</a>
+                        <span class="mx-2"><i class="fa fa-chevron-right fz-12"></i></span>
+                        <a href="">Tin tức</a>
+                        <span class="mx-2"><i class="fa fa-chevron-right fz-12"></i></span>
+                        <span href="">Khuyến mại</span>
+                    </div>
+                </div>
+            </section>
+
+
 
             <div class="container">
-
                 <div class="dok-news-block">
+                    <div class="dok-heading">
+                        <h1 class="mb-0">TIN TỨC &amp; SỰ KIỆN</h1>
+                    </div>
                     <div class="nav-newscate overflow-hidden">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide nav-newscate-item"><a href="/" class="fa fa-home"></a></div>
-                            <div class="swiper-slide nav-newscate-item active"><a href=/khuyen-mai><span>Khuyến
-                                        mại</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/tu-van-tieu-dung><span>Tư
-                                        vấn</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/vao-bep><span>Vào Bếp</span></a>
+                            <div class="swiper-slide nav-newscate-item active">
+                                <a href=/khuyen-mai><span>Khuyến mại</span></a>
                             </div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/video-review><span>Video
-                                        Review</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/meo-vat-doi-song><span>Mẹo vặt -
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/tu-van-tieu-dung><span>Tư
+                                        vấn</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/vao-bep><span>Vào Bếp</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/video-review><span>Video
+                                        Review</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/meo-vat-doi-song><span>Mẹo vặt -
                                         Đời sống</span></a>
                             </div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/loi-hay-y-dep><span>Lời hay - Ý
-                                        đẹp</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/danh-gia-san-pham><span>Kinh nghiệm
-                                        - Thủ
-                                        thuật</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/iphone-14><span>iPhone
-                                        14</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a
-                                    href=/tuyen-dung-nhan-su-van-phong-tru-so-chinh><span>Tuyển
-                                        dụng HO</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/bao-hanh><span>Bảo hành</span></a>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/loi-hay-y-dep><span>Lời hay - Ý
+                                        đẹp</span></a>
                             </div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/tin-ve-mediamart><span>Tin về
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/danh-gia-san-pham><span>Kinh nghiệm
+                                        - Thủ
+                                        thuật</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/iphone-14><span>iPhone
+                                        14</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/tuyen-dung-nhan-su-van-phong-tru-so-chinh><span>Tuyển
+                                        dụng HO</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/bao-hanh><span>Bảo hành</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/tin-ve-mediamart><span>Tin về
                                         Mediamart</span></a>
                             </div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/san-pham-khuyen-mai><span>Sản phẩm
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/san-pham-khuyen-mai><span>Sản phẩm
                                         khuyến
-                                        mại</span></a></div>
-                            <div class="swiper-slide nav-newscate-item"><a href=/tuyen-dung><span>Tuyển
-                                        dụng</span></a></div>
+                                        mại</span></a>
+                            </div>
+                            <div class="swiper-slide nav-newscate-item">
+                                <a href=/tuyen-dung><span>Tuyển
+                                        dụng</span></a>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-12 col-md-9 col-lg-9">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="dok-news mb-lg-0 mb-4">
                             <div class="row">
-                                <div class="col-12 col-md-3 col-lg-3">
-                                    <div class="nav-newscate-child">
-                                        <h2 class="title">Khuyến mại</h2>
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/">Tin Khuyến mại</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/">Ưu đãi trả góp</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/">Ưu đãi thanh toán</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="/">Ưu đãi về dịch vụ</a>
-                                            </li>
-                                            <li class="nav-item fLimitMenu_SeeMore" style="display:none">
-                                                <a href="javascript:"><span>Xem thêm</span>
-                                                    <div class="circle"></div>
-                                                </a>
-                                            </li>
-                                            <li class="nav-item fLimitMenu_Collapse" style="display:none">
-                                                <a href="javascript:"><span>Thu gọn</span>
-                                                    <div class="circle"></div>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                <div class="col-md-7">
+                                    <div class="d-flex flex-column item news-item-large mb-md-0 mb-5">
+                                        <div class="img">
+                                            <a href="">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:690:300/q:90/plain/https://dashboard.cellphones.com.vn/storage/dknt-galaxy-moi-sliding-010724.png"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="meta">
+                                            <a href="">
+                                                <i class="fa fa-user me-2"> </i>Admin
+                                            </a>
+                                            <span class="mx-3">|</span>
+                                            <span>
+                                                <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                            </span>
+                                        </div>
+                                        <div class="name">
+                                            <a href="/">
+                                                SamSung sale đậm giữa tháng 7, sale sập sàn giảm đến 50%
+                                            </a>
+                                        </div>
+                                        <div class="desc mt-2">
+                                            Một số máy tính bảng được trang bị bút cảm ứng đi kèm, số khác thì không.
+                                            Vậy tại sao bạn nên mua chiếc máy tính bảng có bút cảm ứng đi kèm?
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-9 col-lg-9">
-                                    <div class="news-category-detail row">
-                                        <div class="col-12 col-md-12 col-lg-12">
-                                            <ul id="newslist-api" class="newscate-list list-unstyled">
-                                                <li>
-                                                    <div class="news-thumbnail">
-                                                        <div class="thumbnail">
-                                                            <a href="single.html">
-                                                                <img class="img-fluid"
-                                                                    src="https://cdn.mediamart.vn/thumb/images/news/x-hang-cui-dong-khong-li-nhun-gim-tt-dn-50-ti-mediamart-khu-vc-min-bc_db465fe1.jpg"
-                                                                    alt="Xả hàng cuối đông - không lợi nhuận - Sale tất giảm hết đến 50%">
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-name text-color">
-                                                            <a href="single.html">
-                                                                Xả hàng cuối đông - không lợi nhuận - Sale tất giảm hết
-                                                                đến 50%
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-des">
-                                                            Cuối tháng 2/2023, MediaMart triển khai chương trình khuyến
-                                                            mại “ Xả hàng cuối đông, không lợi nhuận giảm tất đến
-                                                            50%”. Theo đó, hàng loạt các sản phẩm đang được săn đón
-                                                            trên thị trường được giảm với mức giá rất hấp dẫn.
-                                                            Chương trình kéo dài từ ngày 25/2/2023 đến ngày
-                                                            10/3/2023, áp dụng tại các siêu thị MediaMart khu vực
-                                                            miền Bắc.
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="news-thumbnail">
-                                                        <div class="thumbnail">
-                                                            <a href="single.html">
-                                                                <img class="img-fluid"
-                                                                    src="https://cdn.mediamart.vn/thumb/images/news/cui-tun-din-lnh-gim-to---khong-lo-v-gia-gim-sau-dn-50_8b779239.webp"
-                                                                    alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-name text-color">
-                                                            <a href="single.html">
-                                                                Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu
-                                                                đến 50% (24.2-26.2)
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-des">
-                                                            Cuối tuần này, đến ngay siêu thị điện máy MediaMart để lựa
-                                                            chọn hàng nghìn sản phẩm điện lạnh gồm tủ lạnh, máy
-                                                            giặt, máy sấy quần áo, điều hòa với giá giảm SỐC đến
-                                                            50%, cùng nhiều ưu đãi hấp dẫn khác. Nhanh tay đặt mua
-                                                            ngay!
-                                                        </div>
+                                <div class="col-md-5">
+                                    <div class="d-flex flex-column">
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/quannguyen/2024/galaxy%20watch%20moi/samsung-galaxy-watch-ultra-3.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                        bỉ cùng
+                                                        nhiều tính năng mới?
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                    </div>
-                                                </li>
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                <li>
-                                                    <div class="news-thumbnail">
-                                                        <div class="thumbnail">
-                                                            <a href="single.html">
-                                                                <img class="img-fluid"
-                                                                    src="https://cdn.mediamart.vn/thumb/images/news/cui-tun-din-lnh-gim-to---khong-lo-v-gia-gim-sau-dn-50_8b779239.webp"
-                                                                    alt="">
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-name text-color">
-                                                            <a href="single.html">
-                                                                Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu
-                                                                đến 50% (24.2-26.2)
-                                                            </a>
-                                                        </div>
-                                                        <div class="news-item-des">
-                                                            Cuối tuần này, đến ngay siêu thị điện máy MediaMart để lựa
-                                                            chọn hàng nghìn sản phẩm điện lạnh gồm tủ lạnh, máy
-                                                            giặt, máy sấy quần áo, điều hòa với giá giảm SỐC đến
-                                                            50%, cùng nhiều ưu đãi hấp dẫn khác. Nhanh tay đặt mua
-                                                            ngay!
-                                                        </div>
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-hyperos-2-0-cover.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                        bỉ cùng
+                                                        nhiều tính năng mới?
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                    </div>
-                                                </li>
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                                <a class="newscate-list-loadmore" href="javascript:" onclick=""
-                                                    title="Xem thêm Khuyến mại"> Xem thêm Khuyến mại </a>
-                                            </ul>
+                            <hr class="my-4"/>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex flex-column sty-big">
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/quannguyen/2024/galaxy%20watch%20moi/samsung-galaxy-watch-ultra-3.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                        bỉ cùng
+                                                        nhiều tính năng mới?
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-hyperos-2-0-cover.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                        bỉ cùng
+                                                        nhiều tính năng mới?
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item news-item-small">
+                                            <div class="img">
+                                                <a href="">
+                                                    <img class="img-fluid"
+                                                        src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                        alt="">
+                                                </a>
+                                            </div>
+                                            <div class="wrapper">
+                                                <div class="name">
+                                                    <a href="/">
+                                                        Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                    </a>
+                                                </div>
+                                                <div class="meta">
+                                                    <a href="">
+                                                        <i class="fa fa-user me-2"> </i>Admin
+                                                    </a>
+                                                    <span class="mx-3">|</span>
+                                                    <span>
+                                                        <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="readmore-btn down mt-4 mb-0" href="">
+                                <span>Xem thêm bài viết</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="dok-widget dok-widget-banner p-0">
+                            <a href="" title="" class="">
+                                <img class="img-fluid" src="https://cdn.tgdd.vn/2024/06/banner/380x215-380x215-1.png"
+                                    alt="">
+                            </a>
+                        </div>
+
+                        <div class="dok-widget dok-widget-hot-news">
+                            <h4 class="fw-bold fz-18 mb-3">Chủ đề Hot</h4>
+                            <ul class="hot-lst">
+                                <li>
+                                    <a href="" target="_blank">
+                                        Thế giới đồng hồ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        Thế giới phụ kiện
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        Nhà mạng, SIM, thẻ cào
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        Tất tần tật về iOS 18
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        Galaxy Unpacked 2024
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="dok-widget dok-widget-hot-news">
+                            <h4 class="fw-bold fz-18 mb-3">Bài viết xem nhiều</h4>
+                            <div class="dok-news">
+                                <div class="d-flex flex-column">
+                                    <div class="item news-item-small">
+                                        <div class="img">
+                                            <a href="">
+                                                <img class="img-fluid"
+                                                    src="https://cdn-media.sforum.vn/storage/app/media/quannguyen/2024/galaxy%20watch%20moi/samsung-galaxy-watch-ultra-3.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="name">
+                                                <a href="/">
+                                                    Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                    bỉ
+                                                    cùng
+                                                    nhiều tính năng mới?
+                                                </a>
+                                            </div>
+                                            <div class="meta">
+                                                <a href="">
+                                                    <i class="fa fa-user me-2"> </i>Admin
+                                                </a>
+                                                <span class="mx-3">|</span>
+                                                <span>
+                                                    <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item news-item-small">
+                                        <div class="img">
+                                            <a href="">
+                                                <img class="img-fluid"
+                                                    src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="name">
+                                                <a href="/">
+                                                    Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                </a>
+                                            </div>
+                                            <div class="meta">
+                                                <a href="">
+                                                    <i class="fa fa-user me-2"> </i>Admin
+                                                </a>
+                                                <span class="mx-3">|</span>
+                                                <span>
+                                                    <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item news-item-small">
+                                        <div class="img">
+                                            <a href="">
+                                                <img class="img-fluid"
+                                                    src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-hyperos-2-0-cover.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="name">
+                                                <a href="/">
+                                                    Những mong chờ về Galaxy Watch mới sắp ra mắt: Đột phá, siêu bền
+                                                    bỉ
+                                                    cùng
+                                                    nhiều tính năng mới?
+                                                </a>
+                                            </div>
+                                            <div class="meta">
+                                                <a href="">
+                                                    <i class="fa fa-user me-2"> </i>Admin
+                                                </a>
+                                                <span class="mx-3">|</span>
+                                                <span>
+                                                    <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item news-item-small">
+                                        <div class="img">
+                                            <a href="">
+                                                <img class="img-fluid"
+                                                    src="https://cdn-media.sforum.vn/storage/app/media/trannghia/xiaomi-15-series-ip69.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="name">
+                                                <a href="/">
+                                                    Xiaomi 15 series sẽ hỗ trợ kháng nước, chống bụi chuẩn IP69
+                                                </a>
+                                            </div>
+                                            <div class="meta">
+                                                <a href="">
+                                                    <i class="fa fa-user me-2"> </i>Admin
+                                                </a>
+                                                <span class="mx-3">|</span>
+                                                <span>
+                                                    <i class="fa fa-calendar-alt me-2"></i> 20/07/2024
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-12 col-md-3 col-lg-3">
-                            <div class="news-option">
-                                <h4 class="text-color-news">Tin mới nhất</h4>
-                                <div class="item">
-                                    <div class="img">
-                                        <a href="single.html"
-                                            title="Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)">
-                                            <img class="img-fluid"
-                                                src="https://cdn.mediamart.vn/images/news/cui-tun-din-lnh-gim-to---khong-lo-v-gia-gim-sau-dn-50_8b779239.webp"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="single.html"
-                                            title="Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)">
-                                            Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="img">
-                                        <a href="single.html"
-                                            title="Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)">
-                                            <img class="img-fluid"
-                                                src="https://cdn.mediamart.vn/images/news/cui-tun-din-lnh-gim-to---khong-lo-v-gia-gim-sau-dn-50_8b779239.webp"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="single.html"
-                                            title="Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)">
-                                            Cuối tuần điện lạnh GIẢM TO – Không lo về giá, giảm sâu đến 50% (24.2-26.2)
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-option">
-                                <h4 class="text-color-news">Tin xem nhiều</h4>
-                                <div class="item">
-                                    <div class="img">
-                                        <a href="single.html"
-                                            title="Mua điện máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng">
-                                            <img class="img-fluid"
-                                                src="https://cdn.mediamart.vn/images/news/mua-dien-may-tra-truoc-0-dong-tra-gop-0-qua-the-tin-dung-W29aW3.webp"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="/uu-dai-tra-gop/mua-dien-may-tra-truoc-0-dong-tra-gop-0-qua-the-tin-dung"
-                                            title="Mua điện máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng"> Mua điện
-                                            máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="img">
-                                        <a href="single.html"
-                                            title="Mua điện máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng">
-                                            <img class="img-fluid"
-                                                src="https://cdn.mediamart.vn/images/news/mua-dien-may-tra-truoc-0-dong-tra-gop-0-qua-the-tin-dung-W29aW3.webp"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="/uu-dai-tra-gop/mua-dien-may-tra-truoc-0-dong-tra-gop-0-qua-the-tin-dung"
-                                            title="Mua điện máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng"> Mua điện
-                                            máy Trả trước 0 đồng, Trả góp 0% qua thẻ tín dụng </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
 
-        <footer id="footer" class="footer"></footer>
+        <footer id="footer" class="footer">
+            <!-- <div class="dok-divider"></div> -->
+            <div class="footer-services">
+                <div class="container">
+                    <div class="dok-home-wrap">
+                        <div class="dok-home-service dok-home-service1">
+                            <img src="assets/img/sv1.svg" alt="">
+                            <p class="title">Đặt mua toàn quốc</p>
+                            <p class="mb-0">0941 339 339 (8:00 - 20:00)</p>
+                        </div>
+                        <div class="dok-home-service dok-home-service2">
+                            <img src="assets/img/sv2.svg" alt="">
+                            <p class="title">Hỗ trợ kỹ thuật</p>
+                            <p class="mb-0">0834 397 999(8:00 - 20:00)</p>
+                        </div>
+                        <div class="dok-home-service dok-home-service3">
+                            <img src="assets/img/sv3.svg" alt="">
+                            <p class="title">Khiếu nại</p>
+                            <p class="mb-0">0941 339 339 (8:00 - 20:00)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="ft-box">
+                                <p class="ft-title">Hỗ trợ khách hàng</p>
+                                <ul class="ft-list-link">
+                                    <li>
+                                        <p>
+                                            Hotline: xxxx-xxxx <br>
+                                            (1000 đ/phút, 8-21h kể cả T7, CN)
+                                        </p>
+                                    </li>
+                                    <li><a href="">Hướng dẫn mua hàng</a></li>
+                                    <li><a href="">Chính sách bảo hành</a></li>
+                                    <li><a href="">Chính sách đổi trả</a></li>
+                                    <li><a href="">Hướng dẫn thanh toán</a></li>
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                    <li><a href="">Giao hàng, lắp đặt</a></li>
+                                    <li><a href="">Hỗ trợ khách hàngL admin@...com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ft-box">
+                                <p class="ft-title">Hỗ trợ khách hàng</p>
+                                <ul class="ft-list-link">
+                                    <li><a href="">Giới thiệu</a></li>
+                                    <li><a href="">Liên hệ</a></li>
+                                    <li><a href="">Tuyển dụng</a></li>
+                                    <li><a href="">Hồ sơ năng lực</a></li>
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                    <li><a href="">Điều khoản và điều kiện</a></li>
+                                    <li><a href="">Tin tức OBIBI</a></li>
+                                    <li><a href="">Góp ý và khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ft-box">
+                                <p class="ft-title">Hỗ trợ khách hàng</p>
+                                <ul class="ft-list-link">
+                                    <li><a href="">Loa</a></li>
+                                    <li><a href="">Cục đẩy</a></li>
+                                    <li><a href="">Amply</a></li>
+                                    <li><a href="">Bàn Mixer</a></li>
+                                    <li><a href="">Micro</a></li>
+                                    <li><a href="">Tai nghe</a></li>
+                                    <li><a href="">Máy chiếu</a></li>
+                                    <li><a href="">Màn hình Led</a></li>
+                                    <li><a href="">Nhạc cụ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="ft-box">
+                                <p class="ft-title">Kết nối với chúng tôi</p>
+                                <ul class="ft-list-icon">
+                                    <li><a href=""><img src="assets/img/social/icon_fb.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/img/social/icon_mess.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/img/social/icon_ytb.png" alt=""></a></li>
+                                    <li><a href=""><img src="assets/img/social/icon_zalo.png" alt=""></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="ft-box">
+                                <p class="ft-title">Phương thức thanh toán</p>
+                                <ul class="ft-list-icon">
+                                    <li><i class="dok-sprite-icon dok-visa"></i></li>
+                                    <li><i class="dok-sprite-icon dok-mastercard"></i></li>
+                                    <li><i class="dok-sprite-icon dok-jcb"></i></li>
+                                    <li><i class="dok-sprite-icon dok-atm"></i></li>
+                                    <li><i class="dok-sprite-icon dok-installment"></i></li>
+                                    <li><i class="dok-sprite-icon dok-cod"></i></li>
+                                </ul>
+                            </div>
+
+                            <div class="ft-box">
+                                <a href=""><img src="assets/img/bocongthuong.svg" alt="" height="30px"></a>
+                                <a href=""><img src="assets/img/dmca.svg" alt="" height="30px"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="text-center">
+                            <p class="mb-0">© 2020. Bản quyền Thuộc Về Công ty TNHH Music Group - GPĐKKD: 0316562220
+                                do
+                                Sở
+                                Kế hoạch & Đầu tư
+                                Hồ Chí Minh cấp ngày 30/10/2020.</p>
+                            <p class="mb-0">Địa chỉ văn phòng: Tầng 10, Tòa nhà Pax Sky, 51 Nguyễn Cư Trinh, Phường
+                                Nguyễn
+                                Cư Trinh, Quận 1,
+                                TP.Hồ Chí Minh. Email: Admin@musicgroup.vn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <div id="banner-fixed"></div> -->
+        <!-- <div id="social-fixed"></div> -->
+
 
     </div>
 </body>
-
 
 <script src="assets/js/jquery-3.6.3.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -293,26 +1324,26 @@
 <script>
     (function () {
 
-        // Fetch Header
-        fetch('patials/header.html')
-            .then(response => response.text())
-            .then(html => {
-                document.querySelector('#header').innerHTML = html;
-            });
+        // // Fetch Header
+        // fetch('patials/header.html')
+        //     .then(response => response.text())
+        //     .then(html => {
+        //         document.querySelector('#header').innerHTML = html;
+        //     });
 
-        // Fetch social
-        fetch('patials/social.html')
-            .then(response => response.text())
-            .then(html => {
-                document.querySelector('#social-fixed').innerHTML = html;
-            });
+        // // Fetch social
+        // fetch('patials/social.html')
+        //     .then(response => response.text())
+        //     .then(html => {
+        //         document.querySelector('#social-fixed').innerHTML = html;
+        //     });
 
-        // Fetch Footer
-        fetch('patials/footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.querySelector('#footer').innerHTML = html;
-            });
+        // // Fetch Footer
+        // fetch('patials/footer.html')
+        //     .then(response => response.text())
+        //     .then(html => {
+        //         document.querySelector('#footer').innerHTML = html;
+        //     });
     })();
 </script>
 

@@ -24,9 +24,18 @@ $(function () {
 			$('.dok-header-item-mobile').removeClass('active');
 			$('#menu-main').removeClass('active');
 		});
-
-		
 	};
+
+	if ($('.dok-categories-info').length > 0) {
+		$('.show').click(function () {
+			const desc = $('.short');
+			desc.removeAttr('style').removeClass('short').addClass('full').css({
+				'max-height': '100%',
+				'overflow-y': 'hidden',
+			});
+			$(this).hide();
+		});
+	}
 
 	if ($('#dok_filter_total').length > 0) {
 		$('#dok_filter_total').on('show.bs.collapse', function () {
@@ -57,10 +66,10 @@ $(function () {
 
 
 	var swiper = new Swiper(".dok-product-thumbnail", {
-		spaceBetween: 16,
-		slidesPerView: 6,
-		freeMode: true,
-		watchSlidesProgress: true,
+		slidesPerView: 'auto',
+		spaceBetween: 10,
+		loop: true,
+		slideToClickedSlide: true,
 	});
 	var swiper2 = new Swiper(".dok-product-img-main", {
 		spaceBetween: 10,
