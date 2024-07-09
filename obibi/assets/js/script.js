@@ -88,128 +88,24 @@ $(function () {
 			}
 		});
 
-		if ($(".toc").length > 0) {
-			var toc = document.querySelector(".toc");
-			var tocPath = document.querySelector(".toc-marker path");
-			var tocItems;
-
-			// Factor of screen size that the element must cross
-			// before it's considered visible
-			var TOP_MARGIN = 0.1,
-				BOTTOM_MARGIN = 0.2;
-
-			var pathLength;
-
-			var lastPathStart, lastPathEnd;
-
-			window.addEventListener("resize", drawPath, false);
-			window.addEventListener("scroll", sync, false);
-
-			drawPath();
-
-			function drawPath() {
-				tocItems = [].slice.call(toc.querySelectorAll("li"));
-
-				// Cache element references and measurements
-				tocItems = tocItems.map(function (item) {
-					var anchor = item.querySelector("a");
-					var target = document.getElementById(
-						anchor.getAttribute("href").slice(1)
-					);
-
-					return {
-						listItem: item,
-						anchor: anchor,
-						target: target,
-					};
-				});
-
-				// Remove missing targets
-				tocItems = tocItems.filter(function (item) {
-					return !!item.target;
-				});
-
-				var path = [];
-				var pathIndent;
-
-				tocItems.forEach(function (item, i) {
-					var x = item.anchor.offsetLeft - 5,
-						y = item.anchor.offsetTop,
-						height = item.anchor.offsetHeight;
-
-					if (i === 0) {
-						path.push("M", x, y, "L", x, y + height);
-						item.pathStart = 0;
-					} else {
-						// Draw an additional line when there's a change in
-						// indent levels
-						if (pathIndent !== x) path.push("L", pathIndent, y);
-
-						path.push("L", x, y);
-
-						// Set the current path so that we can measure it
-						tocPath.setAttribute("d", path.join(" "));
-						item.pathStart = tocPath.getTotalLength() || 0;
-
-						path.push("L", x, y + height);
-					}
-
-					pathIndent = x;
-
-					tocPath.setAttribute("d", path.join(" "));
-					item.pathEnd = tocPath.getTotalLength();
-				});
-
-				pathLength = tocPath.getTotalLength();
-
-				sync();
+		$('#toc').toc({
+			'selectors': '.gtoc', // các phần tử sử dụng làm tiêu đề
+			'container': '.article-content', // phần tử để tìm tất cả các selectors
+			'smoothScrolling': true, // bật hoặc tắt cuộn mượt khi click
+			'prefix': 'toc', // tiền tố cho thẻ anchor và tên class
+			'onHighlight': function (el) { }, // gọi khi một phần mới được làm nổi bật
+			'highlightOnScroll': true, // thêm class cho tiêu đề hiện đang được focus
+			'highlightOffset': 100, // khoảng cách để kích hoạt tiêu đề tiếp theo
+			'anchorName': function (i, heading, prefix) { // hàm tùy chỉnh cho tên anchor
+				return prefix + i;
+			},
+			'headerText': function (i, heading, $heading) { // hàm tùy chỉnh để tạo văn bản tiêu đề
+				return $heading.text();
+			},
+			'itemClass': function (i, heading, $heading, prefix) { // hàm tùy chỉnh cho tên class của mục
+				return $heading[0].tagName.toLowerCase();
 			}
-
-			function sync() {
-				var windowHeight = window.innerHeight;
-
-				var pathStart = pathLength,
-					pathEnd = 0;
-
-				var visibleItems = 0;
-
-				tocItems.forEach(function (item) {
-					var targetBounds = item.target.getBoundingClientRect();
-
-					if (
-						targetBounds.bottom > windowHeight * TOP_MARGIN &&
-						targetBounds.top < windowHeight * (1 - BOTTOM_MARGIN)
-					) {
-						pathStart = Math.min(item.pathStart, pathStart);
-						pathEnd = Math.max(item.pathEnd, pathEnd);
-
-						visibleItems += 1;
-
-						item.listItem.classList.add("visible");
-					} else {
-						item.listItem.classList.remove("visible");
-					}
-				});
-
-				// Specify the visible path or hide the path altogether
-				// if there are no visible items
-				if (visibleItems > 0 && pathStart < pathEnd) {
-					if (pathStart !== lastPathStart || pathEnd !== lastPathEnd) {
-						tocPath.setAttribute("stroke-dashoffset", "1");
-						tocPath.setAttribute(
-							"stroke-dasharray",
-							"1, " + pathStart + ", " + (pathEnd - pathStart) + ", " + pathLength
-						);
-						tocPath.setAttribute("opacity", 1);
-					}
-				} else {
-					tocPath.setAttribute("opacity", 0);
-				}
-
-				lastPathStart = pathStart;
-				lastPathEnd = pathEnd;
-			}
-		}
+		});
 	}
 
 
