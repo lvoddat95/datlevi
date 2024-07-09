@@ -18,10 +18,10 @@ $(function () {
 			}
 		);
 
-		$('.dok-header-item').click(function () {
-			$('.dok-header-overlay').removeClass('active');
-			$('#dok-header-top').find('#menu-main').css("display", "none");
-		});
+		// $('.dok-header-item').click(function () {
+		// 	$('.dok-header-overlay').removeClass('active');
+		// 	$('#dok-header-top').find('#menu-main').css("display", "none");
+		// });
 
 
 		$('.dok-header-item-mobile').click(function () {
