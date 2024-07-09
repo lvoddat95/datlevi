@@ -32,7 +32,7 @@ $(function () {
 		});
 	};
 
-	if ($('.dok-categories-info').length > 0) {
+	if ($('.show').length > 0) {
 		$('.show').click(function () {
 			const desc = $('.short');
 			desc.removeAttr('style').removeClass('short').addClass('full').css({
