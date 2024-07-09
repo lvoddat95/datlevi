@@ -1,14 +1,23 @@
 $(function () {
 	if ($('#dok-header-top').length > 0) {
-		$('.dok-header-item').hover(
+		$('.dok-header-item, #menu-main').hover(
 			function () {
+				clearTimeout($(this).data('timeout')); // Hủy bỏ timeout nếu đang có
 				$('.dok-header-overlay').addClass('active');
 				$(this).closest('#dok-header-top').find('#menu-main').attr('style', '');
 			},
-			// function() {
-			// 	$('.dok-header-overlay').removeClass('active');
-			// }
+			function () {
+				const element = $(this);
+				const timeout = setTimeout(function () {
+					if (!$('.dok-header-item:hover').length && !$('#menu-main:hover').length) {
+						$('.dok-header-overlay').removeClass('active');
+						element.closest('#dok-header-top').find('#menu-main').attr('style', 'display: none;'); // hoặc các style khác cần thiết khi không hover
+					}
+				}, 150); // 1000 milliseconds = 1 second
+				$(this).data('timeout', timeout); // Lưu lại timeout để có thể hủy bỏ nếu cần
+			}
 		);
+
 		$('.dok-header-item').click(function () {
 			$('.dok-header-overlay').removeClass('active');
 			$('#dok-header-top').find('#menu-main').css("display", "none");
@@ -20,8 +29,7 @@ $(function () {
 			$(this).closest('#dok-header-top').find('#menu-main').toggleClass('active');
 		});
 
-		$('.dok-header-overlay').on( "click", function() {
-			console.log(123)
+		$('.dok-header-overlay').on("click", function () {
 			$('.dok-header-overlay').removeClass('active');
 			$('#dok-header-top').find('#menu-main').css("display", "none");
 		});
@@ -45,16 +53,22 @@ $(function () {
 
 	if ($('#dok_filter_total').length > 0) {
 		$('#dok_filter_total').on('show.bs.collapse', function () {
-			$("body").addClass("overlay-filter");
+			$("body").append("<div class='overlay-filter'></div>");
 			$('html, body').animate({
-				scrollTop: $(".dok-combination").offset().top
+				scrollTop: $(".dok-combination").offset().top - 100
 			}, 500);
 		});
 		$('#dok_filter_total').on('hide.bs.collapse', function () {
-			$("body").removeClass("overlay-filter");
+			$(".overlay-filter").remove();
 		});
-
-		$(".close-popup-total").click(function (e) {
+		if ($('.close-popup-total').length > 0) {
+			$(".close-popup-total").click(function (e) {
+				e.preventDefault();
+				$('#dok_filter_total').collapse('hide');
+			});
+		}
+		$('body').on("click", ".overlay-filter", function (e) {
+			console.log(123)
 			e.preventDefault();
 			$('#dok_filter_total').collapse('hide');
 		});
@@ -289,107 +303,7 @@ $(function () {
 });
 
 
-// Mobile JS
-$(function () {
-	if ($('#dok_filter_total').length > 0) {
-		$('#dok_filter_total').on('show.bs.collapse', function () {
-			$("body").addClass("overlay-filter");
-		});
-		$('#dok_filter_total').on('hide.bs.collapse', function () {
-			$("body").removeClass("overlay-filter");
-		});
 
-		$(".close-popup-total").click(function (e) {
-			e.preventDefault();
-			$('#dok_filter_total').collapse('hide');
-		});
-	};
-
-	if ($('[data-sticky]').length > 0) {
-		var sticky = new Sticky('[data-sticky]');
-	};
-
-
-	if ($(".dok-mb-banner-slider").length > 0) {
-		var main_slider = new Swiper(".dok-mb-banner-slider", {
-			slidesPerView: 1,
-			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	}
-
-	if ($(".dok-mb-category-slider").length > 0) {
-		var category_slider = new Swiper(".dok-mb-category-slider", {
-			slidesPerView: 4,
-			spaceBetween: 5,
-			freeMode: true,
-			pagination: {
-				el: ".cate-swiper-pagination",
-				type: "progressbar",
-			},
-		});
-	};
-
-
-
-	if ($(".dok-mb-products-slider").length > 0) {
-		var product_slider = new Swiper(".dok-mb-products-slider", {
-			slidesPerView: 2,
-			spaceBetween: 10,
-			loop: false,
-			navigation: {
-				nextEl: ".mb-products-button-next",
-				prevEl: ".mb-products-button-prev",
-			},
-			breakpoints: {
-				640: {
-					slidesPerView: 2,
-					spaceBetween: 10,
-				},
-				768: {
-					slidesPerView: 4,
-					spaceBetween: 10,
-				},
-				1024: {
-					slidesPerView: 5,
-					spaceBetween: 10,
-				},
-			},
-		});
-	}
-
-	// Lấy thẻ div cần theo dõi
-	const product_acts = document.querySelector('#product-actions-fieldset');
-	if ($(product_acts).length > 0) {
-		// Lắng nghe sự kiện cuộn
-		window.addEventListener('scroll', () => {
-			if (isInViewport(product_acts)) {
-				document.body.classList.remove('show-buynow');
-			} else {
-				document.body.classList.add('show-buynow');
-			}
-		});
-
-		// Hàm kiểm tra xem một phần tử có hiển thị trên màn hình hay không
-		function isInViewport(element) {
-			const rect = element.getBoundingClientRect();
-			return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		}
-	}
-
-});
 
 function do_active_slt(elem) {
 	// get all 'a' elements
