@@ -40,11 +40,16 @@ $(function () {
 			$('.dok-header-overlay').removeClass('active');
 		});
 	};
-
 	if ($('.filter-item__title').length > 0) {
 		$('.filter-item__title').click(function () {
-			$('.filter-item').removeClass('active');
-			$(this).parent('.filter-item').toggleClass('active');
+			var $parentFilterItem = $(this).parent('.filter-item');
+
+			if ($parentFilterItem.hasClass('active')) {
+				$parentFilterItem.removeClass('active');
+			} else {
+				$('.filter-item').removeClass('active');
+				$parentFilterItem.addClass('active');
+			}
 		});
 	}
 

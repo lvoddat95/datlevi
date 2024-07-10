@@ -947,8 +947,8 @@
 
 
             <div class="dok-product-filter mobile mb">
-                <div class="container">
-                    <div class="mb-fix">
+                <div class="mb-filter" data-sticky data-sticky-class="filter-sticky">
+                    <div class="container">
                         <div class="dok-mobile-filters">
                             <div class="d-flex align-items-center">
                                 <div class="box-checkbox extend">
@@ -1246,254 +1246,252 @@
                             </div>
                         </div>
 
-                        <div class="dok-filters position-relative">
-                            <div class="filter-item block-manu">
-                                <div class="filter-item__title">
-                                    <div class="arrow-filter"></div><span>Hãng</span>
-                                </div>
-                                <div class="filter-show">
-                                    <div class="filter-list filter-list--hang manu">
-                                        <a href="tu-lanh-samsung" class="c-btnbox   filter-manu" data-href="samsung"
-                                            data-id="2011" data-name="Samsung">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Samsung1943-b_53.png" width="68" height="30"
-                                                alt="Samsung">
-                                        </a>
-                                        <a href="tu-lanh-lg" class="c-btnbox   filter-manu" data-href="lg"
-                                            data-id="2009" data-name="LG">
-                                            <img src="//cdn.tgdd.vn/Brand/2/LG1943-b_10.png" width="68" height="30"
-                                                alt="LG">
-                                        </a>
-                                        <a href="tu-lanh-aqua-sanyo" class="c-btnbox   filter-manu"
-                                            data-href="aqua-sanyo" data-id="1497" data-name="Aqua">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Aqua1943-b_34.png" width="68" height="30"
-                                                alt="Aqua">
-                                        </a>
-                                        <a href="tu-lanh-toshiba" class="c-btnbox   filter-manu" data-href="toshiba"
-                                            data-id="2010" data-name="Toshiba">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Toshiba1943-b_52.png" width="68" height="30"
-                                                alt="Toshiba">
-                                        </a>
-                                        <a href="tu-lanh-panasonic" class="c-btnbox   filter-manu" data-href="panasonic"
-                                            data-id="2007" data-name="Panasonic">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Panasonic1943-b_52.png" width="68"
-                                                height="30" alt="Panasonic">
-                                        </a>
-                                        <a href="tu-lanh-sharp" class="c-btnbox   filter-manu" data-href="sharp"
-                                            data-id="2012" data-name="Sharp">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Sharp1943-b_53.png" width="68" height="30"
-                                                alt="Sharp">
-                                        </a>
-                                        <a href="tu-lanh-funiki" class="c-btnbox   filter-manu" data-href="funiki"
-                                            data-id="36324" data-name="Funiki">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Funiki-124x48-1.png" width="68" height="30"
-                                                alt="Funiki">
-                                        </a>
-                                        <a href="tu-lanh-beko" class="c-btnbox   filter-manu" data-href="beko"
-                                            data-id="5353" data-name="Beko">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Beko1943-b_0.png" width="68" height="30"
-                                                alt="Beko">
-                                        </a>
-                                        <a href="tu-lanh-casper" class="c-btnbox   filter-manu" data-href="casper"
-                                            data-id="31730" data-name="Casper">
-                                            <img src="//cdn.tgdd.vn/Brand/2/10-200x80-1.png" width="68" height="30"
-                                                alt="Casper">
-                                        </a>
-                                        <a href="tu-lanh-electrolux" class="c-btnbox   filter-manu"
-                                            data-href="electrolux" data-id="2067" data-name="Electrolux">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Electrolux1943-b_56.png" width="68"
-                                                height="30" alt="Electrolux">
-                                        </a>
-                                        <a href="tu-lanh-hitachi" class="c-btnbox   filter-manu" data-href="hitachi"
-                                            data-id="2013" data-name="Hitachi">
-                                            <img src="//cdn.tgdd.vn/Brand/2/Hitachi1943-b_11.png" width="68" height="30"
-                                                alt="Hitachi">
-                                        </a>
-
+                        <div class="position-relative">
+                            <div class="dok-filters">
+                                <div class="filter-item block-manu">
+                                    <div class="filter-item__title">
+                                        <div class="arrow-filter"></div><span>Hãng</span>
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="filter-show">
+                                        <div class="filter-list filter-list--hang manu">
+                                            <a href="tu-lanh-samsung" class="c-btnbox   filter-manu" data-href="samsung"
+                                                data-id="2011" data-name="Samsung">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Samsung1943-b_53.png" width="68"
+                                                    height="30" alt="Samsung">
+                                            </a>
+                                            <a href="tu-lanh-lg" class="c-btnbox   filter-manu" data-href="lg"
+                                                data-id="2009" data-name="LG">
+                                                <img src="//cdn.tgdd.vn/Brand/2/LG1943-b_10.png" width="68" height="30"
+                                                    alt="LG">
+                                            </a>
+                                            <a href="tu-lanh-aqua-sanyo" class="c-btnbox   filter-manu"
+                                                data-href="aqua-sanyo" data-id="1497" data-name="Aqua">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Aqua1943-b_34.png" width="68"
+                                                    height="30" alt="Aqua">
+                                            </a>
+                                            <a href="tu-lanh-toshiba" class="c-btnbox   filter-manu" data-href="toshiba"
+                                                data-id="2010" data-name="Toshiba">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Toshiba1943-b_52.png" width="68"
+                                                    height="30" alt="Toshiba">
+                                            </a>
+                                            <a href="tu-lanh-panasonic" class="c-btnbox   filter-manu"
+                                                data-href="panasonic" data-id="2007" data-name="Panasonic">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Panasonic1943-b_52.png" width="68"
+                                                    height="30" alt="Panasonic">
+                                            </a>
+                                            <a href="tu-lanh-sharp" class="c-btnbox   filter-manu" data-href="sharp"
+                                                data-id="2012" data-name="Sharp">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Sharp1943-b_53.png" width="68"
+                                                    height="30" alt="Sharp">
+                                            </a>
+                                            <a href="tu-lanh-funiki" class="c-btnbox   filter-manu" data-href="funiki"
+                                                data-id="36324" data-name="Funiki">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Funiki-124x48-1.png" width="68"
+                                                    height="30" alt="Funiki">
+                                            </a>
+                                            <a href="tu-lanh-beko" class="c-btnbox   filter-manu" data-href="beko"
+                                                data-id="5353" data-name="Beko">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Beko1943-b_0.png" width="68" height="30"
+                                                    alt="Beko">
+                                            </a>
+                                            <a href="tu-lanh-casper" class="c-btnbox   filter-manu" data-href="casper"
+                                                data-id="31730" data-name="Casper">
+                                                <img src="//cdn.tgdd.vn/Brand/2/10-200x80-1.png" width="68" height="30"
+                                                    alt="Casper">
+                                            </a>
+                                            <a href="tu-lanh-electrolux" class="c-btnbox   filter-manu"
+                                                data-href="electrolux" data-id="2067" data-name="Electrolux">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Electrolux1943-b_56.png" width="68"
+                                                    height="30" alt="Electrolux">
+                                            </a>
+                                            <a href="tu-lanh-hitachi" class="c-btnbox   filter-manu" data-href="hitachi"
+                                                data-id="2013" data-name="Hitachi">
+                                                <img src="//cdn.tgdd.vn/Brand/2/Hitachi1943-b_11.png" width="68"
+                                                    height="30" alt="Hitachi">
+                                            </a>
 
-                            <div class="filter-item " propertyid="39398">
-                                <div class="filter-item__title jsTitle noselecttext" data-textorg="Kiểu tủ"><span>Kiểu
-                                        tủ</span></div>
-                                <div class="filter-show" data-groupid="39398">
-                                    <div class="filter-list  props" data-propid="39398">
-                                        <a href="tu-lanh-mini" data-order="2" data-tooltip="" data-smooth="1"
-                                            data-href="mini" data-id="256601" class="c-btnbox has-icon  ">
-                                            <img alt="Mini" src="https://cdn.tgdd.vn/ValueIcons/logo-tu-mini2.png">
-                                            Mini </a>
-                                        <a href="tu-lanh-side-by-side" data-order="3" data-tooltip="" data-smooth="1"
-                                            data-href="side-by-side" data-id="256602" class="c-btnbox has-icon  ">
-                                            <img alt="Side by Side"
-                                                src="https://cdn.tgdd.vn/ValueIcons/side-by-side.png">
-                                            Side by Side </a>
-                                        <a href="tu-lanh-nhieu-cua" data-order="4" data-tooltip="" data-smooth="1"
-                                            data-href="nhieu-cua" data-id="256603" class="c-btnbox has-icon  ">
-                                            <img alt="Tủ nhiều cửa"
-                                                src="https://cdn.tgdd.vn/ValueIcons/tu-nhieu-cua.png">
-                                            Tủ nhiều cửa </a>
-                                        <a href="tu-lanh-ngan-da-duoi" data-order="5" data-tooltip="" data-smooth="1"
-                                            data-href="ngan-da-duoi" data-id="256604" class="c-btnbox has-icon  ">
-                                            <img alt="Ngăn đá dưới"
-                                                src="https://cdn.tgdd.vn/ValueIcons/ngan-da-duoi.png">
-                                            Ngăn đá dưới </a>
-                                        <a href="tu-lanh-ngan-da-tren" data-order="6" data-tooltip="" data-smooth="1"
-                                            data-href="ngan-da-tren" data-id="256605" class="c-btnbox has-icon  ">
-                                            <img alt="Ngăn đá trên"
-                                                src="https://cdn.tgdd.vn/ValueIcons/ngan-da-tren.png">
-                                            Ngăn đá trên </a>
-                                        <a href="tu-lanh-1-cua-linh-hoat" data-order="7" data-tooltip="" data-smooth="1"
-                                            data-href="1-cua-linh-hoat" data-id="256606" class="c-btnbox has-icon  ">
-                                            <img alt="1 cửa linh hoạt"
-                                                src="https://cdn.tgdd.vn/ValueIcons/tu-lanh-1-canh.png">
-                                            1 cửa linh hoạt </a>
-                                    </div>
-                                    <div class="filter-button filter-button-sticky">
-                                        <a href="javascript:void(0)" class="btn-filter-close">Bỏ chọn</a>
-                                        <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
-                                                class="total-reloading">222</b> kết quả</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="filter-item " propertyid="21152">
-                                <div class="filter-item__title jsTitle noselecttext" data-textorg="Số cánh cửa"><span>Số
-                                        cánh cửa</span></div>
-                                <div class="filter-show" data-groupid="21152">
-                                    <div class="filter-list  props" data-propid="21152">
-                                        <a href="tu-lanh-1-canh" data-order="2" data-tooltip="" data-smooth="1"
-                                            data-href="1-canh" data-id="155241" class="c-btnbox   ">
-                                            1 cánh </a>
-                                        <a href="tu-lanh-2-canh" data-order="3" data-tooltip="" data-smooth="1"
-                                            data-href="2-canh" data-id="149254" class="c-btnbox   ">
-                                            2 cánh </a>
-                                        <a href="tu-lanh-3-canh" data-order="4" data-tooltip="" data-smooth="1"
-                                            data-href="3-canh" data-id="149255" class="c-btnbox   ">
-                                            3 cánh </a>
-                                        <a href="tu-lanh-4-canh" data-order="5" data-tooltip="" data-smooth="1"
-                                            data-href="4-canh" data-id="149256" class="c-btnbox   ">
-                                            4 cánh </a>
-                                        <a href="tu-lanh-6-canh" data-order="7" data-tooltip="" data-smooth="1"
-                                            data-href="6-canh" data-id="149789" class="c-btnbox   ">
-                                            6 cánh </a>
-                                    </div>
-                                    <div class="filter-button filter-button-sticky">
-                                        <a href="javascript:void(0)" class="btn-filter-close">Bỏ chọn</a>
-                                        <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
-                                                class="total-reloading">222</b> kết quả</a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="filter-item warpper-price-outside">
-                                <div class="filter-item__title jsTitle">
-                                    <div class="arrow-filter"></div><span>Giá</span>
-                                </div>
-                                <div class="filter-show">
-                                    <div class="filter-list price">
-                                        <a href="tu-lanh?p=duoi-8-trieu" data-from="-1" data-to="8000000"
-                                            data-href="duoi-8-trieu" class="c-btnbox " data-id="400">Dưới 8 triệu
-                                        </a>
-                                        <a href="tu-lanh?p=tu-8-12-trieu" data-from="8000000" data-to="12000000"
-                                            data-href="tu-8-12-trieu" class="c-btnbox " data-id="402">Từ 8 - 12 triệu
-                                        </a>
-                                        <a href="tu-lanh?p=tu-12-15-trieu" data-from="12000000" data-to="15000000"
-                                            data-href="tu-12-15-trieu" class="c-btnbox " data-id="401">Từ 12 - 15 triệu
-                                        </a>
-                                        <a href="tu-lanh?p=tu-15-20-trieu" data-from="15000000" data-to="20000000"
-                                            data-href="tu-15-20-trieu" class="c-btnbox " data-id="577">Từ 15 - 20 triệu
-                                        </a>
-                                        <a href="tu-lanh?p=tu-20-30-trieu" data-from="20000000" data-to="30000000"
-                                            data-href="tu-20-30-trieu" class="c-btnbox " data-id="928">Từ 20 - 30 triệu
-                                        </a>
-                                        <a href="tu-lanh?p=tren-30-trieu" data-from="30000000" data-to="-1"
-                                            data-href="tren-30-trieu" class="c-btnbox " data-id="929">Trên 30 triệu
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="filter-item " propertyid="6961">
-                                <div class="filter-item__title jsTitle noselecttext" data-textorg="Dung tích"><span>Dung
-                                        tích</span></div>
-                                <div class="filter-show" data-groupid="6961">
-                                    <div class="filter-list  props" data-propid="6961">
-                                        <a href="tu-lanh?g=duoi-150-lit" data-order="1" data-tooltip="" data-smooth="0"
-                                            data-href="duoi-150-lit" data-id="44674" class="c-btnbox   ">
-                                            Dưới 150 lít </a>
-                                        <a href="tu-lanh-tu-150-200-lit" data-order="2" data-tooltip="" data-smooth="1"
-                                            data-href="tu-150-200-lit" data-id="269071" class="c-btnbox   ">
-                                            Từ 150 - 200 lít </a>
-                                        <a href="tu-lanh-tu-201-300-lit" data-order="3" data-tooltip="" data-smooth="1"
-                                            data-href="tu-201-300-lit" data-id="269072" class="c-btnbox   ">
-                                            Từ 201 - 300 lít </a>
-                                        <a href="tu-lanh-tu-301-350-lit" data-order="4" data-tooltip="" data-smooth="1"
-                                            data-href="tu-301-350-lit" data-id="269073" class="c-btnbox   ">
-                                            Từ 301 - 350 lít </a>
-                                        <a href="tu-lanh-tu-351-400-lit" data-order="5" data-tooltip="" data-smooth="1"
-                                            data-href="tu-351-400-lit" data-id="269074" class="c-btnbox   ">
-                                            Từ 351 - 400 lít </a>
-                                        <a href="tu-lanh-tu-401-500-lit" data-order="7" data-tooltip="" data-smooth="1"
-                                            data-href="tu-401-500-lit" data-id="269075" class="c-btnbox   ">
-                                            Từ 401 - 500 lít </a>
-                                        <a href="tu-lanh-tu-501-650-lit" data-order="8" data-tooltip="" data-smooth="1"
-                                            data-href="tu-501-650-lit" data-id="269076" class="c-btnbox   ">
-                                            Từ 501 - 650 lít </a>
-                                        <a href="tu-lanh-tren-650-lit" data-order="9" data-tooltip="" data-smooth="1"
-                                            data-href="tren-650-lit" data-id="269077" class="c-btnbox   ">
-                                            Trên 650 lít </a>
-
-
-                                        <div class="prop-minmax capacity text-active" data-type="capacity"
-                                            data-unit="lít" data-propid="6961" data-activetxt="">
-                                            <p class="range-toggle">
-                                                <a href="javascript:;" class="prevent" onclick="loadRangeInput(this)">
-                                                    <span>Hoặc tùy chọn dung tích</span>
-                                                </a>
-                                            </p>
-                                            <div class="container">
-                                                <div class="prop-minmax-input">
-                                                    <div class="input-box">
-                                                        <label>Từ</label>
-                                                        <span class="input-from">
-                                                            <input type="number" class="min" name="capacity-min-value"
-                                                                placeholder="50" data-minvalue="50" value="">
-                                                            <label class="place-holder">lít</label>
-                                                        </span>
-                                                        <label>Đến</label>
-                                                        <span class="input-to">
-                                                            <input type="number" class="max" name="capacity-max-value"
-                                                                placeholder="700" data-maxvalue="700" value="">
-                                                            <label class="place-holder">lít</label>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <div class="filter-button filter-button-sticky">
-                                        <a href="javascript:void(0)" class="btn-filter-close">Bỏ
-                                            chọn</a>
-                                        <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
-                                                class="total-reloading">222</b> kết quả</a>
+                                </div>
+
+                                <div class="filter-item " propertyid="39398">
+                                    <div class="filter-item__title jsTitle noselecttext" data-textorg="Kiểu tủ">
+                                        <span>Kiểu
+                                            tủ</span>
+                                    </div>
+                                    <div class="filter-show" data-groupid="39398">
+                                        <div class="filter-list  props" data-propid="39398">
+                                            <a href="tu-lanh-mini" data-order="2" data-tooltip="" data-smooth="1"
+                                                data-href="mini" data-id="256601" class="c-btnbox has-icon  ">
+                                                <img alt="Mini" src="https://cdn.tgdd.vn/ValueIcons/logo-tu-mini2.png">
+                                                Mini </a>
+                                            <a href="tu-lanh-side-by-side" data-order="3" data-tooltip=""
+                                                data-smooth="1" data-href="side-by-side" data-id="256602"
+                                                class="c-btnbox has-icon  ">
+                                                <img alt="Side by Side"
+                                                    src="https://cdn.tgdd.vn/ValueIcons/side-by-side.png">
+                                                Side by Side </a>
+                                            <a href="tu-lanh-nhieu-cua" data-order="4" data-tooltip="" data-smooth="1"
+                                                data-href="nhieu-cua" data-id="256603" class="c-btnbox has-icon  ">
+                                                <img alt="Tủ nhiều cửa"
+                                                    src="https://cdn.tgdd.vn/ValueIcons/tu-nhieu-cua.png">
+                                                Tủ nhiều cửa </a>
+                                            <a href="tu-lanh-ngan-da-duoi" data-order="5" data-tooltip=""
+                                                data-smooth="1" data-href="ngan-da-duoi" data-id="256604"
+                                                class="c-btnbox has-icon  ">
+                                                <img alt="Ngăn đá dưới"
+                                                    src="https://cdn.tgdd.vn/ValueIcons/ngan-da-duoi.png">
+                                                Ngăn đá dưới </a>
+                                            <a href="tu-lanh-ngan-da-tren" data-order="6" data-tooltip=""
+                                                data-smooth="1" data-href="ngan-da-tren" data-id="256605"
+                                                class="c-btnbox has-icon  ">
+                                                <img alt="Ngăn đá trên"
+                                                    src="https://cdn.tgdd.vn/ValueIcons/ngan-da-tren.png">
+                                                Ngăn đá trên </a>
+                                            <a href="tu-lanh-1-cua-linh-hoat" data-order="7" data-tooltip=""
+                                                data-smooth="1" data-href="1-cua-linh-hoat" data-id="256606"
+                                                class="c-btnbox has-icon  ">
+                                                <img alt="1 cửa linh hoạt"
+                                                    src="https://cdn.tgdd.vn/ValueIcons/tu-lanh-1-canh.png">
+                                                1 cửa linh hoạt </a>
+                                        </div>
+                                        <div class="filter-button filter-button-sticky">
+                                            <a href="javascript:void(0)" class="btn-filter-close">Bỏ chọn</a>
+                                            <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
+                                                    class="total-reloading">222</b> kết quả</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="filter-item " propertyid="21152">
+                                    <div class="filter-item__title jsTitle noselecttext" data-textorg="Số cánh cửa">
+                                        <span>Số
+                                            cánh cửa</span>
+                                    </div>
+                                    <div class="filter-show" data-groupid="21152">
+                                        <div class="filter-list  props" data-propid="21152">
+                                            <a href="tu-lanh-1-canh" data-order="2" data-tooltip="" data-smooth="1"
+                                                data-href="1-canh" data-id="155241" class="c-btnbox   ">
+                                                1 cánh </a>
+                                            <a href="tu-lanh-2-canh" data-order="3" data-tooltip="" data-smooth="1"
+                                                data-href="2-canh" data-id="149254" class="c-btnbox   ">
+                                                2 cánh </a>
+                                            <a href="tu-lanh-3-canh" data-order="4" data-tooltip="" data-smooth="1"
+                                                data-href="3-canh" data-id="149255" class="c-btnbox   ">
+                                                3 cánh </a>
+                                            <a href="tu-lanh-4-canh" data-order="5" data-tooltip="" data-smooth="1"
+                                                data-href="4-canh" data-id="149256" class="c-btnbox   ">
+                                                4 cánh </a>
+                                            <a href="tu-lanh-6-canh" data-order="7" data-tooltip="" data-smooth="1"
+                                                data-href="6-canh" data-id="149789" class="c-btnbox   ">
+                                                6 cánh </a>
+                                        </div>
+                                        <div class="filter-button filter-button-sticky">
+                                            <a href="javascript:void(0)" class="btn-filter-close">Bỏ chọn</a>
+                                            <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
+                                                    class="total-reloading">222</b> kết quả</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="filter-item warpper-price-outside">
+                                    <div class="filter-item__title jsTitle">
+                                        <div class="arrow-filter"></div><span>Giá</span>
+                                    </div>
+                                    <div class="filter-show">
+                                        <div class="filter-list price">
+                                            <a href="tu-lanh?p=duoi-8-trieu" data-from="-1" data-to="8000000"
+                                                data-href="duoi-8-trieu" class="c-btnbox " data-id="400">Dưới 8 triệu
+                                            </a>
+                                            <a href="tu-lanh?p=tu-8-12-trieu" data-from="8000000" data-to="12000000"
+                                                data-href="tu-8-12-trieu" class="c-btnbox " data-id="402">Từ 8 - 12
+                                                triệu
+                                            </a>
+                                            <a href="tu-lanh?p=tu-12-15-trieu" data-from="12000000" data-to="15000000"
+                                                data-href="tu-12-15-trieu" class="c-btnbox " data-id="401">Từ 12 - 15
+                                                triệu
+                                            </a>
+                                            <a href="tu-lanh?p=tu-15-20-trieu" data-from="15000000" data-to="20000000"
+                                                data-href="tu-15-20-trieu" class="c-btnbox " data-id="577">Từ 15 - 20
+                                                triệu
+                                            </a>
+                                            <a href="tu-lanh?p=tu-20-30-trieu" data-from="20000000" data-to="30000000"
+                                                data-href="tu-20-30-trieu" class="c-btnbox " data-id="928">Từ 20 - 30
+                                                triệu
+                                            </a>
+                                            <a href="tu-lanh?p=tren-30-trieu" data-from="30000000" data-to="-1"
+                                                data-href="tren-30-trieu" class="c-btnbox " data-id="929">Trên 30 triệu
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter-item " propertyid="6961">
+                                    <div class="filter-item__title jsTitle noselecttext" data-textorg="Dung tích">
+                                        <span>Dung
+                                            tích</span>
+                                    </div>
+                                    <div class="filter-show" data-groupid="6961">
+                                        <div class="filter-list  props" data-propid="6961">
+                                            <a href="tu-lanh?g=duoi-150-lit" data-order="1" data-tooltip=""
+                                                data-smooth="0" data-href="duoi-150-lit" data-id="44674"
+                                                class="c-btnbox   ">
+                                                Dưới 150 lít </a>
+                                            <a href="tu-lanh-tu-150-200-lit" data-order="2" data-tooltip=""
+                                                data-smooth="1" data-href="tu-150-200-lit" data-id="269071"
+                                                class="c-btnbox   ">
+                                                Từ 150 - 200 lít </a>
+                                            <a href="tu-lanh-tu-201-300-lit" data-order="3" data-tooltip=""
+                                                data-smooth="1" data-href="tu-201-300-lit" data-id="269072"
+                                                class="c-btnbox   ">
+                                                Từ 201 - 300 lít </a>
+                                            <a href="tu-lanh-tu-301-350-lit" data-order="4" data-tooltip=""
+                                                data-smooth="1" data-href="tu-301-350-lit" data-id="269073"
+                                                class="c-btnbox   ">
+                                                Từ 301 - 350 lít </a>
+                                            <a href="tu-lanh-tu-351-400-lit" data-order="5" data-tooltip=""
+                                                data-smooth="1" data-href="tu-351-400-lit" data-id="269074"
+                                                class="c-btnbox   ">
+                                                Từ 351 - 400 lít </a>
+                                            <a href="tu-lanh-tu-401-500-lit" data-order="7" data-tooltip=""
+                                                data-smooth="1" data-href="tu-401-500-lit" data-id="269075"
+                                                class="c-btnbox   ">
+                                                Từ 401 - 500 lít </a>
+                                            <a href="tu-lanh-tu-501-650-lit" data-order="8" data-tooltip=""
+                                                data-smooth="1" data-href="tu-501-650-lit" data-id="269076"
+                                                class="c-btnbox   ">
+                                                Từ 501 - 650 lít </a>
+                                            <a href="tu-lanh-tren-650-lit" data-order="9" data-tooltip=""
+                                                data-smooth="1" data-href="tren-650-lit" data-id="269077"
+                                                class="c-btnbox   ">
+                                                Trên 650 lít </a>
+
+                                        </div>
+                                        <div class="filter-button filter-button-sticky">
+                                            <a href="javascript:void(0)" class="btn-filter-close">Bỏ
+                                                chọn</a>
+                                            <a href="javascript:filterPros();" class="btn-filter-readmore">Xem <b
+                                                    class="total-reloading">222</b> kết quả</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="filter-item size-filter" propertyid="6584">
+                                    <div class="filter-item__title jsTitle noselecttext" data-textorg="Kích thước">
+                                        <div class="arrow-filter"></div>
+                                        <span>Kích thước</span>
                                     </div>
 
                                 </div>
-                            </div>
-
-                            <div class="filter-item size-filter" propertyid="6584">
-                                <div class="filter-item__title jsTitle noselecttext" data-textorg="Kích thước">
-                                    <div class="arrow-filter"></div>
-                                    <span>Kích thước</span>
-                                </div>
-                               
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="container">
                     <div class="dok-sort-cate">
                         <div class="dok-sort-cate-right">
                             <h2 class="sort-total"><b>26</b> Tivi</h2>

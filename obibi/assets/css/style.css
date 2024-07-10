@@ -7169,10 +7169,21 @@ input:checked+label.rdo-tile-label {
 
 }
 
+.filter-sticky {
+  transition: var(--transition-45);
+  z-index: 1234;
+  background: #fff;
+  padding-top: 10px;
+}
 
-.dok-product-filter.up {}
+.dok-product-filter.down .filter-sticky{
+  position: static !important;
+}
 
-.dok-product-filter.down {}
+.dok-product-filter.up .filter-sticky {
+  top: 70px !important;
+}
+
 
 .dok-filters {
   transition: var(--transition-45);
