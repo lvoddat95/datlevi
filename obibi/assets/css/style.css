@@ -17,14 +17,14 @@ Tags:
 ********************************************************************************************************/
 :root {
   --main-color: #222;
-  --sub-color: #FFA832;
-  --sub-color2: #FFA832;
-  --price-color: #FFA832;
-  --buy-color: #FFA832;
+  --sub-color: #d70018;
+  --sub-color2: #d70018;
+  --price-color: #d70018;
+  --buy-color: #d70018;
 
   --silver: #ccc;
   --link-color: #3f3f3f;
-  --link-hover-color: #FFA832;
+  --link-hover-color: #d70018;
   --gray: #999;
   --bg-badge: #fff0f1;
   --border-color: rgb(67 87 133 / 20%);
@@ -1820,7 +1820,7 @@ input:checked+label.rdo-tile-label {
 #header {
   position: sticky;
   top: 0;
-  z-index: 1111;
+  z-index: 1000;
 }
 
 .header-top {

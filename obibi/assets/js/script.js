@@ -142,6 +142,14 @@ $(function () {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		pagination: {
+			el: ".swiper-pagination-number",
+			clickable: true,
+			type: 'custom',
+			renderCustom: function (current, total) {
+				return (total - 1) + '/' + current.slides.length; 
+			},
+		},
 		thumbs: {
 			swiper: swiper,
 		},
