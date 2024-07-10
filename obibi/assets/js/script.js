@@ -147,7 +147,7 @@ $(function () {
 			clickable: true,
 			type: 'custom',
 			renderCustom: function (current, total) {
-				return (total - 1) + '/' + current.slides.length; 
+				return (total) + '/' + current.slides.length;
 			},
 		},
 		thumbs: {
@@ -292,14 +292,24 @@ $(function () {
 		freeMode: true,
 	});
 
-	// Len dau trang
-	$(".go-top").on("click", function () {
-		$("html, body").animate({
-			scrollTop: 0,
-		},
-			500
-		);
-	});
+	if ($('#go-top').length > 0) {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#go-top').fadeIn();
+			} else {
+				$('#go-top').fadeOut();
+			}
+		});
+		// Len dau trang
+		$("#go-top").on("click", function () {
+			$("html, body").animate({
+				scrollTop: 0,
+			},
+				500
+			);
+		});
+	}
+
 
 	$(document).on("click", "#clickShowSendReview", function () {
 		$("#dok_review_pdp_show_npv").css("display", "none");
