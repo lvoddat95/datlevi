@@ -41,6 +41,13 @@ $(function () {
 		});
 	};
 
+	if ($('.filter-item__title').length > 0) {
+		$('.filter-item__title').click(function () {
+			$('.filter-item').removeClass('active');
+			$(this).parent('.filter-item').toggleClass('active');
+		});
+	}
+
 	if ($('.show').length > 0) {
 		$('.show').click(function () {
 			const desc = $('.short');
