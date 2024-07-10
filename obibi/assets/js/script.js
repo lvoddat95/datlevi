@@ -36,7 +36,8 @@ $(function () {
 
 		$('.dok-menu-mobile-close').click(function () {
 			$('.dok-header-item-mobile').removeClass('active');
-			$('#menu-main').removeClass('active');
+			$('#menu-main').removeClass('active').css("display", "none");
+			$('.dok-header-overlay').removeClass('active');
 		});
 	};
 
