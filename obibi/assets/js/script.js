@@ -76,8 +76,9 @@ $(function () {
 		});
 		if ($('.close-popup-total').length > 0) {
 			$(".close-popup-total").click(function (e) {
+				console.log($('.dok_filter_total'))
 				e.preventDefault();
-				$('#dok_filter_total').collapse('hide');
+				$('.dok_filter_total').collapse('hide');
 			});
 		}
 		$('body').on("click", ".overlay-filter", function (e) {
