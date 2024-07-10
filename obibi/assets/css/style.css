@@ -17,14 +17,14 @@ Tags:
 ********************************************************************************************************/
 :root {
   --main-color: #222;
-  --sub-color: #d70018;
-  --sub-color2: #d70018;
+  --sub-color: #FFA832;
+  --sub-color2: #FF9800;
   --price-color: #d70018;
   --buy-color: #d70018;
 
   --silver: #ccc;
   --link-color: #3f3f3f;
-  --link-hover-color: #d70018;
+  --link-hover-color: #FFA832;
   --gray: #999;
   --bg-badge: #fff0f1;
   --border-color: rgb(67 87 133 / 20%);
@@ -1951,7 +1951,7 @@ input:checked+label.rdo-tile-label {
 #dok-header-top {
   height: 70px;
   padding: 10px 0;
-  background: var(--main-color);
+  background: var(--sub-color);
 }
 
 .dok-header-item-mobile,
@@ -2054,7 +2054,7 @@ input:checked+label.rdo-tile-label {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: var(--sub-color);
+  background-color: var(--buy-color);
   display: block;
   line-height: 20px;
   text-align: center;
@@ -5266,7 +5266,7 @@ input:checked+label.rdo-tile-label {
 
 .box-product-price .price {
   font-size: var(--fz-30);
-  color: var(--sub-color2);
+  color: var(--price-color);
   display: unset;
   font-weight: bold;
 }
