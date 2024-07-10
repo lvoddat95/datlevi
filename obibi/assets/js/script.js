@@ -302,7 +302,8 @@ $(function () {
 			}
 		});
 		// Len dau trang
-		$("#go-top").on("click", function () {
+		$("#go-top").on("click", function (e) {
+			e.preventDefault();
 			$("html, body").animate({
 				scrollTop: 0,
 			},
@@ -312,18 +313,32 @@ $(function () {
 	}
 
 
-	$(document).on("click", "#clickShowSendReview", function () {
-		$("#dok_review_pdp_show_npv").css("display", "none");
-		$("#clickShowSendReview").css("display", "none");
-		$("#send_vote_npv").css("display", "flex");
-		$(".wrap_post_composer_pdp").css("display", "block");
-	});
+
+	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
 
 });
 
 
+var lastScrollTop = 0;
+var scrollTimeout;
 
+function toggleScrollClass(selector) {
+	$(window).scroll(function () {
+		clearTimeout(scrollTimeout);
 
+		var st = $(this).scrollTop();
+		if (st > lastScrollTop) {
+			$(selector).removeClass('up stop ').addClass('down');
+		} else {
+			$(selector).removeClass('down stop').addClass('up');
+		}
+		lastScrollTop = st;
+
+		scrollTimeout = setTimeout(function () {
+			$(selector).addClass('stop');
+		}, 150);
+	});
+}
 function do_active_slt(elem) {
 	// get all 'a' elements
 	var li = document.querySelectorAll('ul.ul-star > li');
