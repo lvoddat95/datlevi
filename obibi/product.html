@@ -23,7 +23,7 @@
 <body class="product-page">
     <div id="master-container">
         <div id="header" class="header">
-            <div>
+            <div class="">
                 <div id="dok-header-top">
                     <div class="container">
                         <div class="row align-items-center">
@@ -669,12 +669,149 @@
 
             <section class="dok-detail-product">
                 <div class="container">
-                    <div class="box-product-top">
+
+                    <!-- Modal -->
+                    <div id="dok-modal-bottom-up" class="modal fade dok-modal-bottom-up" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable box-product-mobile">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="box-product-price">
+                                        <strong class="price">
+                                            <span>2.990.000 ₫</span>
+                                            <del><span>4.150.000 ₫</span></del>
+                                        </strong>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="box-product-filter">
+                                        <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn màu sắc</p>
+                                        <div class="product-filter-list">
+                                            <label>
+                                                <input type="radio" name="Color">
+                                                <span class="radio-btn">
+                                                    <img title="Đỏ" alt=" Đỏ"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-do-red-4_2_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Đỏ</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Color">
+                                                <span class="radio-btn">
+                                                    <img title="Xanh lá" alt=" Xanh lá"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-xanh-reu-forest-green-4_1_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Xanh lá</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Color">
+                                                <span class="radio-btn">
+                                                    <img title="Đen" alt=" Đen"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-den-black-4_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Đen</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+
+                                            <label class="disable">
+                                                <input type="radio" name="Color">
+                                                <span class="radio-btn">
+                                                    <img title="Camo" alt=" Camo"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-camo-squad-4_2.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Camo</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="box-product-filter">
+                                        <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn phiên bản
+                                        </p>
+                                        <div class="product-filter-list">
+                                            <label>
+                                                <input type="radio" name="Bass">
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 20cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Bass">
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 30cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Bass">
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 40cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer ">
+                                    <div class="modal-buy-footer m-0 w-100">
+                                        <div class="row gx-4">
+                                            <div class="d-flex align-items-center col-5">
+                                                <span class="me-3 fz-12 text-nowrap">Số lượng:</span>
+                                                <input type="number" class="form-control text-center" placeholder="0" />
+                                            </div>
+                                            <div class="col-7">
+                                                <button type="button"
+                                                    class="btn btn-danger text-white d-block w-100">Mua
+                                                    ngay</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-product-top box-product-desktop d-lg-block d-none">
                         <div class="d-flex align-items-center flex-1">
                             <div class="d-flex align-items-center">
                                 <div class="box-product-name">
                                     <h1> Loa Bluetooth JBL Charge 5 </h1>
                                 </div>
+
+
 
                                 <div class="box-rating">
                                     <div class="product__box-rating">
@@ -712,9 +849,9 @@
                         </div>
                     </div>
 
-                    <div class="dok-product-block mb-4">
-                        <div class="row mb-4">
-                            <div class="col-md-7 col-sm-6 col-xs-12">
+                    <div class="dok-product-block">
+                        <div class="row">
+                            <div class="col-xl-7 col-lg-6 col-md-12">
                                 <div class="dok-product-image">
                                     <div class="swiper dok-product-img-main">
                                         <div class="swiper-wrapper">
@@ -831,226 +968,452 @@
                                     </div>
                                 </div>
 
-                                <div class="box-warranty-info">
-                                    <div class="box-title text-center">
-                                        <p>Đặc điểm nổi bật</p>
+                                <div class="box-product-mobile d-lg-none d-block">
+                                    <div class="box-product-price mb-0">
+                                        <strong class="price">
+                                            <span>2.990.000 ₫</span>
+                                            <del><span>4.150.000 ₫</span></del>
+                                        </strong>
                                     </div>
-                                    <div class="item-warranty-info">
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
-                                            30Hz-20Khz</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
-                                            30Hz-20Khz</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
+
+                                    <div class="box-product-name">
+                                        <h1> Loa Bluetooth JBL Charge 5 </h1>
+                                    </div>
+
+                                    <hr />
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <b class="me-1"><i class="fa fa-star text-warning"></i> 4.9/5</b>
+                                            <div class="text-primary"><a href="#dok-reviews">(100 đánh giá)</a></div>
+                                            <span class="text-secondary mx-3">|</span>
+                                            <div>
+                                                Đã bán: <a class="text-primary fw-bold" href="">100</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="box-stock">
+                                            <span class="text-success"><i class="fa fa-check-circle"></i> Còn
+                                                hàng</span>
+                                            <!-- <span class="text-warning"><i class="fa fa-clock"></i> Chờ đặt hàng</span> -->
+                                            <!-- <span class="text-danger"><i class="fa fa-times-circle"></i> Hết hàng</span> -->
+                                        </div>
+                                    </div>
+
+                                    <hr />
+
+                                    <ul class="box-product-extrainfo">
+                                        <li>
+                                            <strong>Đơn vị</strong>Cái
+                                        </li>
+
+                                        <li>
+                                            <strong>Tình trạng loa</strong> Fullbox - New 100%
+                                        </li>
+                                        <li>
+                                            <strong>Nguồn gốc/xuất xứ</strong>JBL / USA
+                                        </li>
+                                        <li>
+                                            <strong>Bảo hành</strong> 12 tháng
+                                        </li>
+                                    </ul>
+
+                           
+
+                                    <ul class="box-policy">
+                                        <li><i class="fad fa-badge-check"></i>
+                                            <div class="rightctpc">
+                                                <p>Chính hãng 100%</p>
+                                                <p>Đền gấp 3 lần nếu phát hiện hàng giả</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-arrows-rotate"></i>
+                                            <div class="rightctpc">
+                                                <p>1 đổi 1 trong 15 ngày</p>
+                                                <p>Nếu có lỗi phần cứng từ NSX <br> <a href="">Xem chi tiết</a></p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-screwdriver-wrench"></i>
+                                            <div class="rightctpc">
+                                                <p>Lắp đặt miễn phí</p>
+                                                <p>Giao hàng, lắp đặt và hướng dẫn sử dụng.</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-house-person-return"></i>
+                                            <div class="rightctpc">
+                                                <p>Bảo hành tại nhà</p>
+                                                <p>Hỗ trợ bảo hành tại nhà Dàn loa, Dàn nhạc - Phim</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="box-buy-options py-2 mb-3">
+                                        <div class="d-flex align-items-center mb-1">
+                                            <span class="fz-14 fw-bold">Chọn các tuỳ chọn</span>
+                                            <div class="ms-auto">
+                                                <a href="javascript:void(0);" class="text-secondary" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#dok-modal-bottom-up">
+                                                    Màu sắc, Kích cỡ
+                                                    <i class="fa fa-angle-right ms-2"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="list-img">
+                                             <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
+                                                </a>
+
+                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
+                                                </a>
+
+                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
+                                                </a>
+
+                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
+                                                </a>
+
+                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
+                                                </a>
+
+                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg"
+                                                    >
+                                                    <img class="img-fluid"
+                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
+                                                </a>
+                                        </div>
+
+                                               
+                                        
+                                    </div>
+
+                                    <div class="box-product-promotion">
+                                        <div class="box-product-promotion-header ">
+                                            <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                                            <span>Khuyến mãi</span>
+                                        </div>
+                                        <div class="box-product-promotion-content">
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 10m dây loa
+                                                trị
+                                                giá 300.000đ</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 2 jack neutrik
+                                                trị
+                                                giá 120.000đ</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Miễn phí set up,
+                                                lắp
+                                                đặt với đội ngũ chuyên sâu</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Giao hàng toàn
+                                                quốc,
+                                                thanh toán COD</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trả góp chỉ từ 1%,
+                                                thủ
+                                                tục đơn giản <a href="">(Click xem chi tiết)</a> </p>
+                                        </div>
+                                    </div>
+
+                                    <p class="my-lg-0 my-3 fz-12"><i
+                                            class="fa-solid fa-bolt-lightning text-warning me-2"></i> Đã có
+                                        1000 người quan tâm tới sản phẩm này và 100 người đã mua. Mua ngay!</p>
+
+                                    <div class="box-warranty-info">
+                                        <div class="box-title text-center">
+                                            <p>Đặc điểm nổi bật</p>
+                                        </div>
+                                        <div class="item-warranty-info">
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
+                                                30Hz-20Khz</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
+                                                30Hz-20Khz</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dok-widget dok-widget-thong-so">
+                                        <h2 class="fw-bold fz-18 mb-3">Thông số kỹ thuật</h2>
+                                        <ul class="technical-content">
+                                            <li class="technical-content-item">
+                                                <p>Thời lượng pin </p>
+                                                <div>20 giờ </div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Công suất </p>
+                                                <div>40 W</div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Chống nước</p>
+                                                <div>IP67</div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Tính năng khác</p>
+                                                <div>Sạc cho thiết bị khác qua cổng USB </div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Số loa kết nối cùng lúc</p>
+                                                <div>2 loa</div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Hãng sản xuất</p>
+                                                <div>JBL</div>
+                                            </li>
+                                            <li class="technical-content-item">
+                                                <p>Phạm vi kết nối </p>
+                                                <div>10 m</div>
+                                            </li>
+                                        </ul>
+                                        <a class="readmore-btn mt-4 mb-0 down" href="javascript:void(0);"
+                                            data-bs-toggle="modal" data-bs-target="#dok-technical-full">
+                                            <span>Xem cấu hình chi tiết</span>
+                                        </a>
                                     </div>
                                 </div>
 
-                                <ul class="box-policy ent-flex">
-                                    <li><i class="fad fa-badge-check"></i>
-                                        <div class="rightctpc">
-                                            <p>Chính hãng 100%</p>
-                                            <p>Đền gấp 3 lần nếu phát hiện hàng giả</p>
+                                <div class="box-product-desktop d-lg-block d-none">
+                                    <div class="box-warranty-info">
+                                        <div class="box-title text-center">
+                                            <p>Đặc điểm nổi bật</p>
                                         </div>
-                                    </li>
-                                    <li><i class="fad fa-arrows-rotate"></i>
-                                        <div class="rightctpc">
-                                            <p>1 đổi 1 trong 15 ngày</p>
-                                            <p>Nếu có lỗi phần cứng từ NSX <br> <a href="">Xem chi tiết</a></p>
+                                        <div class="item-warranty-info">
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Công suất 300W</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
+                                                30Hz-20Khz</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Đáp ứng tần số
+                                                30Hz-20Khz</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trở kháng 9ohm</p>
                                         </div>
-                                    </li>
-                                    <li><i class="fad fa-screwdriver-wrench"></i>
-                                        <div class="rightctpc">
-                                            <p>Lắp đặt miễn phí</p>
-                                            <p>Giao hàng, lắp đặt và hướng dẫn sử dụng.</p>
-                                        </div>
-                                    </li>
-                                    <li><i class="fad fa-house-person-return"></i>
-                                        <div class="rightctpc">
-                                            <p>Bảo hành tại nhà</p>
-                                            <p>Hỗ trợ bảo hành tại nhà Dàn loa, Dàn nhạc - Phim</p>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+
+                                    <ul class="box-policy">
+                                        <li><i class="fad fa-badge-check"></i>
+                                            <div class="rightctpc">
+                                                <p>Chính hãng 100%</p>
+                                                <p>Đền gấp 3 lần nếu phát hiện hàng giả</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-arrows-rotate"></i>
+                                            <div class="rightctpc">
+                                                <p>1 đổi 1 trong 15 ngày</p>
+                                                <p>Nếu có lỗi phần cứng từ NSX <br> <a href="">Xem chi tiết</a></p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-screwdriver-wrench"></i>
+                                            <div class="rightctpc">
+                                                <p>Lắp đặt miễn phí</p>
+                                                <p>Giao hàng, lắp đặt và hướng dẫn sử dụng.</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-house-person-return"></i>
+                                            <div class="rightctpc">
+                                                <p>Bảo hành tại nhà</p>
+                                                <p>Hỗ trợ bảo hành tại nhà Dàn loa, Dàn nhạc - Phim</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
-                            <div class="col-md-5 col-sm-6 col-xs-12 fz-14">
-                                <div class="d-flex justify-content-between ">
-                                    <div>
-                                        Thương hiệu: <a class="text-primary fw-bold" href="">JBL</a>
+                            <div class="col-xl-5 col-lg-6 col-xs-md">
+                                <div class="box-product-desktop d-lg-block d-none">
+                                    <div class="d-flex justify-content-between ">
+                                        <div>
+                                            Thương hiệu: <a class="text-primary fw-bold" href="">JBL</a>
+                                        </div>
+                                        <div>
+                                            Mã SP: <span class="text-dark fw-bold">L.JBL.19</span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        Mã SP: <span class="text-dark fw-bold">L.JBL.19</span>
-                                    </div>
-                                </div>
+                                    <hr>
 
-                                <hr>
-
-                                <div class="box-product-filter">
-                                    <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn màu sắc</p>
-                                    <div class="product-filter-list">
-                                        <label>
-                                            <input type="radio" name="Color" />
-                                            <span class="radio-btn">
-                                                <img title="Đỏ" alt=" Đỏ"
-                                                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-do-red-4_2_1.jpg">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Đỏ</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                    <div class="box-product-filter">
+                                        <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn màu sắc</p>
+                                        <div class="product-filter-list">
+                                            <label>
+                                                <input type="radio" name="Color" />
+                                                <span class="radio-btn">
+                                                    <img title="Đỏ" alt=" Đỏ"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-do-red-4_2_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Đỏ</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="Color" />
-                                            <span class="radio-btn">
-                                                <img title="Xanh lá" alt=" Xanh lá"
-                                                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-xanh-reu-forest-green-4_1_1.jpg">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Xanh lá</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Color" />
+                                                <span class="radio-btn">
+                                                    <img title="Xanh lá" alt=" Xanh lá"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-xanh-reu-forest-green-4_1_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Xanh lá</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="Color" />
-                                            <span class="radio-btn">
-                                                <img title="Đen" alt=" Đen"
-                                                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-den-black-4_1.jpg">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Đen</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Color" />
+                                                <span class="radio-btn">
+                                                    <img title="Đen" alt=" Đen"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-den-black-4_1.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Đen</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
+                                            </label>
 
-                                        <label class="disable">
-                                            <input type="radio" name="Color" />
-                                            <span class="radio-btn">
-                                                <img title="Camo" alt=" Camo"
-                                                    src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-camo-squad-4_2.jpg">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Camo</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                            <label class="disable">
+                                                <input type="radio" name="Color" />
+                                                <span class="radio-btn">
+                                                    <img title="Camo" alt=" Camo"
+                                                        src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-camo-squad-4_2.jpg">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Camo</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="box-product-filter">
-                                    <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn phiên bản</p>
-                                    <div class="product-filter-list">
-                                        <label>
-                                            <input type="radio" name="Bass" />
-                                            <span class="radio-btn">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Bass 20cm</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                    <div class="box-product-filter">
+                                        <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn phiên bản</p>
+                                        <div class="product-filter-list">
+                                            <label>
+                                                <input type="radio" name="Bass" />
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 20cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="Bass" />
-                                            <span class="radio-btn">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Bass 30cm</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Bass" />
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 30cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="Bass" />
-                                            <span class="radio-btn">
-                                                <span class="d-flex text-start flex-column">
-                                                    <b class="text">Bass 40cm</b>
-                                                    <span class="price">
-                                                        2.290.000₫
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="Bass" />
+                                                <span class="radio-btn">
+                                                    <span class="d-flex text-start flex-column">
+                                                        <b class="text">Bass 40cm</b>
+                                                        <span class="price">
+                                                            2.290.000₫
+                                                        </span>
                                                     </span>
                                                 </span>
-                                            </span>
-                                        </label>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <hr>
+                                    <hr>
 
-                                <div class="box-product-price">
-                                    <span class="me-3 fz-14">Giá bán:</span>
-                                    <strong class="price">
-                                        <span>2.990.000 ₫</span>
-                                        <del><span>4.150.000 ₫</span></del>
-                                    </strong>
-                                </div>
-
-                                <ul class="box-product-extrainfo">
-                                    <li>
-                                        <strong>Đơn vị</strong>Cái
-                                    </li>
-
-                                    <li>
-                                        <strong>Tình trạng loa</strong> Fullbox - New 100%
-                                    </li>
-                                    <li>
-                                        <strong>Nguồn gốc/xuất xứ</strong>JBL / USA
-                                    </li>
-                                    <li>
-                                        <strong>Bảo hành</strong> 12 tháng
-                                    </li>
-                                </ul>
-
-                                <div class="box-product-promotion">
-                                    <div class="box-product-promotion-header ">
-                                        <div class="icon"><i class="fa-solid fa-gift"></i></div>
-                                        <span>Khuyến mãi</span>
+                                    <div class="box-product-price">
+                                        <span class="me-3 fz-14">Giá bán:</span>
+                                        <strong class="price">
+                                            <span>2.990.000 ₫</span>
+                                            <del><span>4.150.000 ₫</span></del>
+                                        </strong>
                                     </div>
-                                    <div class="box-product-promotion-content">
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 10m dây loa trị
-                                            giá 300.000đ</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 2 jack neutrik trị
-                                            giá 120.000đ</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Miễn phí set up, lắp
-                                            đặt với đội ngũ chuyên sâu</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Giao hàng toàn quốc,
-                                            thanh toán COD</p>
-                                        <p><i class="fas fa-check-circle text-success me-2"></i> Trả góp chỉ từ 1%, thủ
-                                            tục đơn giản <a href="">(Click xem chi tiết)</a> </p>
+
+                                    <ul class="box-product-extrainfo">
+                                        <li>
+                                            <strong>Đơn vị</strong>Cái
+                                        </li>
+
+                                        <li>
+                                            <strong>Tình trạng loa</strong> Fullbox - New 100%
+                                        </li>
+                                        <li>
+                                            <strong>Nguồn gốc/xuất xứ</strong>JBL / USA
+                                        </li>
+                                        <li>
+                                            <strong>Bảo hành</strong> 12 tháng
+                                        </li>
+                                    </ul>
+
+                                    <div class="box-product-promotion">
+                                        <div class="box-product-promotion-header ">
+                                            <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                                            <span>Khuyến mãi</span>
+                                        </div>
+                                        <div class="box-product-promotion-content">
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 10m dây loa
+                                                trị
+                                                giá 300.000đ</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Tặng 2 jack neutrik
+                                                trị
+                                                giá 120.000đ</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Miễn phí set up,
+                                                lắp
+                                                đặt với đội ngũ chuyên sâu</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Giao hàng toàn
+                                                quốc,
+                                                thanh toán COD</p>
+                                            <p><i class="fas fa-check-circle text-success me-2"></i> Trả góp chỉ từ 1%,
+                                                thủ
+                                                tục đơn giản <a href="">(Click xem chi tiết)</a> </p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="box-order-button-container my-3">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <button class="btn-cta order-button">
-                                            <strong>MUA NGAY</strong>
-                                            <span>(Giao nhanh từ 2 giờ hoặc nhận tại cửa hàng)</span>
-                                        </button>
-                                        <button class="btn-cta add-to-cart-button">
-                                            <i class="far fa-cart-plus"></i>
-                                            <span>Thêm vào giỏ</span>
-                                        </button>
+                                    <div class="box-order-button-container my-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <button class="btn-cta order-button">
+                                                <strong>MUA NGAY</strong>
+                                                <span>(Giao nhanh từ 2 giờ hoặc nhận tại cửa hàng)</span>
+                                            </button>
+                                            <button class="btn-cta add-to-cart-button">
+                                                <i class="far fa-cart-plus"></i>
+                                                <span>Thêm vào giỏ</span>
+                                            </button>
+                                        </div>
                                     </div>
+
+                                    <div class="box-product-banner position-relative overflow-hidden rounded-3 mb-3">
+                                        <a href="" class="w-100 h-100">
+                                            <img src="assets/img/product-banner.webp" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+
+                                    <p class="my-lg-0 my-3 fz-12"><i
+                                            class="fa-solid fa-bolt-lightning text-warning me-2"></i> Đã có
+                                        1000 người quan tâm tới sản phẩm này và 100 người đã mua. Mua ngay!</p>
                                 </div>
 
-                                <div class="box-product-banner position-relative overflow-hidden rounded-3 mb-3">
-                                    <a href="" class="w-100 h-100">
-                                        <img src="assets/img/product-banner.webp" alt="" class="img-fluid">
-                                    </a>
-                                </div>
 
-                                <p class="mb-0 fz-12"><i class="fa-solid fa-bolt-lightning text-warning me-2"></i> Đã có
-                                    1000 người quan tâm tới sản phẩm này và 100 người đã mua. Mua ngay!</p>
                             </div>
                         </div>
                     </div>
@@ -1060,7 +1423,7 @@
             <section class="dok-products mb-4">
                 <div class="container">
 
-                    <hr>
+                    <hr class="d-lg-block d-none" />
 
                     <div class="dok-heading">
                         <h2>Sản phẩm tương tự</h2>
@@ -2687,9 +3050,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 box-product-desktop d-lg-block d-none">
                         <div class="dok-widget-list">
-                            <div class="dok-widget">
+                            <div class="dok-widget dok-widget-thong-so">
                                 <h2 class="fw-bold fz-18 mb-3">Thông số kỹ thuật</h2>
                                 <ul class="technical-content">
                                     <li class="technical-content-item">
