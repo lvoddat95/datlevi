@@ -821,6 +821,7 @@ p.rating-circle-ttl em {
 }
 
 .read-assess__title {
+    font-size: 18px;
     font-weight: 700;
     line-height: 20px
 }
@@ -2198,4 +2199,22 @@ ul.ratingLst li .rh>span label.qtv {
     border: 1px solid #e1e1e1;
     outline: none;
     height: 40px;
+}
+
+@media (max-width: 991px) {
+    .box-cmt-popup .info-pro,
+    .select-star{
+        flex-direction: column;
+    }
+    .read-assess .ul-star{
+        margin-left: 0px;
+    }
+    .list-input{
+        flex-direction: column;
+    }
+    .input-assess{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+
 }

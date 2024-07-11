@@ -4536,6 +4536,7 @@ input:checked+label.rdo-tile-label {
   border-radius: var(--radius-8);
   color: var(--link-color);
   background: #fff;
+  white-space: nowrap;
 }
 
 .dok-combination>a.openpopup:not(.collapsed) {
@@ -4693,7 +4694,7 @@ input:checked+label.rdo-tile-label {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 1000;
   background-color: rgba(0 0 0/.4);
 }
 
@@ -4865,6 +4866,8 @@ input:checked+label.rdo-tile-label {
   float: left;
   margin: 5px 0 15px;
   display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .box-checkbox .c-checkitem:first-child {
@@ -4874,7 +4877,9 @@ input:checked+label.rdo-tile-label {
 .box-checkbox .c-checkitem {
   position: relative;
   margin-right: 25px;
+  white-space: nowrap;
 }
+
 
 .c-checkitem .tick-checkbox, .c-checkitem p {
   display: inline-block;
@@ -7171,7 +7176,7 @@ input:checked+label.rdo-tile-label {
 
 .filter-sticky {
   transition: var(--transition-45);
-  z-index: 1234;
+  z-index: 999;
   background: #fff;
   padding-top: 10px;
 }

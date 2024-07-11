@@ -134,6 +134,10 @@
   .dok-product-list.grid-5 .product {
     width: calc(33.33% - 10px);
   }
+
+  .box-checkbox .c-checkitem:last-child {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 767px) {
