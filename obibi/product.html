@@ -654,6 +654,39 @@
             </div>
         </div>
 
+        <nav id="header-simple" class="header-simple">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                    </li>
+                    <li class="dok-header-search d-lg-none d-block">
+                        <form action="">
+                            <input type="search" name="" id="" placeholder="Bạn cần tìm gì hôm nay ?"
+                                autocomplete="off">
+                            <button type="submit"><i class="far fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-share"></i>
+                        </a>
+                    </li>
+                    <li class="dok-cart droplist mx-0">
+                        <a href="" class="d-flex align-items-center">
+                            <div class="position-relative">
+                                <span class="dok-icon mr-0 fal fa-cart-shopping">
+                                    <span class="dok-count">2</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         <div id="content" class="content">
             <section class="dok-breadcrumb">
                 <div class="container">
@@ -696,9 +729,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-do-red-4_2_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Đỏ</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -709,9 +740,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-xanh-reu-forest-green-4_1_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Xanh lá</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -722,9 +751,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-den-black-4_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Đen</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -736,9 +763,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-camo-squad-4_2.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Camo</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -754,9 +779,7 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 20cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -765,9 +788,7 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 30cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -776,9 +797,7 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 40cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -803,6 +822,49 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="dok-services-modal" class="modal fade dok-modal-bottom-up" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen modal-dialog-scrollable box-product-mobile">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="fz-16 fw-medium text-center w-100 mb-0">Cam kết dịch vụ</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <ul class="box-policy">
+                                        <li><i class="fad fa-badge-check"></i>
+                                            <div class="rightctpc">
+                                                <p>Chính hãng 100%</p>
+                                                <p>Đền gấp 3 lần nếu phát hiện hàng giả</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-arrows-rotate"></i>
+                                            <div class="rightctpc">
+                                                <p>1 đổi 1 trong 15 ngày</p>
+                                                <p>Nếu có lỗi phần cứng từ NSX <br> <a href="">Xem chi tiết</a></p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-screwdriver-wrench"></i>
+                                            <div class="rightctpc">
+                                                <p>Lắp đặt miễn phí</p>
+                                                <p>Giao hàng, lắp đặt và hướng dẫn sử dụng.</p>
+                                            </div>
+                                        </li>
+                                        <li><i class="fad fa-house-person-return"></i>
+                                            <div class="rightctpc">
+                                                <p>Bảo hành tại nhà</p>
+                                                <p>Hỗ trợ bảo hành tại nhà Dàn loa, Dàn nhạc - Phim</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="box-product-top box-product-desktop d-lg-block d-none">
                         <div class="d-flex align-items-center flex-1">
@@ -980,9 +1042,7 @@
                                         <h1> Loa Bluetooth JBL Charge 5 </h1>
                                     </div>
 
-                                    <hr />
-
-                                    <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between my-4">
                                         <div class="d-flex align-items-center">
                                             <b class="me-1"><i class="fa fa-star text-warning"></i> 4.9/5</b>
                                             <div class="text-primary"><a href="#dok-reviews">(100 đánh giá)</a></div>
@@ -1000,8 +1060,6 @@
                                         </div>
                                     </div>
 
-                                    <hr />
-
                                     <ul class="box-product-extrainfo">
                                         <li>
                                             <strong>Đơn vị</strong>Cái
@@ -1018,40 +1076,43 @@
                                         </li>
                                     </ul>
 
-                           
 
-                                    <ul class="box-policy">
-                                        <li><i class="fad fa-badge-check"></i>
-                                            <div class="rightctpc">
-                                                <p>Chính hãng 100%</p>
-                                                <p>Đền gấp 3 lần nếu phát hiện hàng giả</p>
-                                            </div>
-                                        </li>
-                                        <li><i class="fad fa-arrows-rotate"></i>
-                                            <div class="rightctpc">
-                                                <p>1 đổi 1 trong 15 ngày</p>
-                                                <p>Nếu có lỗi phần cứng từ NSX <br> <a href="">Xem chi tiết</a></p>
-                                            </div>
-                                        </li>
-                                        <li><i class="fad fa-screwdriver-wrench"></i>
-                                            <div class="rightctpc">
-                                                <p>Lắp đặt miễn phí</p>
-                                                <p>Giao hàng, lắp đặt và hướng dẫn sử dụng.</p>
-                                            </div>
-                                        </li>
-                                        <li><i class="fad fa-house-person-return"></i>
-                                            <div class="rightctpc">
-                                                <p>Bảo hành tại nhà</p>
-                                                <p>Hỗ trợ bảo hành tại nhà Dàn loa, Dàn nhạc - Phim</p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <ul class="box-policy">
+                                            <li><i class="fad fa-badge-check"></i>
+                                                <div class="rightctpc">
+                                                    <p>Chính hãng 100%</p>
+                                                </div>
+                                            </li>
+                                            <li><i class="fad fa-arrows-rotate"></i>
+                                                <div class="rightctpc">
+                                                    <p>1 đổi 1 trong 15 ngày</p>
+                                                </div>
+                                            </li>
+                                            <li><i class="fad fa-screwdriver-wrench"></i>
+                                                <div class="rightctpc">
+                                                    <p>Lắp đặt miễn phí</p>
+                                                </div>
+                                            </li>
+                                            <li><i class="fad fa-house-person-return"></i>
+                                                <div class="rightctpc">
+                                                    <p>Bảo hành tại nhà</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="javascript:void(0);" class="text-secondary text-nowrap" type="button"
+                                            data-bs-toggle="modal" data-bs-target="#dok-services-modal">
+                                            Xem
+                                            <i class="fa fa-angle-right ms-2"></i>
+                                        </a>
+                                    </div>
 
                                     <div class="box-buy-options py-2 mb-3">
                                         <div class="d-flex align-items-center mb-1">
                                             <span class="fz-14 fw-bold">Chọn các tuỳ chọn</span>
                                             <div class="ms-auto">
-                                                <a href="javascript:void(0);" class="text-secondary" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                <a href="javascript:void(0);" class="text-secondary" type="button"
+                                                    class="btn btn-primary" data-bs-toggle="modal"
                                                     data-bs-target="#dok-modal-bottom-up">
                                                     Màu sắc, Kích cỡ
                                                     <i class="fa fa-angle-right ms-2"></i>
@@ -1059,45 +1120,45 @@
                                             </div>
                                         </div>
                                         <div class="list-img">
-                                             <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
+                                            </a>
 
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
+                                            </a>
 
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
+                                            </a>
 
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
+                                            </a>
 
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
+                                            </a>
 
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg"
-                                                    >
-                                                    <img class="img-fluid"
-                                                        src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
-                                                </a>
+                                            <a
+                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg">
+                                                <img class="img-fluid"
+                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
+                                            </a>
                                         </div>
 
-                                               
-                                        
+
+
                                     </div>
 
                                     <div class="box-product-promotion">
@@ -1240,6 +1301,13 @@
                                         </div>
                                     </div>
                                     <hr>
+                                    <div class="box-product-price">
+                                        <span class="me-3 fz-14">Giá bán:</span>
+                                        <strong class="price">
+                                            <span>2.990.000 ₫</span>
+                                            <del><span>4.150.000 ₫</span></del>
+                                        </strong>
+                                    </div>
 
                                     <div class="box-product-filter">
                                         <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn màu sắc</p>
@@ -1251,9 +1319,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-do-red-4_2_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Đỏ</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -1264,9 +1330,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-xanh-reu-forest-green-4_1_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Xanh lá</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -1277,9 +1341,7 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-den-black-4_1.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Đen</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -1291,14 +1353,13 @@
                                                         src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/l/o/loa-jbl-charge-5-camo-squad-4_2.jpg">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Camo</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
                                         </div>
                                     </div>
+
 
                                     <div class="box-product-filter">
                                         <p class="fz-14 fw-medium text-uppercase mb-3">Lựa chọn phiên bản</p>
@@ -1308,9 +1369,7 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 20cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -1319,9 +1378,7 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 30cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
@@ -1330,23 +1387,11 @@
                                                 <span class="radio-btn">
                                                     <span class="d-flex text-start flex-column">
                                                         <b class="text">Bass 40cm</b>
-                                                        <span class="price">
-                                                            2.290.000₫
-                                                        </span>
+
                                                     </span>
                                                 </span>
                                             </label>
                                         </div>
-                                    </div>
-
-                                    <hr>
-
-                                    <div class="box-product-price">
-                                        <span class="me-3 fz-14">Giá bán:</span>
-                                        <strong class="price">
-                                            <span>2.990.000 ₫</span>
-                                            <del><span>4.150.000 ₫</span></del>
-                                        </strong>
                                     </div>
 
                                     <ul class="box-product-extrainfo">
@@ -1420,481 +1465,8 @@
                 </div>
             </section>
 
-            <section class="dok-products mb-4">
-                <div class="container">
-
-                    <hr class="d-lg-block d-none" />
-
-                    <div class="dok-heading">
-                        <h2>Sản phẩm tương tự</h2>
-                    </div>
-                    <div class="dok-products-slider swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
-                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            2.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            2.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
-                                                        width="358" height="358"
-                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
-                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            10.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            11.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
-                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            2.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            2.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
-                                                        width="358" height="358"
-                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
-                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            10.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            11.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
-                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            2.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            2.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product">
-                                    <div class="product-info-container">
-                                        <div class="product-info">
-                                            <a href="" class="product__link button__link" rel="">
-                                                <div class="product__image">
-                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
-                                                        width="358" height="358"
-                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
-                                                        class="product__img">
-                                                </div>
-
-                                                <div class="product__name">
-                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
-                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
-                                                </div>
-
-                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
-
-                                                <div class="bottom-div">
-                                                    <div class="product__box-rating">
-                                                        <div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                            <div class="ic-star is-active">
-                                                                <i class="fas fa-star-sharp"></i>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div style="color: #0a58ca;">(100)</div>
-                                                </div>
-
-
-                                                <div class="block-box-price">
-                                                    <div class="box-info__box-price">
-                                                        <p class="product__price--show">
-                                                            10.390.000đ
-                                                        </p>
-                                                        <p class="product__price--through">
-                                                            11.990.000đ
-                                                        </p>
-                                                        <div class="product__price--percent">
-                                                            <p class="product__price--percent-detail">
-                                                                Giảm&nbsp;2%
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <a class="block-add-to-cart" href="javascript:void(0)">
-                                                    Thêm giỏ hàng
-                                                </a>
-
-                                            </a>
-                                        </div>
-
-                                        <div class="install-0-tag">
-                                            Trả góp 0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
-            </section>
-
 
             <div class="container">
-
-                <hr>
-
                 <div class="row">
                     <div class="col-md-8">
                         <div class="dok-categories-info mb-4">
@@ -2266,13 +1838,12 @@
 
                         <div id="dok-reviews" class="dok-reviews dok-box-s">
                             <p class="dok-box-s-title">
-                                Đánh giá & nhận xét
+                                Đánh giá của khách hàng về “Loa Bluetooth JBL Charge 5”
                             </p>
 
                             <div id="reviews" class="scrollto">
                                 <div class="box-border bg-white">
                                     <div class="rating " id="danhgia">
-                                        <p class="rating__title">Loa Marshall kết nối thông tin phiên bản giới hạn</p>
                                         <div class="rating-star ">
                                             <div class="rating-left">
                                                 <div class="rating-top">
@@ -2338,37 +1909,32 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="rating-right rating-circle-viewall">
-                                                <p class="rating-circle-ttl"><em>Bạn đã dùng sản phẩm này? </em></p>
-                                                <p class="btn-send-r">
-                                                    <a href="javascript:showInputRating();"
-                                                        class="comment-btn__item blue" style="width: 100%;"><i
-                                                            class="fa fa-star"></i>Viết đánh giá</a>
-                                                </p>
+                                            <div class="rating-right">
+                                                <div class="rating-img ">
+                                                    <ul class="rating-img-list">
+                                                        <li class="js-Showcmt" onclick="goToRSlideByAttID(1501)">
+                                                            <img class="lazyload"
+                                                                src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
+                                                                alt="Image Rating 0">
+                                                        </li>
+                                                        <li class="js-Showcmt" onclick="goToRSlideByAttID(1502)">
+                                                            <img class="lazyload"
+                                                                src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
+                                                                alt="Image Rating 1">
+                                                        </li>
+                                                        <li class="js-Showcmt" onclick="goToRSlideByAttID(1501)">
+                                                            <img class="lazyload"
+                                                                src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
+                                                                alt="Image Rating 0">
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <div class="rating-img ">
-                                            <ul class="rating-img-list">
-
-                                                <li class="js-Showcmt" onclick="goToRSlideByAttID(1501)">
-                                                    <img class="lazyload"
-                                                        src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
-                                                        alt="Image Rating 0">
-                                                </li>
-
-                                                <li class="js-Showcmt" onclick="goToRSlideByAttID(1502)">
-                                                    <img class="lazyload"
-                                                        src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
-                                                        alt="Image Rating 1">
-                                                </li>
-
-                                            </ul>
-                                        </div>
-
                                     </div>
-                                    <div class="comment comment--all ratingLst">
 
+                                    <div class="comment comment--all ratingLst">
                                         <div class="comment__item par">
                                             <div class="item-top">
                                                 <p class="txtname">Huế Nguyễn</p>
@@ -2390,8 +1956,8 @@
                                                 </div>
 
                                                 <div class="intro-future">
-                                                    <i class="fa fa-heart"></i>
-                                                    Sẽ giới thiệu cho bạn bè, người thân
+                                                    <i class="fa fa-badge-check text-success"></i>
+                                                    Đã mua hàng
                                                 </div>
 
                                             </div>
@@ -2411,29 +1977,9 @@
 
                                             </div>
 
-                                            <div class="item-click">
-                                                <a href="javascript:likeRating(1626,0);" class="click-like"
-                                                    data-like="0" id="CommentLike_1626">
-                                                    <i class="icondetail-likewhite"></i>
-                                                    Hữu ích
-                                                </a>
-                                                <a href="javascript:showRatingCmtChild('r-1626')" class="click-cmt">
-                                                    <i class="fa fa-comments"></i>
-                                                    <span class="cmtr">0 thảo luận</span>
-                                                </a>
-
-                                                <div class="rr-1626 reply hide">
-                                                    <input name="CommentContent1626" id="CommentContent1626"
-                                                        placeholder="Nhập thảo luận của bạn">
-                                                    <a href="javascript:ratingRelply(2411,1626,'Product');"
-                                                        class="rrSend">Gửi</a>
-                                                    <div class="ifrl hide">
-                                                        <span></span>| <a href="javascript:showReplyConfirmPopup()">Sửa
-                                                            tên</a>
-                                                    </div>
-                                                </div>
+                                            <div class="item-click text-secondary">
+                                                Đánh giá vào 1 ngày trước
                                             </div>
-
                                         </div>
 
                                         <div class="comment__item par">
@@ -2457,8 +2003,8 @@
                                                 </div>
 
                                                 <div class="intro-future">
-                                                    <i class="fa fa-heart"></i>
-                                                    Sẽ giới thiệu cho bạn bè, người thân
+                                                    <i class="fa fa-badge-check text-success"></i>
+                                                    Đã mua hàng
                                                 </div>
 
                                             </div>
@@ -2478,38 +2024,15 @@
 
                                             </div>
 
-                                            <div class="item-click">
-                                                <a href="javascript:likeRating(1625,0);" class="click-like"
-                                                    data-like="0" id="CommentLike_1625">
-                                                    <i class="icondetail-likewhite"></i>
-                                                    Hữu ích
-                                                </a>
-                                                <a href="javascript:showRatingCmtChild('r-1625')" class="click-cmt">
-                                                    <i class="fa fa-comments"></i>
-                                                    <span class="cmtr">0 thảo luận</span>
-                                                </a>
-
-                                                <div class="rr-1625 reply hide">
-                                                    <input name="CommentContent1625" id="CommentContent1625"
-                                                        placeholder="Nhập thảo luận của bạn">
-                                                    <a href="javascript:ratingRelply(2411,1625,'Product');"
-                                                        class="rrSend">Gửi</a>
-                                                    <div class="ifrl hide">
-                                                        <span></span>| <a href="javascript:showReplyConfirmPopup()">Sửa
-                                                            tên</a>
-                                                    </div>
-                                                </div>
+                                            <div class="item-click text-secondary">
+                                                Đánh giá vào 1 tháng trước
                                             </div>
 
                                         </div>
 
                                     </div>
                                     <div class="comment-btn">
-                                        <a href="javascript:showInputRating();" class="comment-btn__item blue"><i
-                                                class="fa fa-star"></i>Viết đánh
-                                            giá</a>
-                                        <a href="/ket-sat-thong-minh-bokee-bk60b-khoa-van-tay-dien-tu-ket-noi-dien-thoai.html?view=danhgia"
-                                            class="comment-btn__item right-arrow"><span>Xem 2 đánh giá</span></a>
+                                        <a href="" class="comment-btn__item right-arrow"><span>Xem 2 đánh giá</span></a>
                                     </div>
                                     <div class="read-assess hide">
                                         <div class="read-assess__top">
@@ -2754,7 +2277,7 @@
 
 
                         <div id="block-comment-cps" class="dok-comments dok-box-s comment-container">
-                            <div class="d-flex flex-wrap">
+                            <div class="d-flex align-items-center flex-wrap">
                                 <p class="dok-box-s-title mb-0">
                                     Hỏi đáp về sản phẩm
                                 </p>
@@ -2827,10 +2350,10 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr />
 
                             <div class="block-comment__box-list-comment">
-                                <div id="page_comment_list" class="list-comment">
-                                    <hr style="">
+                                <div id="page_comment_list" class="list-comment box-border bg-white">
                                     <div class="item-comment">
                                         <div class="item-comment__box-cmt">
                                             <div class="box-cmt__box-info">
@@ -3040,7 +2563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="btn-show-more button__cmt-showmore">
+                                <button class="btn-show-more button__cmt-showmore mt-3">
                                     Xem thêm 48 bình
                                     luận&emsp;
                                     <i class="fa fa-angle-down"></i>
@@ -3200,10 +2723,476 @@
                     </div>
                 </div>
             </div>
+
+            <section class="dok-products mt-4">
+                <div class="container">
+                    <div class="dok-heading">
+                        <h2>Sản phẩm tương tự</h2>
+                    </div>
+                    <div class="dok-products-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
+                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            2.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            2.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
+                                                        width="358" height="358"
+                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
+                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            10.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            11.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
+                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            2.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            2.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
+                                                        width="358" height="358"
+                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
+                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            10.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            11.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/image/loa-bluetooth-alpha-work-w88-1.webp"
+                                                        width="358" height="358" alt="Loa bluetooth Alpha Works W88"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa bluetooth Alpha Works W88</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            2.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            2.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-info-container">
+                                        <div class="product-info">
+                                            <a href="" class="product__link button__link" rel="">
+                                                <div class="product__image">
+                                                    <img src="https://bcec.vn/upload/original-image/loa-marshall-stanmore-iii.jpg"
+                                                        width="358" height="358"
+                                                        alt="Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W, Bluetooth 5.2, AUX, RCA, Knob)"
+                                                        class="product__img">
+                                                </div>
+
+                                                <div class="product__name">
+                                                    <h3 class="mb-0">Loa Marshall Stanmore 3 (III) Chính Hãng ASH (80W,
+                                                        Bluetooth 5.2, AUX, RCA, Knob)</h3>
+                                                </div>
+
+                                                <div class="block-smem-price">100+ sản phẩm đã bán</div>
+
+                                                <div class="bottom-div">
+                                                    <div class="product__box-rating">
+                                                        <div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                            <div class="ic-star is-active">
+                                                                <i class="fas fa-star-sharp"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="color: #0a58ca;">(100 đánh giá)</div>
+                                                </div>
+
+
+                                                <div class="block-box-price">
+                                                    <div class="box-info__box-price">
+                                                        <p class="product__price--show">
+                                                            10.390.000đ
+                                                        </p>
+                                                        <p class="product__price--through">
+                                                            11.990.000đ
+                                                        </p>
+                                                        <div class="product__price--percent">
+                                                            <p class="product__price--percent-detail">
+                                                                Giảm&nbsp;2%
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <a class="block-add-to-cart" href="javascript:void(0)">
+                                                    Thêm giỏ hàng
+                                                </a>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="install-0-tag">
+                                            Trả góp 0%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <footer id="footer" class="footer">
-            <!-- <div class="dok-divider"></div> -->
             <div class="footer-services">
                 <div class="container">
                     <div class="dok-home-wrap">
@@ -3331,45 +3320,12 @@
             </div>
         </footer>
 
-        <nav class="header-simple">
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="">
-                            <i class="fa fa-arrow-left"></i>
-                        </a>
-                    </li>
-                    <li class="dok-header-search d-lg-none d-block">
-                        <form action="">
-                            <input type="search" name="" id="" placeholder="Bạn cần tìm gì hôm nay ?"
-                                autocomplete="off">
-                            <button type="submit"><i class="far fa-magnifying-glass"></i></button>
-                        </form>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="fa fa-share"></i>
-                        </a>
-                    </li>
-                    <li class="dok-cart droplist mx-0">
-                        <a href="" class="d-flex align-items-center">
-                            <div class="position-relative">
-                                <span class="dok-icon mr-0 fal fa-cart-shopping">
-                                    <span class="dok-count">2</span>
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
         <nav id="bottom-product" class="bottom-nav">
             <div class="container">
                 <ul>
                     <li><a href=""><i class="fa fa-list-alt"></i><span>Danh mục</span></a></li>
                     <li><a href=""><i class="fa fa-phone-rotary"></i><span>Tư vấn</span></a></li>
-                    <li><a href="" class="bottom-nav-button bottom-nav-cart"><span>Giỏ hàng</span></a></li>
+                    <li><a href="" class="bottom-nav-button bottom-nav-cart"><span>Thêm giỏ hàng</span></a></li>
                     <li><a href="" class="bottom-nav-button bottom-nav-buy"><span>Mua ngay</span></a></li>
                 </ul>
             </div>

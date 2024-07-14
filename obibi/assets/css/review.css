@@ -76,7 +76,7 @@
 .rating-right {
     border-left: 1px solid #f1f1f1;
     position: relative;
-    padding: 0 20px 10px 10px;
+    padding: 10px;
     text-align: center;
     width: 50%;
     min-height: 145px
@@ -164,22 +164,24 @@
 }
 
 .rating-list .timing1 {
-    width: 1%
+    width: 1%;
 }
 
 .rating-list .timing2 {
-    width: 2%
+    width: 2%;
 }
 
 .rating-img-list {
     display: flex;
-    position: relative
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .rating-img-list li {
     cursor: pointer;
     line-height: 0;
-    margin-right: 5px
+    margin-right: 5px;
+    width: calc(25% - 5px);
 }
 
 .rating-img-list li:first-child {
@@ -190,18 +192,22 @@
     position: relative
 }
 
+.rating-img-list li:nth-child(n+9) {
+    display: none;
+}
+
 .rating-img-list img {
-    width: 109px;
-    height: 109px;
+    /* width: 109px;
+    height: 109px; */
     border-radius: 5px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .rating-img-ttl {
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .rating-img-rd {
@@ -714,7 +720,8 @@ p.rating-circle-ttl em {
 
 .comment-btn {
     display: flex;
-    padding: 15px 10px
+    justify-content: center;
+    padding: 15px 10px 0;
 }
 
 .comment-btn__item {
@@ -726,7 +733,8 @@ p.rating-circle-ttl em {
     margin-left: 3%;
     padding: 11px 5px;
     text-align: center;
-    width: 48.5%
+    width: 48.5%;
+    font-size: 14px;
 }
 
 .comment-btn__item:first-child {
@@ -1684,14 +1692,10 @@ p.rating-circle-ttl em {
     margin-right: 10px
 }
 
-.comment-btn__item.right-arrow span::before {
-    border-bottom: 5px solid transparent;
-    border-top: 5px solid transparent;
-    border-left: 5px solid var(--main-color);
-    content: '';
-    position: absolute;
-    top: 3px;
-    right: -15px
+.comment-btn__item.right-arrow span::after {
+    content: "\f107";
+    font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+    margin-left: 14px;
 }
 
 .comment-btn__item.right-arrow span {
@@ -2234,5 +2238,13 @@ ul.ratingLst li .rh>span label.qtv {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.4;
+    }
+    .rating-star{
+        flex-direction: column;
+    }
+    .rating-left,
+    .rating-right{
+        border: 0;
+        width: 100%;
     }
 }
