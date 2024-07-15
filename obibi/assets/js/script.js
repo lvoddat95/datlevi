@@ -279,6 +279,34 @@ $(function () {
 		});
 	}
 
+	if ($(".dok-products-slider-1").length > 0) {
+		var product_slider = new Swiper(".dok-products-slider-1", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: true,
+			// autoplay: {
+			// 	delay: 3000,
+			// 	disableOnInteraction: false,
+			// 	pauseOnMouseEnter: true,
+			// },
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerView: 5,
+				},
+			},
+		});
+	}
+
 
 	if ($(".dok-brand-list").length > 0) {
 		var brand_slider = new Swiper(".dok-brand-list", {
