@@ -3453,7 +3453,7 @@ input:checked+label.rdo-tile-label {
   }
 
   .product-1-col .product-info-container .product-info a .block-smem-price {
-    font-size: var(--fz-14);
+    font-size: var(--fz-12);
 
   }
 }
