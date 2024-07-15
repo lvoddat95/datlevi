@@ -3440,6 +3440,7 @@ input:checked+label.rdo-tile-label {
 
   .product-1-col .product-info-container .product-info a .product__name h3 {
     height: auto;
+    font-size: var(--fz-14);
   }
 
   .product-1-col .product-info-container .bottom-div{
