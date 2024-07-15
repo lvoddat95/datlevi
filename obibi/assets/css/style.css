@@ -3441,14 +3441,20 @@ input:checked+label.rdo-tile-label {
   .product-1-col .product-info-container .product-info a .product__name h3 {
     height: auto;
     font-size: var(--fz-14);
+    font-weight: 500;
   }
 
-  .product-1-col .product-info-container .product-info a .block-box-price .box-info__box-price .product__price--show{
+  .product-1-col .product-info-container .product-info a .block-box-price .box-info__box-price .product__price--show {
     font-size: var(--fz-16);
   }
 
-  .product-1-col .product-info-container .bottom-div{
+  .product-1-col .product-info-container .bottom-div {
     font-size: var(--fz-10);
+  }
+
+  .product-1-col .product-info-container .product-info a .block-smem-price {
+    font-size: var(--fz-14);
+
   }
 }
 
