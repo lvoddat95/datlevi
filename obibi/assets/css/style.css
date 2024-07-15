@@ -3443,6 +3443,10 @@ input:checked+label.rdo-tile-label {
     font-size: var(--fz-14);
   }
 
+  .product-1-col .product-info-container .product-info a .block-box-price .box-info__box-price .product__price--show{
+    font-size: var(--fz-16);
+  }
+
   .product-1-col .product-info-container .bottom-div{
     font-size: var(--fz-10);
   }
