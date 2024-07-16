@@ -24,9 +24,9 @@ $(function () {
 		// });
 
 
-		$('.dok-header-item-mobile').click(function () {
+		$('.dok-category-toggle').click(function () {
 			$(this).toggleClass('active');
-			$(this).closest('#dok-header-top').find('#menu-main').toggleClass('active');
+			$(this).closest('body').find('#dok-header-top #menu-main').toggleClass('active');
 		});
 
 		$('.dok-header-overlay').on("click", function () {
@@ -35,7 +35,7 @@ $(function () {
 		});
 
 		$('.dok-menu-mobile-close').click(function () {
-			$('.dok-header-item-mobile').removeClass('active');
+			$('.dok-category-toggle').removeClass('active');
 			$('#menu-main').removeClass('active').css("display", "none");
 			$('.dok-header-overlay').removeClass('active');
 		});
@@ -249,7 +249,33 @@ $(function () {
 		});
 	}
 
-
+	if ($(".dok-products-post").length > 0) {
+		var product_in_post = new Swiper(".dok-products-post", {
+			slidesPerView: 2,
+			spaceBetween: 0,
+			loop: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+				pauseOnMouseEnter: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				1024: {
+					slidesPerView: 3,
+				},
+			},
+		});
+	}
 
 	if ($(".dok-products-slider").length > 0) {
 		var product_slider = new Swiper(".dok-products-slider", {
@@ -394,7 +420,31 @@ $(function () {
 		});
 	};
 
+	if ($(".dok-hotline-slider").length > 0) {
+		var hotline_slider = new Swiper(".dok-hotline-slider", {
+			slidesPerView: 2,
+			spaceBetween: 16,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "progressbar",
+				clickable: true
+			},
+			breakpoints: {
+				640: {
+					slidesPerView: 2,
+				},
+				768: {
+					slidesPerView: 2,
+				},
+				1024: {
+					slidesPerView: 4,
+				},
+			},
+		});
+	};
 
+	
 	var swiper = new Swiper(".nav-newscate", {
 		slidesPerView: "auto",
 		freeMode: true,
@@ -419,6 +469,18 @@ $(function () {
 		});
 	}
 
+	$('#decrease').click(function() {
+        let currentValue = parseInt($('#counter').val());
+        if (currentValue > 1) {
+            $('#counter').val(currentValue - 1);
+        }
+    });
+
+    $('#increase').click(function() {
+        let currentValue = parseInt($('#counter').val());
+        $('#counter').val(currentValue + 1);
+    });
+
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 120) {
 			$('#header').addClass('fixed');
@@ -426,6 +488,7 @@ $(function () {
 			$('#header').removeClass('fixed');
 		}
 	});
+
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 70) {
 			$('#header-simple').addClass('fixed');
@@ -436,8 +499,9 @@ $(function () {
 
 	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
 
-});
 
+
+});
 
 var lastScrollTop = 0;
 var scrollTimeout;
@@ -456,7 +520,7 @@ function toggleScrollClass(selector) {
 
 		scrollTimeout = setTimeout(function () {
 			$(selector).addClass('stop');
-		}, 300);
+		}, 500);
 	});
 }
 

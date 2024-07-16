@@ -633,7 +633,7 @@
                                     </li>
 
                                     <li class="d-lg-none d-block">
-                                        <a class="dok-header-item-mobile" href="javascript:void(0)">
+                                        <a class="dok-header-item-mobile dok-category-toggle" href="javascript:void(0)">
                                             <i class="far fa-bars-staggered"></i>
                                         </a>
                                     </li>
@@ -703,9 +703,8 @@
             <section class="dok-detail-product">
                 <div class="container">
 
-                    <!-- Modal -->
-                    <div id="dok-modal-bottom-up" class="modal fade dok-modal-bottom-up" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Modal thêm sản phẩm -->
+                    <div id="dok-modal-bottom-up" class="modal fade dok-modal-bottom-up" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen modal-dialog-scrollable box-product-mobile">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -806,12 +805,16 @@
                                 </div>
                                 <div class="modal-footer ">
                                     <div class="modal-buy-footer m-0 w-100">
-                                        <div class="row gx-4">
-                                            <div class="d-flex align-items-center col-5">
+                                        <div class="d-flex gx-4">
+                                            <div class="d-flex align-items-center">
                                                 <span class="me-3 fz-12 text-nowrap">Số lượng:</span>
-                                                <input type="number" class="form-control text-center" placeholder="0" />
+                                                <div class="counter-container">
+                                                    <button id="decrease"><i class="far fa-minus fz-14"></i></button>
+                                                    <input type="number" id="counter" class="counter-input" value="1" readonly>
+                                                    <button id="increase"><i class="far fa-plus fz-14"></i></button>
+                                                </div>
                                             </div>
-                                            <div class="col-7">
+                                            <div class="ms-auto">
                                                 <button type="button"
                                                     class="btn btn-danger text-white d-block w-100">Mua
                                                     ngay</button>
@@ -823,8 +826,8 @@
                         </div>
                     </div>
 
-                    <div id="dok-services-modal" class="modal fade dok-modal-bottom-up" tabindex="-1"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <!-- Modal cam kết dịch vụ-->
+                    <div id="dok-services-modal" class="modal fade dok-modal-bottom-up" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-fullscreen modal-dialog-scrollable box-product-mobile">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -872,8 +875,6 @@
                                 <div class="box-product-name">
                                     <h1> Loa Bluetooth JBL Charge 5 </h1>
                                 </div>
-
-
 
                                 <div class="box-rating">
                                     <div class="product__box-rating">
@@ -2729,7 +2730,7 @@
                     <div class="dok-heading">
                         <h2>Sản phẩm tương tự</h2>
                     </div>
-                    <div class="dok-products-slider swiper">
+                    <div class="dok-products-slider dok-slider-box swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="product">
@@ -3323,7 +3324,7 @@
         <nav id="bottom-product" class="bottom-nav">
             <div class="container">
                 <ul>
-                    <li><a href=""><i class="fa fa-list-alt"></i><span>Danh mục</span></a></li>
+                    <li><a href="javascript:void(0)" class="dok-category-toggle"><i class="fa fa-list-alt"></i><span>Danh mục</span></a></li>
                     <li><a href=""><i class="fa fa-phone-rotary"></i><span>Tư vấn</span></a></li>
                     <li><a href="" class="bottom-nav-button bottom-nav-cart"><span>Thêm giỏ hàng</span></a></li>
                     <li><a href="" class="bottom-nav-button bottom-nav-buy"><span>Mua ngay</span></a></li>
