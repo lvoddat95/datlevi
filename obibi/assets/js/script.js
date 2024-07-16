@@ -338,6 +338,7 @@ $(function () {
 		var brand_slider = new Swiper(".dok-brand-list", {
 			slidesPerView: 4,
 			spaceBetween: 8,
+			loop: true,
 			freeMode: true,
 			autoplay: {
 				delay: 2500,
@@ -367,6 +368,7 @@ $(function () {
 		var category_slider = new Swiper(".dok-category-list", {
 			slidesPerView: 3,
 			spaceBetween: 8,
+			loop: true,
 			freeMode: true,
 			autoplay: {
 				delay: 2500,
