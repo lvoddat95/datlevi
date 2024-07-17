@@ -211,6 +211,10 @@
     margin: 0 !important;
   }
 
+  .footer-copyright{
+    padding-bottom: 80px;
+  }
+
 }
 
 @media (max-width: 575px) {}
