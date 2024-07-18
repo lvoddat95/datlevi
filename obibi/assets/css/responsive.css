@@ -214,7 +214,9 @@
   .footer-copyright{
     padding-bottom: 80px;
   }
-
+  .product-info-container .bottom-div{
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 575px) {}

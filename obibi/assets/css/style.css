@@ -7499,6 +7499,10 @@ input:checked+label.rdo-tile-label {
     display: none;
   }
 
+  .product-page #header-simple {
+    display: block;
+  }
+
   #header-simple.fixed {
     top: -74px;
   }
