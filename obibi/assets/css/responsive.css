@@ -53,6 +53,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+hr.mobile-line,
+.product-page hr.mobile-line {
+  height: 2px;
+  margin: 10px 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  border: none;
+  display: none;
+}
 
 /* More */
 
@@ -140,6 +151,10 @@
 }
 
 @media (max-width: 767px) {
+  .dok-widget-list {
+    margin-top: 20px;
+  }
+
   .dok-slider-box {
     margin: -10px -6px -8px;
   }
@@ -148,8 +163,9 @@
     padding: 10px 4px 8px;
   }
 
+  .box-warranty-info .box-title p,
   .dok-faqs .title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .dok-product-block {
@@ -180,6 +196,7 @@
   }
 
   ._bd+a.show {
+    line-height: normal;
     margin: 0px auto 0;
     font-size: 14px;
   }
@@ -251,6 +268,10 @@
     bottom: -70px;
   }
 
+  .article-detail,
+  .dok-widget,
+  .box-product-mobile .dok-widget,
+  .box-warranty-info,
   .box-border,
   .dok-box-s,
   .dok-faqs,
@@ -262,8 +283,27 @@
     background-color: #fff;
   }
 
-  .block-comment__box-list-comment .list-comment .item-comment__box-cmt .box-cmt__box-question {
-    background-color: aliceblue;
+  .box-product-mobile .dok-widget h2,
+  .dok-reviews .dok-box-s-title {
+    font-size: 18px;
+  }
+
+  .box-product-mobile .item-warranty-info {
+    margin-bottom: 0;
+  }
+
+  hr.mobile-line,
+  .product-page hr.mobile-line,
+  .product-page .box-product-mobile hr {
+    display: block;
+    height: 7px;
+    margin: 9px -10px;
+    width: calc(100% + 20px);
+  }
+
+  .dok-faqs .accordion .content-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .rating-right {
@@ -272,6 +312,27 @@
 
   .rating-img {
     padding-bottom: 0;
+  }
+
+  #block-comment-cps {
+    margin-bottom: 20px;
+  }
+
+  ._bd+a.show,
+  .readmore-btn,
+  .comment-btn__item,
+  .block-comment__box-list-comment .btn-show-more {
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--main-color);
+    display: block;
+    line-height: 17px;
+    padding: 11px 11px;
+    text-align: center;
+    font-size: 14px;
+    height: auto;
+    box-shadow: none;
+    width: 80%;
   }
 
 }

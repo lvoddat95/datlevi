@@ -4014,6 +4014,10 @@ input:checked+label.rdo-tile-label {
   font-weight: 500;
 }
 
+.dok-widget .ft-list-link li {
+  font-size: var(--fz-14);
+}
+
 .ft-list-link li:last-child {
   margin-bottom: 0;
 }
@@ -4164,6 +4168,10 @@ input:checked+label.rdo-tile-label {
   margin-bottom: 15px;
 }
 
+.dok-widget:last-child {
+  margin-bottom: 0px;
+}
+
 .dok-widget .dok-news .news-item-small .name a {
   font-size: 14px;
   line-height: 1.4;
@@ -4193,7 +4201,6 @@ input:checked+label.rdo-tile-label {
 }
 
 .dok-faqs {
-  background-color: #f9fafb;
   border-radius: 10px;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
   margin: 15px auto;
@@ -4257,7 +4264,6 @@ input:checked+label.rdo-tile-label {
 }
 
 .dok-faqs .accordion .accordion__content {
-  background-color: #f2f2f2;
   max-height: 0;
   overflow: hidden;
   text-align: justify;
@@ -4265,7 +4271,6 @@ input:checked+label.rdo-tile-label {
 
 /* Comment */
 .dok-box-s {
-  background-color: #f9fafb;
   border-radius: 10px;
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .1), 0 2px 6px 2px rgba(60, 64, 67, .15);
   margin-top: 15px;
@@ -4610,6 +4615,7 @@ input:checked+label.rdo-tile-label {
   padding: 10px;
   width: calc(100% - 25px);
   border-radius: 6px;
+  background-color: #f9fafb;
 }
 
 .block-comment__box-list-comment .list-comment .item-comment__box-cmt .box-cmt__box-question .content {
@@ -7652,6 +7658,10 @@ input:checked+label.rdo-tile-label {
   width: 100%;
 }
 
+.box-product-mobile .item-warranty-info>p:last-child {
+  margin-bottom: 0;
+}
+
 /* Modal Buy */
 .dok-modal-bottom-up {
   top: auto;
@@ -7754,6 +7764,9 @@ input:checked+label.rdo-tile-label {
   justify-content: center;
   background-color: var(--sub-color);
   border: 2px solid var(--bg-sub-op25);
+}
+
+.box-contact-detail > div{
   padding: 14px;
 }
 
@@ -7813,6 +7826,7 @@ input:checked+label.rdo-tile-label {
   margin-bottom: 8px;
   letter-spacing: -1px;
 }
+
 /* .fancybox__slide.has-caption {
   flex-direction: row;
 }

@@ -2239,7 +2239,11 @@ ul.ratingLst li .rh>span label.qtv {
         font-size: 14px;
         line-height: 1.4;
     }
+    .rating-top{
+        margin-bottom: 10px;
+    }
     .rating-star{
+        margin-top: 9px;
         flex-direction: column;
     }
     .rating-left,
