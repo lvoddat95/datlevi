@@ -219,11 +219,38 @@
     font-size: 12px;
   }
 
+  .product-info-container .bottom-div .label-rate span {
+    display: none;
+  }
+
   .dok-slider-box {
     margin: -10px -14px -8px;
   }
-  .readmore-btn{
+
+  .filter-sticky {
+    padding: 0;
   }
+
+  .mobile .box-checkbox.extend {
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .short .show_light {
+    bottom: -70px;
+  }
+
+  .box-border,
+  .dok-box-s,
+  .dok-faqs,
+  .dok-categories-info {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+    background-color: #fff;
+  }
+
 }
 
 @media (max-width: 575px) {}
