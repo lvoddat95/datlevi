@@ -2061,6 +2061,7 @@ input:checked+label.rdo-tile-label {
   font-size: var(--fz-14);
   border-radius: var(--radius-10);
   width: 100%;
+  background-color: #fff;
 }
 
 .dok-header-search input:focus,
@@ -2085,6 +2086,9 @@ input:checked+label.rdo-tile-label {
   border-top-right-radius: var(--radius-10);
   border-bottom-right-radius: var(--radius-10);
   outline: none;
+}
+.dok-header-search button i{
+  color: var(--dark);
 }
 
 .dok-list-action {
