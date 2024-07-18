@@ -112,6 +112,7 @@
     margin-right: auto;
     overflow-x: auto;
     width: 100%;
+    padding: 6px 0;
   }
 
 
@@ -249,6 +250,15 @@
     padding: 0;
     border-radius: 0;
     background-color: #fff;
+  }
+  .block-comment__box-list-comment .list-comment .item-comment__box-cmt .box-cmt__box-question{
+    background-color: aliceblue;
+  }
+  .rating-right{
+    min-height: auto;
+  }
+  .rating-img{
+    padding-bottom: 0;
   }
 
 }
