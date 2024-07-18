@@ -2324,6 +2324,7 @@ input:checked+label.rdo-tile-label {
 
 /* Start Menu category */
 #dok-menu-mobile-filter {
+  overflow-y: hidden;
   padding: 0 20px;
 }
 
