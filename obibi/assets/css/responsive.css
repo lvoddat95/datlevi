@@ -211,11 +211,18 @@
     margin: 0 !important;
   }
 
-  .footer-copyright{
+  .footer-copyright {
     padding-bottom: 80px;
   }
-  .product-info-container .bottom-div{
+
+  .product-info-container .bottom-div {
     font-size: 12px;
+  }
+
+  .dok-slider-box {
+    margin: -10px -14px -8px;
+  }
+  .readmore-btn{
   }
 }
 

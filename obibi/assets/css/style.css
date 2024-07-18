@@ -2087,7 +2087,8 @@ input:checked+label.rdo-tile-label {
   border-bottom-right-radius: var(--radius-10);
   outline: none;
 }
-.dok-header-search button i{
+
+.dok-header-search button i {
   color: var(--dark);
 }
 
@@ -7536,7 +7537,9 @@ input:checked+label.rdo-tile-label {
 }
 
 .dok-product-filter:not(.stop) .filter-sticky {
-  position: static !important;
+  /* position: static !important; */
+  opacity: 0;
+  visibility: hidden;
 }
 
 .dok-product-filter.stop .filter-sticky {
@@ -7810,3 +7813,10 @@ input:checked+label.rdo-tile-label {
   margin-bottom: 8px;
   letter-spacing: -1px;
 }
+/* .fancybox__slide.has-caption {
+  flex-direction: row;
+}
+
+.fancybox__caption {
+  padding: 1rem 3rem 1rem 1rem;
+} */

@@ -243,7 +243,12 @@ $(function () {
 
 	if ($('[data-fancybox="review"]').length > 0) {
 		Fancybox.bind('[data-fancybox="review"]', {
-			// Your custom options
+			caption: (fancybox, slide) => {
+				const caption = slide.caption || "";
+
+				return `${slide.index + 1} / ${fancybox.carousel?.slides.length
+					} <br /> ${caption}`;
+			},
 		});
 	}
 
