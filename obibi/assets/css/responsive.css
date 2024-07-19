@@ -318,22 +318,7 @@ hr.mobile-line,
     margin-bottom: 20px;
   }
 
-  ._bd+a.show,
-  .readmore-btn,
-  .comment-btn__item,
-  .block-comment__box-list-comment .btn-show-more {
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
-    color: var(--main-color);
-    display: block;
-    line-height: 17px;
-    padding: 11px 11px;
-    text-align: center;
-    font-size: 14px;
-    height: auto;
-    box-shadow: none;
-    width: 80%;
-  }
+  
 
 }
 
