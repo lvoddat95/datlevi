@@ -2087,7 +2087,8 @@ input:checked+label.rdo-tile-label {
   border-bottom-right-radius: var(--radius-10);
   outline: none;
 }
-.dok-header-search button i{
+
+.dok-header-search button i {
   color: var(--dark);
 }
 
@@ -7680,30 +7681,40 @@ input:checked+label.rdo-tile-label {
   right: 15px;
 }
 
+.counter-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-6);
+}
+
 .modal-buy-footer button {
-  outline: none;
+  outline: initial;
   height: 42px;
   width: 40px;
-  border: 1px solid var(--border-color);
+  border: none;
+  transition: var(--transition-25);
+}
+
+.modal-buy-footer button:focus {
+  color: #212529;
+  background-color: #e2e6ea;
+  box-shadow: 0 0 0 .2rem rgba(216, 217, 219, .5);
 }
 
 .modal-buy-footer input {
   max-width: 40px;
   height: 42px;
-  border: 1px solid var(--border-color);
+  border: none;
   margin: 0 -1px;
-}
-
-.counter-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal-buy-footer input.counter-input {
   text-align: center;
 }
-
 
 .dok-modal-bottom-up.modal.fade .modal-dialog {
   transform: translate(0, 50px);
