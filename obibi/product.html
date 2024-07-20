@@ -42,6 +42,7 @@
             <section class="dok-detail-product">
                 <div class="container">
 
+
                     <div class="box-product-top box-product-desktop d-lg-block d-none">
                         <div class="d-flex align-items-center flex-1">
                             <div class="d-flex align-items-center">
@@ -85,99 +86,156 @@
                         </div>
                     </div>
 
-
-
                     <!-- Modal Menu Mobile -->
-                    <div id="dok-product-modal-tab" class="modal fade product-modal-tab" tabindex="-1"
+                    <div id="dok-product-modal-preview" class="modal fade product-modal-preview" tabindex="-1"
                         aria-hidden="true">
-                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                        <div class="modal-dialog modal-xl modal-fullscreen-lg-down modal-dialog-scrollable">
                             <div class="modal-content">
-                                <div class="modal-body p-0">
-                                    <nav>
-                                        <ul class="nav" id="nav-tab" role="tablist">
-                                            <li id="tab-images-label" class="tab-item active" data-bs-toggle="tab"
-                                                data-bs-target="#tab-images" type="button" role="tab">
-                                                Ảnh sản phẩm
-                                            </li>
-                                            <li id="tab-videos-label" class="tab-item" data-bs-toggle="tab"
-                                                data-bs-target="#tab-videos" type="button" role="tab">
-                                                Video sản phẩm
-                                            </li>
-                                            <li id="tab-technical-label" class="tab-item" data-bs-toggle="tab"
-                                                data-bs-target="#tab-technical" type="button" role="tab">
-                                                Thông số kỹ thuật
-                                            </li>
+                                <div class="modal-body position-relative">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+
+                                    <div id="dok-product-modal-tab" class="dok-product-modal-tab dok-tabs">
+                                        <ul class="nav">
+                                            <li class="dok-tab-item active"><a href="#tab-image">Ảnh sản phẩm</a></li>
+                                            <li class="dok-tab-item"><a href="#tab-video">Video sản phẩm</a></li>
                                         </ul>
-                                    </nav>
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="tab-images" role="tabpanel"
-                                            aria-labelledby="tab-images-label" tabindex="0">
-                                            <div class="tab-image-list">
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png"
-                                                        data-fancybox="gallery" data-caption="CAPTION 1">
-                                                        <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png" />
-                                                    </a>
+                                        <div class="dok-tab-content">
+                                            <div id="tab-image" class="dok-tab-pane active">
+                                                <div class="swiper dok-product-img-main dok-product-img-main2-js">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
+                                                        </div>
+
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="swiper-button-next"></div>
+                                                    <div class="swiper-button-prev"></div>
+                                                    <div class="swiper-pagination-number"></div>
                                                 </div>
 
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 2">
-                                                        <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
-                                                    </a>
+                                                <div thumbsSlider=""
+                                                    class="swiper dok-product-thumbnail dok-product-thumbnail2-js">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img class="img-fluid"
+                                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-video" class="dok-tab-pane">
+
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="video-1" role="tabpanel"
+                                                        aria-labelledby="video-tab-1">
+                                                        <a href="https://www.youtube.com/embed/epg1duT1Gn4"
+                                                            data-fancybox="video-gallery">
+                                                            <i class="icon-play fab fa-youtube"></i>
+                                                            <img class="img-fluid"
+                                                                src="https://img.youtube.com/vi/epg1duT1Gn4/maxresdefault.jpg" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="video-2" role="tabpanel"
+                                                        aria-labelledby="video-tab-2">
+                                                        <a href="https://www.youtube.com/embed/WWmWE695baU"
+                                                            data-fancybox="video-gallery">
+                                                            <i class="icon-play fab fa-youtube"></i>
+                                                            <img class="img-fluid"
+                                                                src="https://img.youtube.com/vi/WWmWE695baU/maxresdefault.jpg" />
+                                                        </a>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="video-3" role="tabpanel"
+                                                        aria-labelledby="video-tab-3">
+                                                        <a href="https://www.youtube.com/embed/zNia48htgsI"
+                                                            data-fancybox="video-gallery">
+                                                            <i class="icon-play fab fa-youtube"></i>
+                                                            <img class="img-fluid"
+                                                                src="https://img.youtube.com/vi/zNia48htgsI/maxresdefault.jpg" />
+                                                        </a>
+                                                    </div>
                                                 </div>
 
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 3">
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li class="active" id="video-tab-1" data-bs-toggle="tab"
+                                                        data-bs-target="#video-1" type="button" role="tab"
+                                                        aria-controls="video-1" aria-selected="true">
                                                         <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
-                                                    </a>
-                                                </div>
-
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 4">
+                                                            src="https://img.youtube.com/vi/epg1duT1Gn4/mqdefault.jpg" />
+                                                    </li>
+                                                    <li id="video-tab-2" data-bs-toggle="tab" data-bs-target="#video-2"
+                                                        type="button" role="tab" aria-controls="video-2"
+                                                        aria-selected="false">
                                                         <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
-                                                    </a>
-                                                </div>
-
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 5">
+                                                            src="http://i3.ytimg.com/vi/WWmWE695baU/hqdefault.jpg">
+                                                    </li>
+                                                    <li id="video-tab-3" data-bs-toggle="tab" data-bs-target="#video-3"
+                                                        type="button" role="tab" aria-controls="video-3"
+                                                        aria-selected="false">
                                                         <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
-                                                    </a>
-                                                </div>
-
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 6">
-                                                        <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
-                                                    </a>
-                                                </div>
-
-                                                <div class="tab-image-item">
-                                                    <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg"
-                                                        data-fancybox="gallery" data-caption="CAPTION 7">
-                                                        <img class="img-fluid"
-                                                            src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
-                                                    </a>
-                                                </div>
+                                                            src="http://i3.ytimg.com/vi/zNia48htgsI/hqdefault.jpg">
+                                                    </li>
+                                                </ul>
 
                                             </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="tab-videos" role="tabpanel"
-                                            aria-labelledby="tab-videos-label" tabindex="1">
-                                        </div>
-
-                                        <div class="tab-pane fade" id="tab-technical" role="tabpanel"
-                                            aria-labelledby="tab-technical-label" tabindex="1">
                                         </div>
                                     </div>
                                 </div>
@@ -185,72 +243,72 @@
                         </div>
                     </div>
 
-                    <!-- <a href="https://www.youtube.com/embed/rcsUJY_Ym4o" data-fancybox="gallery"
-                        data-caption="CAPTION 12">
-                        <iframe id="vid_frame" src="https://www.youtube.com/embed/rcsUJY_Ym4o"
-                            style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"
-                            allowfullscreen scrolling="no"
-                            allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe>
-                    </a> -->
 
 
                     <div class="dok-product-block">
                         <div class="row">
                             <div class="col-xl-7 col-lg-6 col-md-12">
                                 <div class="dok-product-image">
-                                    <div class="swiper dok-product-img-main">
+                                    <div class="swiper dok-product-img-main dok-product-img-main-js">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png"
-                                                    data-fancybox="gallery" data-caption="CAPTION 1">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-ksp.png" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 2">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 3">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 4">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 5">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 6">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
                                                 </a>
                                             </div>
 
                                             <div class="swiper-slide">
-                                                <a href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg"
-                                                    data-fancybox="gallery" data-caption="CAPTION 7">
+                                                <a data-bs-toggle="modal" data-bs-target="#dok-product-modal-preview"
+                                                    data-tab="image"
+                                                    href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg">
                                                     <img class="img-fluid"
                                                         src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
                                                 </a>
@@ -264,11 +322,15 @@
                                     </div>
 
                                     <div class="d-flex">
-                                        <a href="javascript:void(0);" data-bs-toggle="modal"
-                                            data-bs-target="#dok-product-modal-tab">
-                                            3 Video
-                                        </a>
-                                        <div thumbsSlider="" class="swiper dok-product-thumbnail">
+                                        <div class="video-thumb">
+                                            <a href="javascript:void(0);" class="text-nowrap" data-bs-toggle="modal"
+                                                data-bs-target="#dok-product-modal-preview" data-tab="video">
+                                                <span><i class="fa-brands fa-youtube"></i></span>
+                                            </a>
+                                            <span>3 video</span>
+                                        </div>
+                                        <div thumbsSlider=""
+                                            class="swiper dok-product-thumbnail dok-product-thumbnail-js">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide">
                                                     <img class="img-fluid"
@@ -394,41 +456,18 @@
                                             </div>
                                         </div>
                                         <div class="list-img">
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
-                                            </a>
-
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
-                                            </a>
-
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
-                                            </a>
-
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
-                                            </a>
-
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
-                                            </a>
-
-                                            <a
-                                                href="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg">
-                                                <img class="img-fluid"
-                                                    src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
-                                            </a>
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-7_1.jpg" />
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-3_1.jpg" />
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-4_1.jpg" />
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-5_1.jpg" />
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5_1_1.jpg" />
+                                            <img class="img-fluid"
+                                                src="https://cdn2.cellphones.com.vn/x/media/catalog/product/l/o/loa-bluetooth-jbl-charge-5-6_1.jpg" />
                                         </div>
 
 
@@ -3459,6 +3498,7 @@
 <script src="assets/js/fancybox.umd.js"></script>
 <script src="assets/js/toc.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/jquery.fitvids.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/script.js"></script>
 

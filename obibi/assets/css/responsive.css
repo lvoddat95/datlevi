@@ -317,7 +317,9 @@ hr.mobile-line,
   #block-comment-cps {
     margin-bottom: 20px;
   }
-
+  #tab-video .icon-play{
+    font-size: 70px;
+  }
   
 
 }
