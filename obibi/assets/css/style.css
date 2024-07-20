@@ -7541,11 +7541,25 @@ input:checked+label.rdo-tile-label {
 }
 
 .dok-product-filter:not(.stop) .filter-sticky {
-  /* position: static !important; */
   opacity: 0;
   visibility: hidden;
 }
 
+.dok-product-toc:not(.stop).toc-sticky {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dok-product-toc {
+  background: #fff;
+  transition: var(--transition-45);
+}
+
+.dok-product-toc.stop.toc-sticky {
+  z-index: 999;
+}
+
+.dok-product-toc.stop.toc-sticky,
 .dok-product-filter.stop .filter-sticky {
   top: 70px !important;
   border-bottom: 1px solid var(--border-color);
@@ -7853,19 +7867,26 @@ input:checked+label.rdo-tile-label {
   max-width: 280px;
 }
 
-#dok-product-modal-tab>ul {
+#dok-product-modal-tab {
+  overflow-x: hidden;
+}
+
+.dok-tab-nav>ul {
   display: flex;
   justify-content: center;
   margin: auto;
   padding-top: 10px;
   border-bottom: 1px solid #e0e0e0;
+  overflow: hidden;
+  overflow-x: auto;
 }
 
-#dok-product-modal-tab>ul li {
+.dok-tab-nav>ul li {
   display: flex;
+  white-space: nowrap;
 }
 
-#dok-product-modal-tab>ul li a {
+.dok-tab-nav>ul li a {
   color: var(--dark);
   cursor: pointer;
   font-size: 16px;
@@ -7876,7 +7897,7 @@ input:checked+label.rdo-tile-label {
   transition: none;
 }
 
-#dok-product-modal-tab>ul li.active a {
+.dok-tab-nav>ul li.active a {
   border-bottom: 4px solid var(--sub-color);
   color: var(--sub-color);
   font-weight: bold;
@@ -7927,6 +7948,12 @@ input:checked+label.rdo-tile-label {
   left: auto;
   right: 20px;
   top: 20px;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   z-index: 1;
 }
 
@@ -8001,4 +8028,26 @@ input:checked+label.rdo-tile-label {
   transform: translate(-50%, -50%);
   font-size: 120px;
   color: var(--price-color);
+}
+
+#scroll-to-item ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#scroll-to-item ul li {
+  display: flex;
+}
+
+#scroll-to-item ul li a {
+  position: relative;
+  top: 1px;
+  padding: 10px 0;
+  color: var(--dark);
+  border-bottom: 3px solid transparent;
+}
+
+#scroll-to-item ul li a.active {
+  border-color: var(--sub-color);
 }

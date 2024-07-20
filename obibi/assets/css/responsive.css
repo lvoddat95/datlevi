@@ -317,10 +317,23 @@ hr.mobile-line,
   #block-comment-cps {
     margin-bottom: 20px;
   }
-  #tab-video .icon-play{
+
+  #tab-video .icon-play {
     font-size: 70px;
   }
-  
+
+  .dok-tab-nav>ul {
+    justify-content: start;
+  }
+
+  .dok-tab-nav {
+    padding-right: 40px;
+  }
+
+  .product-modal-preview .btn-close {
+    right: 10px;
+    top: 10px;
+  }
 
 }
 

@@ -207,8 +207,54 @@ $(function () {
 		});
 	}
 
+	if ($('#scroll-to-item').length > 0) {
 
+		$('#scroll-to-item ul li a').click(function (event) {
+			event.preventDefault();
 
+			// Lấy giá trị của thuộc tính href, loại bỏ dấu # để lấy id của phần tử cần cuộn đến
+			var targetId = $(this).attr('href').substring(1);
+
+			// Tìm phần tử có id tương ứng
+			var targetElement = $('#' + targetId);
+
+			// Kiểm tra xem phần tử có tồn tại hay không
+			if (targetElement.length) {
+				// Cuộn mượt mà đến vị trí của phần tử đó
+				$('html, body').animate({
+					scrollTop: targetElement.offset().top
+				}, 1000, function () {
+					// Thêm lớp active vào thẻ a đã được click
+					$('#scroll-to-item ul li a').removeClass('active');
+					$('a[href="#' + targetId + '"]').addClass('active');
+					console.log(123)
+				}); // Thời gian cuộn (1000ms = 1 giây)
+			} else {
+				console.warn('Element with id ' + targetId + ' not found.');
+			}
+		});
+
+		// Xử lý sự kiện cuộn trang để thêm/xóa lớp active vào thẻ a tương ứng
+		$(window).scroll(function () {
+			var scrollPos = $(document).scrollTop();
+
+			$('#scroll-to-item ul li a').each(function () {
+				var currLink = $(this);
+				var targetId = currLink.attr("href").substring(1);
+				var targetElement = $('#' + targetId);
+
+				if (targetElement.length) {
+					var targetPos = targetElement.offset().top;
+					var targetHeight = targetElement.outerHeight();
+
+					if (scrollPos >= targetPos && scrollPos < targetPos + targetHeight) {
+						$('#scroll-to-item ul li a').removeClass('active');
+						currLink.addClass('active');
+					}
+				}
+			});
+		});
+	}
 
 
 
@@ -271,14 +317,19 @@ $(function () {
 
 	$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
 		var tab = $(e.relatedTarget).data('tab');
-		if (tab == 'image') {
-			activateTab('#dok-product-modal-tab', '#tab-image');
-		} else {
-			activateTab('#dok-product-modal-tab', '#tab-video');
+		switch (tab) {
+			case 'image':
+				activateTab('#dok-product-modal-tab', '#tab-image');
+				break;
+			case 'video':
+				activateTab('#dok-product-modal-tab', '#tab-video');
+				break;
+			case 'technical':
+				activateTab('#dok-product-modal-tab', '#tab-technical');
+				break;
+			default:
+			// code block
 		}
-	});
-
-	$('#dok-product-modal-preview').on('hidden.bs.modal', function (e) {
 
 	});
 
@@ -526,10 +577,7 @@ $(function () {
 		});
 	};
 
-	$(".vid-container").fitVids();
-
 	if ($(".nav-newscate").length > 0) {
-
 		var swiper = new Swiper(".nav-newscate", {
 			slidesPerView: "auto",
 			freeMode: true,
@@ -599,29 +647,38 @@ $(function () {
 	});
 
 	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
-
-
+	toggleScrollClass('#scroll-to-item', 70);
 
 
 });
 
-var lastScrollTop = 0;
-var scrollTimeout;
 
-function toggleScrollClass(selector) {
+function toggleScrollClass(selector, threshold = 0) {
+	var lastScrollTop = 0;
+	var scrollTimeout;
+
 	$(window).scroll(function () {
 		clearTimeout(scrollTimeout);
 
 		var st = $(this).scrollTop();
-		if (st > lastScrollTop) {
-			$(selector).removeClass('up stop').addClass('down');
+
+		// Kiểm tra nếu vị trí cuộn qua ngưỡng được xác định
+		if (st > threshold) {
+			if (st > lastScrollTop) {
+				$(selector).removeClass('up stop').addClass('down');
+			} else {
+				$(selector).removeClass('down stop').addClass('up');
+			}
 		} else {
-			$(selector).removeClass('down stop').addClass('up');
+			$(selector).removeClass('up down stop'); // Xóa các lớp nếu chưa qua ngưỡng
 		}
+
 		lastScrollTop = st;
 
 		scrollTimeout = setTimeout(function () {
-			$(selector).addClass('stop');
+			if (st > threshold) {
+				$(selector).addClass('stop');
+			}
 		}, 500);
 	});
 }
@@ -642,50 +699,3 @@ function stopAllVideos() {
 	});
 }
 
-function do_active_slt(elem) {
-	// get all 'a' elements
-	var li = document.querySelectorAll('ul.ul-star > li');
-	// loop through all 'a' elements
-	for (i = 0; i < li.length; i++) {
-		// Remove the class 'active' if it exists
-		li[i].classList.remove('active-slt')
-	}
-	// add 'active' classs to the element that was clicked
-	elem.classList.add('active-slt');
-}
-
-var showInputRating = function () {
-	$(".read-assess").show();
-	$("body").addClass("overlay");
-}
-
-var hideInputRating = function () {
-	$(".read-assess").hide();
-	$("body").removeClass("overlay");
-}
-
-var show_search_box = function (p_this) {
-	$(p_this).focus();
-	$("#dok_mb_search").show();
-}
-
-var hide_search_box = function (p_this) {
-	$(p_this).focus();
-	$("#dok_mb_search").hide();
-}
-var likeRating = function () {
-	$(".click-like").find("i").removeClass('icondetail-likewhite');
-	$(".click-like").find("i").addClass('icondetail-like');
-}
-
-var showRatingCmtChild = function (pid) {
-	$(".r" + pid).show();
-}
-var ratingRelply = function (pid) {
-	$(".rRepPopup").show();
-	$("body").addClass("overlay");
-}
-var hideReplyConfirmPopup = function (pid) {
-	$(".rRepPopup").hide();
-	$("body").removeClass("overlay");
-}
