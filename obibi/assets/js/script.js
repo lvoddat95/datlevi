@@ -649,6 +649,20 @@ $(function () {
 	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
 	toggleScrollClass('#scroll-to-item', 70);
 
+	if ($(".copy").length > 0) {
+		$('.copy').click(function () {
+			var textToCopy = $(this).siblings('.text-wrap').find('.text').text();
+
+			var tempInput = $('<input>');
+			$('body').append(tempInput);
+			tempInput.val(textToCopy).select();
+			document.execCommand('copy');
+			tempInput.remove();
+
+			alert('Đã sao chép: ' + textToCopy);
+		});
+	}
+
 
 });
 
@@ -699,3 +713,43 @@ function stopAllVideos() {
 	});
 }
 
+var change_delivery_menthod = function (p_menthod) {
+	if (p_menthod === 'nhan-hang') {
+		$('#form-giao-hang').hide();
+		$('#form-nhan-hang').show();
+	} else {
+		$('#form-giao-hang').show();
+		$('#form-nhan-hang').hide();
+	}
+}
+
+var change_check_other_delivery = function (p_this) {
+	if (p_this.checked) {
+		$('#form-nhan-hang-ho').slideDown('300');
+	} else {
+		$('#form-nhan-hang-ho').slideUp('300');
+	}
+}
+
+var change_check_invoice = function (p_this) {
+	if (p_this.checked) {
+		$('#form-xuat-hoa-don').slideDown('300');
+	} else {
+		$('#form-xuat-hoa-don').slideUp('300');
+	}
+}
+
+var change_payment_menthod = function (p_menthod) {
+	if (p_menthod === 'ngan-hang') {
+		$('#form-ngan-hang').slideDown('300');
+	} else {
+		$('#form-ngan-hang').slideUp('300');
+	}
+}
+
+var change_bank_menthod = function (p_this) {
+	if (p_this.checked) {
+		$(p_this).closest('.list-tra-gop').find('li').removeClass('active');
+		$('input[type="radio"][name="bank-menthod"]:checked').closest('li').addClass('active');
+	}
+}

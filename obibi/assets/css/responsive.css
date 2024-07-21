@@ -337,7 +337,29 @@ hr.mobile-line,
 
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+  .bank-info {
+    max-width: 100%;
+  }
+
+  .p-cart-title.pd,
+  .p-cart-box {
+    padding: 8px 4px;
+  }
+
+  .total-provisional ul>li {
+    align-items: start;
+    margin-bottom: 4px;
+  }
+
+  .total-provisional ul>li>span {
+    display: block;
+  }
+
+  .p-hinh-thuc{
+    display: block;
+  }
+}
 
 @media (max-width: 475px) {}
 
