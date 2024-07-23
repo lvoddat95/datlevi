@@ -113,6 +113,11 @@ hr.mobile-line,
 
 @media (max-width: 991px) {
 
+  .cart-box {
+    box-shadow: none;
+    margin-bottom: 75px;
+  }
+
   .dok-header-overlay {
     display: none;
   }
@@ -344,20 +349,37 @@ hr.mobile-line,
 
   .p-cart-title.pd,
   .p-cart-box {
-    padding: 8px 4px;
+    padding: 8px 0;
   }
 
-  .total-provisional ul>li {
+  .total-provisional>ul>li {
     align-items: start;
     margin-bottom: 4px;
   }
 
-  .total-provisional ul>li>span {
+  .total-provisional>ul>li>span {
     display: block;
   }
 
-  .p-hinh-thuc{
+  .p-hinh-thuc {
     display: block;
+  }
+
+  .p-cart-delivery-menthod {
+    margin-top: 6px;
+  }
+
+  .cart-page {
+    background: #fff;
+  }
+
+  .total-provisional,
+  .cart-listing>ul>li {
+    padding: 10px 0;
+  }
+
+  .cart-listing .p-cart-img {
+    width: 100px;
   }
 }
 

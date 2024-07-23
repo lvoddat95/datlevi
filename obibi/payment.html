@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="cart-page">
+<body class="cart-page ">
     <div id="master-container">
         <div id="header" class="header"></div>
 
@@ -178,24 +178,28 @@
 
         </div>
 
-        <footer id="footer" class="footer"></footer>
-
         <div id="bottom-nav-box"></div>
 
         <div id="go-top" title="Lên đầu trang"></div>
 
-        <div id="dok-buy-success" class="modal fade dok-modal-bottom-up" data-bs-backdrop="static"
+        <div id="dok-buy-success" class="modal fade dok-modal-bottom-up alert-modal" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="fz-18 fw-bold text-center w-100 mb-0">ĐẶT HÀNG THÀNH CÔNG</h4>
+                        <h4 class="fz-24 fw-bold text-center w-100 mb-0">Đặt hàng thành công</h4>
                     </div>
                     <div class="modal-body">
                         <div class="p-buy-success">
-                            <div class="text-center">
-                                <div class="mb-3">
-                                    <i class="fa-sharp-duotone fa-solid fa-check-to-slot text-success fz-30"></i>
+                            <div class="text-center mb-4">
+                                <div class="icon-success">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <circle class="path circle" fill="none" stroke="#4CAF50" stroke-width="6"
+                                            stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                        <polyline class="path check" fill="none" stroke="#4CAF50" stroke-width="6"
+                                            stroke-linecap="round" stroke-miterlimit="10"
+                                            points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                    </svg>
                                 </div>
                                 <p>Cảm ơn Anh/Chị ABC đã đặt hàng!</p>
                                 <p>Chúng tôi sẽ liên hệ với Anh/Chị để xác nhận đơn hàng trong vòng 15 phút tới.</p>
@@ -213,13 +217,12 @@
             </div>
         </div>
 
-
-        <div id="dok-modal-review" class="modal fade dok-modal-bottom-up" data-bs-backdrop="static"
+        <div id="dok-modal-review" class="modal fade dok-modal-bottom-up alert-modal" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="fz-18 fw-bold text-center w-100 mb-0">ĐÁNH GIÁ SẢN PHẨM</h4>
+                        <h4 class="fz-24 fw-bold text-center w-100 mb-0">Đánh giá sản phẩm</h4>
                         <button type="button" class="btn-close" data-bs-target="#dok-buy-success" data-bs-toggle="modal"
                             data-bs-dismiss="modal"></button>
                     </div>
@@ -296,7 +299,6 @@
             </div>
         </div>
 
-
     </div>
 </body>
 
@@ -315,13 +317,6 @@
             .then(response => response.text())
             .then(html => {
                 document.querySelector('#header-simple').innerHTML = html;
-            });
-
-        // Fetch Footer
-        fetch('patials/footer.html')
-            .then(response => response.text())
-            .then(html => {
-                document.querySelector('#footer').innerHTML = html;
             });
 
         // Fetch Bottom nav

@@ -875,7 +875,7 @@ a.link:hover {
   min-width: 70px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 30px;
+  min-height: 40px;
   border: var(--border);
   border-radius: var(--radius-4);
   overflow: auto !important;
@@ -7726,8 +7726,8 @@ input:checked+label.rdo-tile-label {
 .counter-container button,
 .modal-buy-footer button {
   outline: initial;
-  height: 42px;
-  width: 40px;
+  height: 38px;
+  width: 38px;
   border: none;
   transition: var(--transition-25);
 }
@@ -7741,8 +7741,8 @@ input:checked+label.rdo-tile-label {
 
 .counter-container input,
 .modal-buy-footer input {
-  max-width: 40px;
-  height: 42px;
+  max-width: 38px;
+  height: 38px;
   border: none;
   margin: 0 -1px;
 }
@@ -8076,24 +8076,27 @@ input.counter-input {
 }
 
 .cart-box {
-  position: relative;
-  border-radius: var(--radius-8);
+  display: block;
   background: #fff;
+  box-shadow: 0 0 18px rgba(0, 0, 0, .12);
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-4);
 }
 
-.cart-listing ul {
+.cart-listing>ul {
   border-top: 1px solid var(--border-color);
 }
 
-.cart-listing ul li {
+.cart-listing>ul>li {
   display: flex;
-  align-items: top;
+  align-items: start;
   padding: 10px 30px;
   width: 100%;
   box-sizing: border-box;
 }
 
-.cart-listing ul li:not(:first-child) {
+.cart-listing>ul>li:not(:first-child) {
   border-top: 1px solid #e1e1e1;
 }
 
@@ -8160,8 +8163,24 @@ input.counter-input {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
+}
+
+.p-cart-selection>div {
+  margin-right: 12px;
   margin-bottom: 6px;
+}
+
+.p-cart-selection .dropdown-menu {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.p-cart-selection .dropdown-item {
+  font-weight: normal;
+}
+
+.p-cart-selection .dropdown-item.active {
+  font-weight: 500;
 }
 
 .p-cart-selection select {
@@ -8178,8 +8197,9 @@ input.counter-input {
 }
 
 .cart-page .counter-container input {
-  max-width: 30px;
+  max-width: 36px;
   height: 32px;
+  outline: none;
 }
 
 .total-provisional {
@@ -8188,25 +8208,25 @@ input.counter-input {
   padding: 10px 30px;
 }
 
-.total-provisional ul {
+.total-provisional>ul {
   display: flex;
   flex-direction: column;
 }
 
-.total-provisional ul>li {
+.total-provisional>ul>li {
   display: flex;
   align-items: center;
   min-height: 30px;
 }
 
-.total-provisional ul>li>span {
+.total-provisional>ul>li>span {
   display: flex;
   align-items: center;
   float: left;
   color: var(--dark);
 }
 
-.total-provisional ul>li>span:nth-child(2) {
+.total-provisional>ul>li>span:nth-child(2) {
   float: right;
   margin-left: auto;
 }
@@ -8229,7 +8249,7 @@ input.counter-input {
 .total-discount button {
   white-space: nowrap;
   border: none;
-  height: 28px;
+  height: 38px;
   position: absolute;
   top: 1px;
   right: 1px;
@@ -8279,7 +8299,7 @@ input.counter-input {
 .p-cart-delivery-menthod .btn {
   border-radius: 0;
   min-height: 24px;
-  padding: 3px 10px;
+  padding: 6px 10px;
   font-weight: 400;
   outline: none;
   box-shadow: none;
@@ -8428,4 +8448,80 @@ input.counter-input {
 
 .p-cart-box .list-month .form-check-label span:first-child {
   width: 30%;
+}
+
+.alert-modal .modal-header {
+  border-bottom: 0px;
+}
+
+.alert-modal .modal-content {
+  padding: 20px 10px;
+}
+
+.icon-success svg {
+  width: 70px;
+  display: block;
+  margin: 0px auto 20px;
+}
+
+.icon-success .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+.icon-success .path.circle {
+  -webkit-animation: dash 0.9s ease-in-out;
+  animation: dash 0.9s ease-in-out;
+}
+
+.icon-success .path.line {
+  stroke-dashoffset: 1000;
+  -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+  animation: dash 0.9s 0.35s ease-in-out forwards;
+}
+
+.icon-success .path.check {
+  stroke-dashoffset: -100;
+  -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  animation: dash-check 0.9s 0.35s ease-in-out forwards;
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
 }

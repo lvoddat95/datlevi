@@ -753,3 +753,4 @@ var change_bank_menthod = function (p_this) {
 		$('input[type="radio"][name="bank-menthod"]:checked').closest('li').addClass('active');
 	}
 }
+
