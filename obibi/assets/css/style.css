@@ -8015,7 +8015,7 @@ input.counter-input {
 .dok-tab-content .tab-content .tab-pane.active {
   display: block !important;
   text-align: center;
-  max-height: calc(100vh - 250px);
+  /* max-height: calc(100vh - 250px); */
 }
 
 #tab-video ul {
