@@ -5375,13 +5375,22 @@ input:checked+label.rdo-tile-label {
 
 .dok-product-img-main {
   align-items: center;
-  border: 1px solid #d1d5db;
-  border-radius: 15px;
+  /* border: 1px solid #d1d5db; */
+  /* border-radius: 15px; */
   display: flex;
   height: 400px;
   justify-content: center;
   margin: 0 0 10px;
   width: 100%;
+}
+
+.dok-product-img-main .swiper-button-next, .dok-product-img-main .swiper-button-prev {
+  opacity: 0;
+  transition: var(--transition-25);
+}
+
+.dok-product-img-main:hover .swiper-button-next, .dok-product-img-main:hover .swiper-button-prev {
+  opacity: 1;
 }
 
 .dok-product-img-main .swiper-slide {
