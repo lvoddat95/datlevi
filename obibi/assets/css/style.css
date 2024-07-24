@@ -4632,7 +4632,7 @@ input:checked+label.rdo-tile-label {
   margin: 0
 }
 
-.block-comment__box-list-comment .list-comment .item-comment__box-cmt .box-cmt__box-question .btn-rep-cmt {
+.btn-rep-cmt {
   align-items: center;
   background-color: transparent;
   border: 0;
@@ -4642,12 +4642,12 @@ input:checked+label.rdo-tile-label {
   font-size: 14px;
   line-height: 1;
   margin-left: auto;
-  margin-top: 10px;
   -webkit-text-decoration: none;
-  text-decoration: none
+  text-decoration: none;
+  padding: 0;
 }
 
-.block-comment__box-list-comment .list-comment .item-comment__box-cmt .box-cmt__box-question .btn-rep-cmt svg>path {
+.btn-rep-cmt svg>path {
   fill: var(--sub-color2);
 }
 
@@ -5243,6 +5243,12 @@ input:checked+label.rdo-tile-label {
   cursor: pointer;
   color: var(--sub-color2);
   font-size: 16px;
+}
+
+._bd+a.show::after {
+  content: "\f107";
+  font-family: var(--fa-style-family, "Font Awesome 6 Pro");
+  margin-left: 10px;
 }
 
 .dok-categories-info a {
