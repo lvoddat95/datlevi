@@ -112,17 +112,25 @@ hr.mobile-line,
 }
 
 @media (max-width: 991px) {
+  .dok-product-img-main-mobile{
+    margin-top: 40px;
+  }
   .dok-product-modal-tab .modal-header{
     position: fixed;
     left: 0;
     right: 0;
     width: 100%;
-    transform: translateY(-70px);
-    opacity: 0;
+    transform: translateY(0px);
     z-index: 1;
     background: #fff;
     -webkit-transition: var(--transition-45);
     transition: var(--transition-45);
+  }
+
+  .dok-product-modal-tab.top .modal-header,
+  .dok-product-modal-tab.down .modal-header{
+    transform: translateY(-70px);
+    opacity: 0;
   }
 
   .dok-product-modal-tab.stop .modal-header{
