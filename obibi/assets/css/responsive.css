@@ -112,10 +112,11 @@ hr.mobile-line,
 }
 
 @media (max-width: 991px) {
-  .dok-product-img-main-mobile{
+  .dok-product-modal-tab .dok-tab-content {
     margin-top: 40px;
   }
-  .dok-product-modal-tab .modal-header{
+
+  .dok-product-modal-tab .modal-header {
     position: fixed;
     left: 0;
     right: 0;
@@ -128,12 +129,12 @@ hr.mobile-line,
   }
 
   .dok-product-modal-tab.top .modal-header,
-  .dok-product-modal-tab.down .modal-header{
+  .dok-product-modal-tab.down .modal-header {
     transform: translateY(-70px);
     opacity: 0;
   }
 
-  .dok-product-modal-tab.stop .modal-header{
+  .dok-product-modal-tab.stop .modal-header {
     transform: translateY(0);
     opacity: 1;
   }
@@ -397,7 +398,7 @@ hr.mobile-line,
     display: block;
   }
 
-  .total-product-coupon{
+  .total-product-coupon {
     width: 100%;
   }
 
