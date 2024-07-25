@@ -314,24 +314,31 @@ $(function () {
 		},
 	});
 
-	toggleScrollClass('#dok-product-modal-tab', 0, '#dok-product-modal-tab > .modal-body');
+	if ($('#dok-product-modal-preview').length > 0) {
+		toggleScrollClass('#dok-product-modal-tab', 0, '#dok-product-modal-tab > .modal-body');
 
-	$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
-		var tab = $(e.relatedTarget).data('tab');
-		switch (tab) {
-			case 'image':
-				activateTab('#dok-product-modal-tab', '#tab-image');
-				break;
-			case 'video':
-				activateTab('#dok-product-modal-tab', '#tab-video');
-				break;
-			case 'technical':
-				activateTab('#dok-product-modal-tab', '#tab-technical');
-				break;
-			default:
-		}
+		$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
+			var tab = $(e.relatedTarget).data('tab');
+			$('html').css('overflow-x', 'initial');
+			switch (tab) {
+				case 'image':
+					activateTab('#dok-product-modal-tab', '#tab-image');
+					break;
+				case 'video':
+					activateTab('#dok-product-modal-tab', '#tab-video');
+					break;
+				case 'technical':
+					activateTab('#dok-product-modal-tab', '#tab-technical');
+					break;
+				default:
+			}
+		});
 
-	});
+		$('#dok-product-modal-preview').on('hidden.bs.modal', function (e) {
+			$('html').css('overflow-x', 'hidden');
+		});
+	}
+
 
 	$('.dok-tab-item').click(function (event) {
 		event.preventDefault();
@@ -678,8 +685,6 @@ function toggleScrollClass(selector, threshold = 0, scrollContainer = window) {
 		clearTimeout(scrollTimeout);
 
 		var st = $(this).scrollTop();
-
-		console.log($(selector))
 
 		// Kiểm tra nếu vị trí cuộn qua ngưỡng được xác định
 		if (st > threshold) {
