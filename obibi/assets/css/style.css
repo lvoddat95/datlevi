@@ -122,6 +122,9 @@ Tags:
   --bs-backdrop-opacity: 1;
 }
 
+html, body {
+  overflow-x: hidden;
+}
 
 html {
   font-size: 62.5%;
@@ -140,6 +143,11 @@ body {
   font-family: var(--font-family-sans-serif);
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
 input,
@@ -8539,4 +8547,8 @@ input.counter-input {
   100% {
     stroke-dashoffset: 900;
   }
+}
+
+.dok-product-img-main-mobile img {
+  margin-bottom: 10px;
 }
