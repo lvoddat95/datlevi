@@ -440,7 +440,7 @@ $(function () {
 	if ($(".dok-products-slider").length > 0) {
 		var product_slider = new Swiper(".dok-products-slider", {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 8,
 			loop: true,
 			autoplay: {
 				delay: 3000,
@@ -454,12 +454,15 @@ $(function () {
 			breakpoints: {
 				640: {
 					slidesPerView: 2,
+					spaceBetween: 8,
 				},
 				768: {
 					slidesPerView: 3,
+					spaceBetween: 0,
 				},
 				1024: {
 					slidesPerView: 5,
+					spaceBetween: 0,
 				},
 			},
 		});
@@ -717,9 +720,15 @@ var change_delivery_menthod = function (p_menthod) {
 	if (p_menthod === 'nhan-hang') {
 		$('#form-giao-hang').hide();
 		$('#form-nhan-hang').show();
+		$('#total-fee-ship').hide();
+		$('#shipping-menthod').hide();
+		$('input[type="radio"][name="shipping-menthod"]').attr('checked', false);
 	} else {
 		$('#form-giao-hang').show();
 		$('#form-nhan-hang').hide();
+		$('#total-fee-ship').show();
+		$('#shipping-menthod').show();
+		$('input[type="radio"][name="shipping-menthod"]').attr('checked', false);
 	}
 }
 
@@ -744,6 +753,17 @@ var change_payment_menthod = function (p_menthod) {
 		$('#form-ngan-hang').slideDown('300');
 	} else {
 		$('#form-ngan-hang').slideUp('300');
+	}
+}
+
+var change_ship_menthod = function (p_this) {
+	$('.fee-ship').hide();
+	$('#total-fee-ship').hide();
+	let fee_ship = $(p_this).parent().find('.fee-ship');
+	if (p_this.checked) {
+		fee_ship.show();
+		$('#total-fee-ship').show();
+		$('#total-fee-ship').find('.temp-total-money').text(fee_ship.text());
 	}
 }
 

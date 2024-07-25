@@ -39,7 +39,8 @@
 
             <div class="container">
                 <div class="cart-box">
-                    <div class="alert-primary-new"><i class="fa fa-credit-card"></i><strong> THANH TOÁN</strong></div>
+                    <div class="alert-success-new"><i class="fad fa-bag-shopping"></i><strong> ĐẶT HÀNG THÀNH
+                            CÔNG</strong></div>
                     <div>
                         <h4 class="p-cart-title pd">Thông tin đơn hàng</h4>
                         <div class="p-cart-box">
@@ -59,42 +60,68 @@
                                 </tr>
                                 <tr>
                                     <td class="text-black-50 fw-medium">Tổng tiền</td>
-                                    <td class="ps-4"><span class="price-color">11,000,000đ</span></td>
+                                    <td class="ps-4"><span class="price-color fw-bold">11,000,000đ</span></td>
                                 </tr>
                             </table>
                         </div>
                     </div>
-
+                    <div class="p-cart-box border-0 pb-0">
+                        <h4 class="order-infor-alert"> Đơn hàng chưa được thanh toán </h4>
+                    </div>
                     <div>
                         <h4 class="p-cart-title pd">Chọn hình thức thanh toán</h4>
                         <div class="p-cart-box">
-                            <div class="d-flex flex-column">
+                            <div class="d-flex flex-column formality-pay-new">
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input" type="radio" name="payment-menthod" id="pay-1"
                                         onchange="change_payment_menthod('cod');" checked>
                                     <label class="form-check-label mb-0 ms-2" for="pay-1">
-                                        Thành toán khi nhận hàng - COD
+                                        <i class="choose-payment-normal-at-store"></i> Thành toán tiền mặt khi nhận hàng
                                     </label>
                                 </div>
+
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input" type="radio" name="payment-menthod" id="pay-2"
                                         onchange="change_payment_menthod('ngan-hang');">
                                     <label class="form-check-label mb-0 ms-2" for="pay-2">
-                                        Chuyển khoản ngân hàng
+                                        <i class="choose-payment-bank"></i>Chuyển khoản ngân hàng
                                     </label>
                                 </div>
+
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input" type="radio" name="payment-menthod" id="pay-3"
-                                        onchange="change_payment_menthod('zalo');">
+                                        onchange="change_payment_menthod('3');">
                                     <label class="form-check-label mb-0 ms-2" for="pay-3">
-                                        Thanh toán Momo
+                                        <i class="choose-payment-atm"></i>Qua thẻ ATM (có Internet Banking)
                                     </label>
                                 </div>
+
                                 <div class="form-check d-flex align-items-center mb-3">
                                     <input class="form-check-input" type="radio" name="payment-menthod" id="pay-4"
-                                        onchange="change_payment_menthod('vnpay');">
+                                        onchange="change_payment_menthod('4');">
                                     <label class="form-check-label mb-0 ms-2" for="pay-4">
-                                        Thanh toán bằng VNPAY
+                                        <i class="choose-payment-VMJ"></i>Qua thẻ quốc tế Visa, Master, JCB
+                                        <span class="listcard">
+                                            <i class="cartnew-visa"></i>
+                                            <i class="cartnew-mastercard"></i>
+                                            <i class="cartnew-jcb"></i>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input" type="radio" name="payment-menthod" id="pay-5"
+                                        onchange="change_payment_menthod('5');">
+                                    <label class="form-check-label mb-0 ms-2" for="pay-5">
+                                        <i class="choose-payment-MOMO"></i>Ví MoMo
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex align-items-center mb-3">
+                                    <input class="form-check-input" type="radio" name="payment-menthod" id="pay-6"
+                                        onchange="change_payment_menthod('6');">
+                                    <label class="form-check-label mb-0 ms-2" for="pay-6">
+                                        <i class="choose-payment-QR-Code"></i>Qua VNPAY-QR
                                     </label>
                                 </div>
                             </div>
