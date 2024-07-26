@@ -8938,3 +8938,7 @@ input.counter-input {
   margin: 0 0 10px;
   font-size: 14px;
 }
+
+.modal-fullscreen .modal-body{
+  overflow-x: hidden;
+}
