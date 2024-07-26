@@ -5704,6 +5704,7 @@ input:checked+label.rdo-tile-label {
 }
 
 .order-button strong {
+  cursor: pointer;
   color: #fff;
   font-size: 16px;
 }
