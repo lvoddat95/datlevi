@@ -392,6 +392,16 @@ $(function () {
 	}
 
 
+	if ($('[data-fancybox="video-gallery-mobile"]').length > 0) {
+		Fancybox.bind('[data-fancybox="video-gallery-mobile"]', {
+			Thumbs: {
+				type: "classic",
+			},
+			parentEl: document.getElementById("tab-video")
+		});
+	}
+
+
 	if ($(".dok-adv-slider").length > 0) {
 		var main_slider = new Swiper(".dok-adv-slider", {
 			slidesPerView: 1,
