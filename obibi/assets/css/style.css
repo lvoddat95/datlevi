@@ -123,7 +123,6 @@ Tags:
 }
 
 html {
-  overflow-x: hidden;
   font-size: 62.5%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -134,12 +133,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin: 0;
-  overflow-x: hidden;
   font-synthesis: none;
   color: var(--dark);
   font-family: var(--font-family-sans-serif);
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
+}
+
+body.modal-open {
+  overflow: hidden !important;
 }
 
 img, video {
