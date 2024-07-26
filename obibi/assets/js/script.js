@@ -762,6 +762,12 @@ var change_payment_menthod = function (p_menthod) {
 	} else {
 		$('#form-ngan-hang').slideUp('300');
 	}
+
+	if (p_menthod === 'cod') {
+		$('.btn-pay').attr('data-bs-target','#dok-buy-success');
+	} else {
+		$('.btn-pay').attr('data-bs-target','#dok-pay-success');
+	}
 }
 
 var change_ship_menthod = function (p_this) {

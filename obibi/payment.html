@@ -62,6 +62,10 @@
                                     <td class="text-black-50 fw-medium">Tổng tiền</td>
                                     <td class="ps-4"><span class="price-color fw-bold">11,000,000đ</span></td>
                                 </tr>
+                                <tr>
+                                    <td class="text-black-50 fw-medium">Tổng tiền</td>
+                                    <td class="ps-4"><span class="price-color fw-bold">11,000,000đ</span></td>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -218,12 +222,47 @@
 
         <div id="go-top" title="Lên đầu trang"></div>
 
-        <div id="dok-buy-success" class="modal fade dok-modal-bottom-up alert-modal" data-bs-backdrop="static"
+        <div id="dok-pay-success" class="modal fade dok-modal-bottom-up alert-modal" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="fz-24 fw-bold text-center w-100 mb-0">Thanh toán thành công</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-buy-success">
+                            <div class="text-center mb-4">
+                                <div class="icon-success">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                                        <circle class="path circle" fill="none" stroke="#4CAF50" stroke-width="6"
+                                            stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+                                        <polyline class="path check" fill="none" stroke="#4CAF50" stroke-width="6"
+                                            stroke-linecap="round" stroke-miterlimit="10"
+                                            points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                                    </svg>
+                                </div>
+                                <p>Cảm ơn Anh/Chị ABC đã đặt hàng!</p>
+                                <p>Chúng tôi sẽ liên hệ với Anh/Chị để xác nhận đơn hàng trong vòng 15 phút tới.</p>
+                                <p><i class="fa fa-phone-circle me-2"></i>Nếu cần tư vấn, hãy liên hệ ngày với <a
+                                        href="tel:0941339339" class="main-color">0941339339</a></p>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center gap-4">
+                                <a href="index.html" class="btn btn-pay">Tiếp tục mua hàng</a>
+                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#dok-modal-review"
+                                    class="btn btn-default">Đánh giá sản phẩm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dok-buy-success" class="modal fade dok-modal-bottom-up alert-modal" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="fz-24 fw-bold text-center w-100 mb-0">Đặt hàng thành công</h4>
                     </div>
                     <div class="modal-body">
                         <div class="p-buy-success">
