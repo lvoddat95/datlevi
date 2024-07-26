@@ -416,7 +416,7 @@ $(function () {
 	if ($(".dok-products-post").length > 0) {
 		var product_in_post = new Swiper(".dok-products-post", {
 			slidesPerView: 2,
-			spaceBetween: 0,
+			spaceBetween: 8,
 			loop: true,
 			autoplay: {
 				delay: 3000,
@@ -430,12 +430,15 @@ $(function () {
 			breakpoints: {
 				640: {
 					slidesPerView: 2,
+					spaceBetween: 8,
 				},
 				768: {
 					slidesPerView: 3,
+					spaceBetween: 0,
 				},
 				1024: {
 					slidesPerView: 3,
+					spaceBetween: 0,
 				},
 			},
 		});
