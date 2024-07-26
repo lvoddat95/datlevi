@@ -319,7 +319,6 @@ $(function () {
 
 		$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
 			var tab = $(e.relatedTarget).data('tab');
-			$('html').css('overflow-x', 'initial');
 			switch (tab) {
 				case 'image':
 					activateTab('#dok-product-modal-tab', '#tab-image');
@@ -335,7 +334,6 @@ $(function () {
 		});
 
 		$('#dok-product-modal-preview').on('hidden.bs.modal', function (e) {
-			$('html').css('overflow-x', 'hidden');
 		});
 	}
 
