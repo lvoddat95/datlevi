@@ -333,11 +333,11 @@ $(function () {
 		});
 	}
 
-	$('#dok-product-modal-preview, #dok-menu-mobile').on('shown.bs.modal', function (e) {
+	$('#dok-product-modal-preview, #dok-menu-mobile, .dok-modal-bottom-up').on('shown.bs.modal', function (e) {
 		$('html').css('overflow-x', 'initial');
 	});
 
-	$('#dok-product-modal-preview, #dok-menu-mobile').on('hidden.bs.modal', function (e) {
+	$('#dok-product-modal-preview, #dok-menu-mobile, .dok-modal-bottom-up').on('hidden.bs.modal', function (e) {
 		$('html').css('overflow-x', 'hidden');
 	});
 
