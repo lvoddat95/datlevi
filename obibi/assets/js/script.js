@@ -671,7 +671,7 @@ $(function () {
 		}
 	});
 
-	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
+	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile, #content');
 	toggleScrollClass('#scroll-to-item', 70);
 
 	if ($(".copy").length > 0) {

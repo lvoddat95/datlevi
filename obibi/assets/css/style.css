@@ -1899,17 +1899,14 @@ input:checked+label.rdo-tile-label {
 
 /* Trang chủ */
 #header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
-}
-
-#content {
-  margin-top: 70px;
 }
 
 #dok-header-top {
@@ -7445,13 +7442,9 @@ input:checked+label.rdo-tile-label {
   display: block;
 }
 
-.category-page #content,
-.product-page #content {
-  margin-top: 70px;
-}
 
 .header-simple {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -7505,10 +7498,6 @@ input:checked+label.rdo-tile-label {
 @media (max-width: 991px) {
   #dok-header-top {
     height: 120px;
-  }
-
-  #content {
-    margin-top: 120px;
   }
 
   .category-page .header,
