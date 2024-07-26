@@ -316,7 +316,6 @@ $(function () {
 
 	if ($('#dok-product-modal-preview').length > 0) {
 		toggleScrollClass('#dok-product-modal-tab', 0, '#dok-product-modal-tab > .modal-body');
-
 		$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
 			var tab = $(e.relatedTarget).data('tab');
 			switch (tab) {
@@ -332,10 +331,15 @@ $(function () {
 				default:
 			}
 		});
-
-		$('#dok-product-modal-preview').on('hidden.bs.modal', function (e) {
-		});
 	}
+
+	$('#dok-product-modal-preview, #dok-menu-mobile').on('shown.bs.modal', function (e) {
+		$('html').css('overflow-x', 'initial');
+	});
+
+	$('#dok-product-modal-preview, #dok-menu-mobile').on('hidden.bs.modal', function (e) {
+		$('html').css('overflow-x', 'hidden');
+	});
 
 
 	$('.dok-tab-item').click(function (event) {
@@ -774,9 +778,9 @@ var change_payment_menthod = function (p_menthod) {
 	}
 
 	if (p_menthod === 'cod') {
-		$('.btn-pay').attr('data-bs-target','#dok-buy-success');
+		$('.btn-pay').attr('data-bs-target', '#dok-buy-success');
 	} else {
-		$('.btn-pay').attr('data-bs-target','#dok-pay-success');
+		$('.btn-pay').attr('data-bs-target', '#dok-pay-success');
 	}
 }
 
