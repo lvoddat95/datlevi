@@ -314,28 +314,35 @@ $(function () {
 		},
 	});
 
+	if ($('#dok-product-modal-preview').length > 0) {
+		toggleScrollClass('#dok-product-modal-tab', 0, '#dok-product-modal-tab > .modal-body');
 
-	$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
-		var tab = $(e.relatedTarget).data('tab');
-		switch (tab) {
-			case 'image':
-				activateTab('#dok-product-modal-tab', '#tab-image');
-				break;
-			case 'video':
-				activateTab('#dok-product-modal-tab', '#tab-video');
-				break;
-			case 'technical':
-				activateTab('#dok-product-modal-tab', '#tab-technical');
-				break;
-			default:
-			// code block
-		}
+		$('#dok-product-modal-preview').on('shown.bs.modal', function (e) {
+			var tab = $(e.relatedTarget).data('tab');
+			$('html').css('overflow-x', 'initial');
+			switch (tab) {
+				case 'image':
+					activateTab('#dok-product-modal-tab', '#tab-image');
+					break;
+				case 'video':
+					activateTab('#dok-product-modal-tab', '#tab-video');
+					break;
+				case 'technical':
+					activateTab('#dok-product-modal-tab', '#tab-technical');
+					break;
+				default:
+			}
+		});
 
-	});
+		$('#dok-product-modal-preview').on('hidden.bs.modal', function (e) {
+			$('html').css('overflow-x', 'hidden');
+		});
+	}
+
 
 	$('.dok-tab-item').click(function (event) {
 		event.preventDefault();
-		const $parentTabs = $(this).closest('.dok-tabs');
+		const $parentTabs = $(this).closest('.dok-custom-tab');
 		$parentTabs.find('.dok-tab-item').removeClass('active');
 		$parentTabs.find('.dok-tab-pane').removeClass('active');
 		$(this).addClass('active');
@@ -670,11 +677,11 @@ $(function () {
 });
 
 
-function toggleScrollClass(selector, threshold = 0) {
+function toggleScrollClass(selector, threshold = 0, scrollContainer = window) {
 	var lastScrollTop = 0;
 	var scrollTimeout;
 
-	$(window).scroll(function () {
+	$(scrollContainer).scroll(function () {
 		clearTimeout(scrollTimeout);
 
 		var st = $(this).scrollTop();
