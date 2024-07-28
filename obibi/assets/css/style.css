@@ -5350,6 +5350,7 @@ input:checked+label.rdo-tile-label {
 .post-page hr,
 .news-page hr,
 .product-page hr {
+  position: relative;
   height: 2px;
   margin: 10px 0;
   background-color: #f5f5f5;
@@ -7694,8 +7695,13 @@ input:checked+label.rdo-tile-label {
   font-size: var(--fz-16);
 }
 
+.box-product-mobile .item-warranty-info {
+  margin: 0;
+}
+
 .box-product-mobile .item-warranty-info>p {
   width: 100%;
+  padding: 0;
 }
 
 .box-product-mobile .item-warranty-info>p:last-child {
@@ -8925,6 +8931,6 @@ input.counter-input {
   font-size: 14px;
 }
 
-.modal-fullscreen .modal-body{
+.modal-fullscreen .modal-body {
   overflow-x: hidden;
 }
