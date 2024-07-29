@@ -7721,7 +7721,7 @@ input:checked+label.rdo-tile-label {
   border-top-right-radius: 12px;
   box-shadow: var(--shadow-m);
 }
-
+.product-modal-preview .modal-content,
 .dok-modal-bottom-up .modal-content {
   height: 100%;
 }
