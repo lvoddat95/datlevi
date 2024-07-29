@@ -1910,6 +1910,7 @@ input:checked+label.rdo-tile-label {
 }
 
 #dok-header-top {
+  overflow: hidden;
   display: flex;
   align-items: center;
   height: 70px;
