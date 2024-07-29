@@ -161,11 +161,15 @@ hr.mobile-line,
   }
 
   .dok-slider-box {
-    margin: -10px 0 -8px;
+    margin: -10px 0 0px;
   }
 
   .dok-slider-box .swiper-slide {
     padding: 10px 1px 8px;
+  }
+
+  .dok-brand-list, .dok-category-list {
+    margin-bottom: 0;
   }
 
   .box-warranty-info .box-title p,
