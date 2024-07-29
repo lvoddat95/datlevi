@@ -7526,8 +7526,8 @@ input:checked+label.rdo-tile-label {
     display: none !important;
   }
 
-  #header.fixed {
-    top: -70px;
+  #header {
+    top: -120px;
   }
 
   .bottom-nav {
