@@ -802,3 +802,11 @@ var change_bank_menthod = function (p_this) {
 	}
 }
 
+
+var apply_coupon = function () {
+	if ($('#coupon-code').val().length > 0) {
+		$('#total-coupon').show();
+	} else {
+		$('#total-coupon').hide();
+	}
+}
