@@ -333,13 +333,13 @@ $(function () {
 		});
 	}
 
-	$('#dok-product-modal-preview, #dok-menu-mobile').on('shown.bs.modal', function (e) {
-		$('html').css('overflow-x', 'initial');
-	});
+	// $('#dok-product-modal-preview, #dok-menu-mobile, .dok-modal-bottom-up').on('shown.bs.modal', function (e) {
+	// 	$('html').css('overflow-x', 'initial');
+	// });
 
-	$('#dok-product-modal-preview, #dok-menu-mobile').on('hidden.bs.modal', function (e) {
-		$('html').css('overflow-x', 'hidden');
-	});
+	// $('#dok-product-modal-preview, #dok-menu-mobile, .dok-modal-bottom-up').on('hidden.bs.modal', function (e) {
+	// 	$('html').css('overflow-x', 'hidden');
+	// });
 
 
 	$('.dok-tab-item').click(function (event) {
@@ -671,7 +671,7 @@ $(function () {
 		}
 	});
 
-	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile');
+	toggleScrollClass('#header, .bottom-nav, .header-simple, #go-top, .dok-product-filter.mobile, #content');
 	toggleScrollClass('#scroll-to-item', 70);
 
 	if ($(".copy").length > 0) {

@@ -302,9 +302,11 @@ hr.mobile-line,
   .product-page .box-product-mobile hr {
     display: block;
     height: 7px;
-    margin: 9px -10px;
-    width: calc(100% + 20px);
+    width: calc(100% + 15px);
+    position: relative;
+    left: -8px;
   }
+
 
   .dok-faqs .accordion .content-wrapper {
     padding-left: 0px;
