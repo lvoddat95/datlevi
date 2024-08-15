@@ -112,6 +112,9 @@ hr.mobile-line,
 }
 
 @media (max-width: 991px) {
+  #dok-header-top {
+    overflow: hidden;
+  }
 
   .cart-box {
     box-shadow: none;
