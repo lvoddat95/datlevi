@@ -689,6 +689,11 @@ $(function () {
 	}
 
 
+	$(".dok-filter-item .dropdown-content a").click(function(event) {
+        $(this).toggleClass("active");
+        event.preventDefault();
+    });
+
 });
 
 
