@@ -655,13 +655,13 @@ $(function () {
 		_counter.val(currentValue + 1);
 	});
 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 120) {
-			$('#header').addClass('fixed');
-		} else {
-			$('#header').removeClass('fixed');
-		}
-	});
+	// $(window).scroll(function () {
+	// 	if ($(this).scrollTop() > 120) {
+	// 		$('#header').addClass('fixed');
+	// 	} else {
+	// 		$('#header').removeClass('fixed');
+	// 	}
+	// });
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 70) {
@@ -807,3 +807,11 @@ var change_bank_menthod = function (p_this) {
 	}
 }
 
+
+var apply_coupon = function () {
+	if ($('#coupon-code').val().length > 0) {
+		$('#total-coupon').show();
+	} else {
+		$('#total-coupon').hide();
+	}
+}

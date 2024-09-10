@@ -399,10 +399,10 @@
                                 <li>
                                     <span class="total-product-quantity total-product-coupon">
                                         <span class="total-label">Nhập mã giảm giá:</span>
-                                        <form action="" class="total-discount">
-                                            <input type="text" placeholder="" class="form-control" name="" id="">
-                                            <button type="submit">Áp dụng</button>
-                                        </form>
+                                        <div class="total-discount">
+                                            <input type="text" placeholder="" class="form-control" name="" id="coupon-code">
+                                            <button onclick="apply_coupon()">Áp dụng</button>
+                                        </div>
                                     </span>
                                 </li>
                             </ul>
@@ -421,17 +421,23 @@
                                     <span class="temp-total-money">13.680.000₫</span>
                                 </li>
                                 
-                                <li id="total-fee-ship" style="display: none;">
+                                <li id="total-fee-ship" style="">
                                     <span class="total-product-quantity">
                                         <span class="total-label">Phí vận chuyển: </span>
                                     </span>
-                                    <span class="temp-total-money">120.000₫</span>
+                                    <span class="temp-total-money">Miễn phí</span>
                                 </li>
                                 <li>
                                     <span class="total-product-quantity">
                                         <span class="total-label">Tổng voucher giảm giá: </span>
                                     </span>
                                     <span class="temp-total-money">-500.000đ</span>
+                                </li>
+                                <li id="total-coupon" style="display: none;">
+                                    <span class="total-product-quantity">
+                                        <span class="total-label">Mã giảm giá: </span>
+                                    </span>
+                                    <span class="temp-total-money">-250.000đ</span>
                                 </li>
                                 <li>
                                     <span class="total-product-quantity">

@@ -2345,10 +2345,13 @@ input:checked+label.rdo-tile-label {
 
 /* Start Menu category */
 #dok-menu-mobile-filter {
-  overflow-y: hidden;
+  overflow-x: hidden;
   padding: 0 20px;
 }
 
+.dok-menu-mobile-filter-box{
+  overflow-x: hidden;
+}
 #dok-menu-mobile-filter .dok-menu-mobile-title {
   padding-left: 0;
   padding-right: 0;
@@ -7526,8 +7529,8 @@ input:checked+label.rdo-tile-label {
     display: none !important;
   }
 
-  #header.fixed {
-    top: -70px;
+  #header {
+    top: -120px;
   }
 
   .bottom-nav {
@@ -7717,7 +7720,7 @@ input:checked+label.rdo-tile-label {
   border-top-right-radius: 12px;
   box-shadow: var(--shadow-m);
 }
-
+.product-modal-preview .modal-content,
 .dok-modal-bottom-up .modal-content {
   height: 100%;
 }
