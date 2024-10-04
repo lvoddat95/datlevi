@@ -1,23 +1,29 @@
 $(function () {
-	if ($('#dok-header-top').length > 0) {
-		$('.dok-header-item, .menu-tree').hover(
-			function () {
-				clearTimeout($(this).data('timeout')); // Hủy bỏ timeout nếu đang có
-				$('.dok-header-overlay').addClass('active');
-				$(this).closest('#dok-header-top').find('#menu-main').attr('style', '').addClass('hover');
-			},
-			function () {
-				const element = $(this);
-				const timeout = setTimeout(function () {
-					if (!$('.dok-header-item:hover').length && !$('.menu-tree:hover').length) {
-						$('.dok-header-overlay').removeClass('active');
-						element.closest('#dok-header-top').find('#menu-main').attr('style', 'display: none;').removeClass('hover'); // hoặc các style khác cần thiết khi không hover
-					}
-				}, 150); // 1000 milliseconds = 1 second
-				$(this).data('timeout', timeout); // Lưu lại timeout để có thể hủy bỏ nếu cần
-			}
-		);
-	};
+
+	if ($('.menu-tree').length > 0) {
+		const ps = new PerfectScrollbar('.menu-tree');
+
+		if ($('#dok-header-top').length > 0) {
+			$('.dok-header-item, .menu-tree').hover(
+				function () {
+					clearTimeout($(this).data('timeout')); // Hủy bỏ timeout nếu đang có
+					$('.dok-header-overlay').addClass('active');
+					$(this).closest('#dok-header-top').find('#menu-main').attr('style', '').addClass('hover');
+					ps.update();
+				},
+				function () {
+					const element = $(this);
+					const timeout = setTimeout(function () {
+						if (!$('.dok-header-item:hover').length && !$('.menu-tree:hover').length) {
+							$('.dok-header-overlay').removeClass('active');
+							element.closest('#dok-header-top').find('#menu-main').attr('style', 'display: none;').removeClass('hover'); // hoặc các style khác cần thiết khi không hover
+						}
+					}, 150); // 1000 milliseconds = 1 second
+					$(this).data('timeout', timeout); // Lưu lại timeout để có thể hủy bỏ nếu cần
+				}
+			);
+		};
+	}
 
 	if ($('.filter-item__title').length > 0) {
 		$('.filter-item__title').click(function () {
@@ -689,10 +695,10 @@ $(function () {
 	}
 
 
-	$(".dok-filter-item .dropdown-content a").click(function(event) {
-        $(this).toggleClass("active");
-        event.preventDefault();
-    });
+	$(".dok-filter-item .dropdown-content a").click(function (event) {
+		$(this).toggleClass("active");
+		event.preventDefault();
+	});
 
 });
 

@@ -2482,6 +2482,7 @@ input:checked+label.rdo-tile-label {
 .menu-container .menu-wrapper {
   left: 8px;
   position: absolute;
+  overflow: hidden;
   top: 100px;
   z-index: 999;
   width: 100%;
@@ -2555,7 +2556,10 @@ input:checked+label.rdo-tile-label {
   width: 18px;
   font-size: 18px;
 }
-
+.menu-tree .ps__rail-y{
+  right: auto;
+  left: -6px;
+}
 .menu-tree {
   background-color: #fff;
   border-radius: 10px;
